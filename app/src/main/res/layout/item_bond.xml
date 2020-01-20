@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/white"
+  android:paddingTop="@dimen/layout_20dp"
+  android:layout_marginBottom="@dimen/layout_20dp">
+
+  <LinearLayout
+    android:id="@+id/ll_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/layout_10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/tv_pair_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/text_14sp"
+      tools:text="BTC/USDT" />
+
+    <TextView
+      android:id="@+id/tv_deal_type_tag"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/layout_8dp"
+      android:background="@drawable/corner_solid_small_green"
+      android:padding="@dimen/layout_3dp"
+      android:text="买涨"
+      android:textColor="@color/white"
+      android:textSize="@dimen/text_8sp"
+      android:visibility="gone"
+      tools:visibility="visible" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/ll_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/layout_5dp"
+    android:layout_marginLeft="@dimen/layout_10dp"
+    android:orientation="vertical"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/ll_name">
+
+    <TextView
+      android:id="@+id/price"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/layout_5dp"
+      tools:text="买入价：2222.88"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/text_12sp" />
+
+    <TextView
+      android:id="@+id/time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/layout_5dp"
+      tools:text="2010-10-10 10:10:10"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/text_12sp" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/ll_profit_loss"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/layout_10dp"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <TextView
+      android:id="@+id/profit_loss_volume"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/color_a50000"
+      android:textSize="@dimen/text_14sp"
+      tools:text="+11.10" />
+
+    <TextView
+      android:id="@+id/rate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/layout_5dp"
+      android:textColor="@color/color_a50000"
+      android:textSize="@dimen/text_10sp"
+      android:gravity="center"
+      android:drawablePadding="@dimen/layout_5dp"
+      android:drawableRight="@drawable/ic_arrow_right"
+      tools:text="95%" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/quantity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/layout_10dp"
+    android:textColor="@color/color_8fa2cc"
+    android:textSize="@dimen/text_10sp"
+    app:layout_constraintTop_toBottomOf="@id/ll_profit_loss"
+    app:layout_constraintRight_toRightOf="parent"
+    tools:text="数量：0个" />
+
+  <View
+    android:id="@+id/divider"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_1dp"
+    android:layout_marginTop="@dimen/layout_20dp"
+    android:background="@color/color_f2f4f9"
+    app:layout_constraintTop_toBottomOf="@id/ll_price"/>
+
+  <TextView
+    android:id="@+id/btn_cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/layout_10dp"
+    android:background="@drawable/corner_solid_cce6ff"
+    android:paddingLeft="@dimen/layout_18dp"
+    android:paddingTop="@dimen/layout_7dp"
+    android:paddingRight="@dimen/layout_18dp"
+    android:paddingBottom="@dimen/layout_7dp"
+    android:textColor="@color/color_0080ff"
+    android:text="撤单"
+    android:textSize="@dimen/text_12sp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/divider"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

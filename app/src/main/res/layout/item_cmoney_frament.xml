@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:background="@color/main_money_rl_background"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_tilte"
+            android:layout_width="@dimen/layout_20dp"
+            android:layout_height="@dimen/layout_20dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNY"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_17sp" />
+
+            <TextView
+                android:id="@+id/list_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(CNY)"
+                android:textColor="@color/money_name"
+                android:textSize="@dimen/text_15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_Nowmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:text="CNY"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

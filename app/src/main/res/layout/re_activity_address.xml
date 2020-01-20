@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9">
+    <com.eex.common.view.NewComTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/mine_mention_money_address"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/layout_20dp"
+        android:paddingRight="@dimen/layout_20dp"
+        android:paddingBottom="@dimen/layout_20dp"
+        android:paddingTop="@dimen/layout_10dp"
+        android:background="@color/color_f2f4f9"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_money_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_add_address_con"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:background="@drawable/add_bankcards_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/layout_15dp"
+                android:layout_height="@dimen/layout_15dp"
+                android:src="@drawable/cq_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:text="@string/mine_mention_money_address"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_109dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:gravity="center"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="@dimen/layout_15dp"
+                android:layout_height="@dimen/layout_15dp"
+                android:src="@drawable/cq_add"
+                android:tint="@color/color_0080ff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:text="@string/mine_mention_money_address"
+                android:textColor="@color/color_0080ff"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

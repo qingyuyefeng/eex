@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/dialogyes" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TxType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="需人工审核(24h审核完成)"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TXname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_16sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/layout_18dp"
+            android:background="@drawable/backbtn"
+            android:text="重新认证级别3"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

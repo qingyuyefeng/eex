@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <com.androidkun.xtablayout.XTabLayout
+    android:id="@+id/deal_type"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:xTabDividerWidthWidthText="true"
+    app:xTabIndicatorColor="@color/color_00a546"
+    app:xTabIndicatorHeight="@dimen/layout_2dp"
+    app:xTabIndicatorWidth="@dimen/layout_40dp"
+    app:xTabMode="scrollable"
+    app:xTabSelectedTextColor="@color/color_00a546"
+    app:xTabSelectedTextSize="@dimen/text_16sp"
+    app:xTabTextColor="@color/color_8fa2cc"
+    app:xTabTextSize="@dimen/text_16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/color_f2f4f9" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/layout_20dp"
+    android:orientation="horizontal">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/pay_type"
+      android:textColor="@color/color_filtrate_text"
+      android:textSize="@dimen/text_12sp"/>
+
+    <RadioGroup
+      android:id="@+id/radio_pay_type"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/layout_10dp"
+      android:orientation="horizontal">
+
+      <RadioButton
+        android:id="@+id/pay_type_wechat"
+        style="@style/pay_type_radio"
+        android:checked="true"
+        android:text="@string/we_chat" />
+
+      <RadioButton
+        android:id="@+id/pay_type_alipay"
+        style="@style/pay_type_radio"
+        android:text="@string/alipay" />
+
+      <RadioButton
+        android:id="@+id/pay_type_bank"
+        style="@style/pay_type_radio"
+        android:text="@string/bank_card" />
+    </RadioGroup>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/layout_5dp"
+    android:layout_marginLeft="@dimen/layout_20dp"
+    android:layout_marginRight="@dimen/layout_20dp"
+    android:padding="@dimen/layout_10dp"
+    android:orientation="horizontal"
+    android:background="@color/color_f2f4f9">
+
+    <TextView
+      android:id="@+id/fix_price_unit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/color_4d6599"
+      android:text="￥"
+      android:visibility="gone"
+      tools:visibility="visible"
+      />
+
+    <EditText
+      android:id="@+id/tv_deal_amount"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@null"
+      android:digits="@string/filter_vcode2"
+      android:gravity="center"
+      android:hint="@string/buy_instant_hint"
+      android:textColor="@color/color_4d6599"
+      android:textColorHint="@color/color_cfd6e6"
+      android:textSize="@dimen/text_13sp" />
+
+    <TextView
+      android:id="@+id/price_unit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/color_4d6599"
+      tools:text="USD"/>
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/tv_tips"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/layout_20dp"
+    android:layout_marginLeft="@dimen/layout_20dp"
+    android:layout_marginRight="@dimen/layout_20dp"
+    android:drawableLeft="@mipmap/ic_amount_exchange"
+    android:drawablePadding="@dimen/layout_5dp"
+    android:layout_gravity="right"
+    android:text="@string/amount_trade"
+    android:textColor="@color/color_0080ff"
+    android:textSize="@dimen/text_12sp"/>
+
+  <RelativeLayout
+    android:id="@+id/btn_buy_instant"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/ic_trade_instant_bg"
+    android:padding="@dimen/layout_9dp"
+    android:layout_marginLeft="@dimen/layout_20dp"
+    android:layout_marginRight="@dimen/layout_20dp"
+    android:layout_marginBottom="@dimen/layout_20dp"
+    >
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:drawableLeft="@mipmap/ic_trade_instant"
+      android:drawablePadding="@dimen/layout_5dp"
+      android:gravity="center"
+      android:text="@string/buy_instant"
+      android:textColor="@color/white"
+      android:textSize="@dimen/text_12sp" />
+  </RelativeLayout>
+
+</LinearLayout>

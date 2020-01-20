@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/activity_marginTop_da"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/layout_10dp"
+                    android:paddingBottom="@dimen/layout_10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tx_FriendNuber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layout_5dp"
+                            android:text="@string/frent"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <Button
+                            android:id="@+id/btn_Friend"
+                            android:layout_width="56dip"
+                            android:layout_height="20dip"
+                            android:layout_marginTop="@dimen/layout_5dp"
+                            android:background="@drawable/btn_red_bg"
+                            android:text="查看"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/layout_10dp"
+                        android:layout_marginBottom="@dimen/layout_10dp"
+                        android:background="@color/appbar_background1" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tx_Numberof"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layout_5dp"
+                            android:text="EBX有效持仓人数"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <Button
+                            android:id="@+id/btn_Numberof"
+                            android:layout_width="56dip"
+                            android:layout_height="20dip"
+                            android:layout_marginTop="@dimen/layout_5dp"
+                            android:background="@drawable/btn_red_bg"
+                            android:text="查看"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/layout_10dp"
+                        android:layout_marginBottom="@dimen/layout_10dp"
+                        android:background="@color/appbar_background1" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tx_moneyNuber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¥0"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/layout_5dp"
+                            android:text="@string/mone"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <Button
+                            android:id="@+id/btn_money"
+                            android:layout_width="@dimen/layout_56dp"
+                            android:layout_height="@dimen/layout_20dp"
+                            android:layout_marginTop="@dimen/layout_5dp"
+                            android:background="@drawable/btn_red_bg"
+                            android:text="查看"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/appbar_background2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/yaoqingma"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_marginRight="@dimen/layout_10dp"
+                            android:layout_weight="8"
+                            android:background="@drawable/btn_popwindow_error_bg">
+
+                            <TextView
+                                android:id="@+id/textview_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/layout_10dp"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxEms="15"
+                                android:maxLines="1"
+                                android:text=""
+                                android:textColor="@color/background_baise" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/btn_code"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/layout_10dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/btn_run_setinfo_next_bg"
+                            android:src="@drawable/cq_fuzi" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="@dimen/layout_10dp"
+                        android:text="@string/lianjie"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:layout_marginBottom="@dimen/layout_10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_marginRight="@dimen/layout_10dp"
+                            android:layout_weight="8"
+                            android:background="@drawable/btn_popwindow_error_bg">
+
+                            <TextView
+                                android:id="@+id/textview_link"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/layout_10dp"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:maxEms="15"
+                                android:maxLines="1"
+                                android:text="0"
+                                android:textColor="@color/background_baise" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/btn_link"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/layout_10dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/btn_run_setinfo_next_bg"
+                            android:src="@drawable/cq_fuzi" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

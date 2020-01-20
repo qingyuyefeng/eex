@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9">
+    <com.eex.common.view.NewComTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/legal_currency_collection_method"/>
+    <LinearLayout
+        android:id="@+id/ll_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_50dp"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_10dp"
+        android:paddingRight="@dimen/layout_10dp">
+
+        <ImageView
+            android:layout_width="@dimen/layout_36dp"
+            android:layout_height="@dimen/layout_36dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:src="@mipmap/bankcard"/>
+
+        <TextView
+            style="@style/normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank_card" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_if_bank_card"
+            style="@style/normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_set"
+            android:textColor="@color/color_cc3333" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_6dp"
+            android:layout_height="@dimen/layout_12dp"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:src="@mipmap/cq_right"
+            android:tint="@color/color_8fa2cc" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_we_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_50dp"
+        android:layout_marginTop="@dimen/layout_3dp"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_10dp"
+        android:paddingRight="@dimen/layout_10dp">
+
+        <ImageView
+            android:layout_width="@dimen/layout_36dp"
+            android:layout_height="@dimen/layout_36dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:src="@mipmap/we_chat"/>
+        <TextView
+            style="@style/normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/we_chat" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_if_we_chat"
+            style="@style/normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_set"
+            android:textColor="@color/color_cc3333" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_6dp"
+            android:layout_height="@dimen/layout_12dp"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:src="@mipmap/cq_right"
+            android:tint="@color/color_8fa2cc" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_50dp"
+        android:layout_marginTop="@dimen/layout_3dp"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_10dp"
+        android:paddingRight="@dimen/layout_10dp">
+
+        <ImageView
+            android:layout_width="@dimen/layout_36dp"
+            android:layout_height="@dimen/layout_36dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:src="@mipmap/alipay"/>
+        <TextView
+            style="@style/normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alipay" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_if_alipay"
+            style="@style/normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_set"
+            android:textColor="@color/color_cc3333" />
+
+        <ImageView
+            android:layout_width="@dimen/layout_6dp"
+            android:layout_height="@dimen/layout_12dp"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:src="@mipmap/cq_right"
+            android:tint="@color/color_8fa2cc" />
+    </LinearLayout>
+</LinearLayout>

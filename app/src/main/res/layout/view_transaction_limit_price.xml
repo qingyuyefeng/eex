@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/white"
+  android:orientation="vertical">
+  <!--委托价格-->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/color_f2f4f9"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/btn_price_subtract"
+      android:layout_width="36dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="-"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/text_16sp" />
+
+    <EditText
+      android:id="@+id/edit_price"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="@dimen/layout_5dp"
+      android:layout_weight="1"
+      android:background="@null"
+      android:gravity="center"
+      android:hint="委托价"
+        android:inputType="numberDecimal|numberSigned"
+      android:lines="1"
+      android:maxLines="1"
+      android:singleLine="true"
+      android:textColor="@color/color_4d6599"
+      android:textColorHint="@color/color_cfd6e6"
+      android:textSize="@dimen/text_13sp" />
+
+    <TextView
+      android:id="@+id/btn_price_add"
+      android:layout_width="36dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="+"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/text_16sp" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/fix_coin_valuation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:textColor="@color/color_cfd6e6"
+    android:textSize="@dimen/text_10sp"
+    android:visibility="visible"
+    tools:text="估值:￥0" />
+
+  <!--委托数量-->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/color_f2f4f9"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/btn_num_subtract"
+      android:layout_width="36dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="-"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/text_16sp" />
+
+    <EditText
+      android:id="@+id/edit_num"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="@dimen/layout_5dp"
+      android:layout_weight="1"
+      android:background="@null"
+      android:gravity="center"
+      android:hint="委托量"
+        android:inputType="numberDecimal|numberSigned"
+      android:lines="1"
+      android:maxLines="1"
+      android:singleLine="true"
+      android:textColor="@color/color_4d6599"
+      android:textColorHint="@color/color_cfd6e6"
+      android:textSize="@dimen/text_13sp" />
+
+    <TextView
+      android:id="@+id/btn_num_add"
+      android:layout_width="36dp"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="+"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/text_16sp" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/usable_amount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:text="可用 0 USD"
+    android:textColor="@color/color_4d6599"
+    android:textSize="@dimen/text_10sp" />
+
+  <!--4个按钮-->
+  <net.lucode.hackware.magicindicator.MagicIndicator
+    android:id="@+id/percents"
+    android:layout_width="match_parent"
+    android:layout_height="20dp" />
+
+  <!--成交金额-->
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/layout_5dp">
+
+    <EditText
+      android:id="@+id/tv_deal_amount"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="@dimen/layout_5dp"
+      android:layout_weight="1"
+      android:background="@null"
+      android:enabled="false"
+      android:gravity="center"
+      android:hint="成交金额"
+      android:lines="1"
+      android:maxLines="1"
+        android:inputType="numberDecimal|numberSigned"
+      android:singleLine="true"
+      android:textColor="@color/color_4d6599"
+      android:textColorHint="@color/color_cfd6e6"
+      android:textSize="@dimen/text_13sp" />
+
+    <TextView
+      android:id="@+id/fix_price_unit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/color_4d6599"
+      tools:text="USD" />
+  </LinearLayout>
+</LinearLayout>
+
+

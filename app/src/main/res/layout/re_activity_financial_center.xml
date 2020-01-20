@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <com.eex.common.view.NewComTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/currency_financial"
+        app:iv_right="@mipmap/financial_right"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/layout_30dp"
+                android:paddingRight="@dimen/layout_30dp"
+                android:paddingBottom="@dimen/layout_20dp">
+
+                <TextView
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_20dp"
+                    android:text="@string/finance_products" />
+
+                <TextView
+                    android:id="@+id/tv_choose_product"
+                    style="@style/normal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_30dp"
+                    android:layout_marginTop="@dimen/layout_5dp"
+                    android:background="@color/color_f2f4f9"
+                    android:drawableRight="@mipmap/down_triangle"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/layout_20dp"
+                    android:text="EBX" />
+
+                <TextView
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_20dp"
+                    android:text="@string/financial_number" />
+
+                <EditText
+                    android:id="@+id/et_input_amount"
+                    style="@style/normal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_30dp"
+                    android:layout_marginTop="@dimen/layout_5dp"
+                    android:inputType="numberDecimal"
+                    android:background="@color/color_f2f4f9"
+                    android:gravity="center_vertical"
+                    android:hint="@string/please_enter_recharge_amount"
+                    android:paddingLeft="@dimen/layout_20dp"
+                    android:textColorHint="@color/color_cfd6e6" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/normal_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rest_can_use"
+                        android:textColor="@color/color_8fa2cc" />
+                    <TextView
+                        android:id="@+id/tv_can_use"
+                        style="@style/normal_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_5dp"
+                        android:text="0.00"
+                        android:textColor="@color/color_8fa2cc" />
+                    <TextView
+                        android:id="@+id/tv_coin_type1"
+                        style="@style/normal_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_5dp"
+                        android:text="EBX"
+                        android:textColor="@color/color_8fa2cc" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_financial_cycle"
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_20dp"
+                    android:text="@string/financial_management_cycle"
+                    android:visibility="gone"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_financial_cycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_32dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rb_financial_cycle1"
+                        style="@style/check_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_30dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="invisible"/>
+                    <RadioButton
+                        android:id="@+id/rb_financial_cycle2"
+                        style="@style/check_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_30dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:visibility="invisible"/>
+                    <RadioButton
+                        android:id="@+id/rb_financial_cycle3"
+                        style="@style/check_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_30dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:visibility="invisible"/>
+                    <RadioButton
+                        android:id="@+id/rb_financial_cycle4"
+                        style="@style/check_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_30dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/layout_10dp" />
+                    <RadioButton
+                        android:id="@+id/rb_financial_cycle5"
+                        style="@style/check_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_30dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:visibility="gone"/>
+                </RadioGroup>
+
+
+                <TextView
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_20dp"
+                    android:text="@string/leverage" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_5dp"
+                    android:background="@color/color_f2f4f9"
+                    android:padding="@dimen/layout_10dp">
+
+                    <TextView
+                        style="@style/normal_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lever" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        style="@style/normal_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="0.005" />
+
+                    <TextView
+                        android:id="@+id/tv_coin_type2"
+                        style="@style/normal_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:gravity="center"
+                        android:text="EBX" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_9dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/layout_30dp"
+                android:paddingRight="@dimen/layout_30dp">
+                    <TextView
+                        android:id="@+id/tv_type_tip1"
+                        style="@style/normal_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_f2f4f9"
+                        android:paddingLeft="@dimen/layout_10dp"
+                        android:paddingTop="@dimen/layout_5dp"
+                        android:paddingRight="@dimen/layout_10dp"
+                        android:paddingBottom="@dimen/layout_5dp"
+                        android:text="@string/principal_interest_continue_cycle"/>
+                    <TextView
+                        android:id="@+id/tv_type_tip2"
+                        style="@style/normal_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/color_f2f4f9"
+                        android:paddingLeft="@dimen/layout_10dp"
+                        android:paddingTop="@dimen/layout_5dp"
+                        android:paddingRight="@dimen/layout_10dp"
+                        android:paddingBottom="@dimen/layout_5dp"
+                        android:text="@string/principal_continue_cycle"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/tv_type_tip3"
+                        style="@style/normal_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:background="@color/color_f2f4f9"
+                        android:paddingLeft="@dimen/layout_10dp"
+                        android:paddingTop="@dimen/layout_5dp"
+                        android:paddingRight="@dimen/layout_10dp"
+                        android:paddingBottom="@dimen/layout_5dp"
+                        android:text="@string/not_continue_cycle"
+                        android:visibility="gone"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_financial_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_32dp"
+                    android:layout_marginTop="@dimen/layout_10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_continue_finance"
+                        style="@style/check_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_30dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/continue_to_finance" />
+                    <RadioButton
+                        android:id="@+id/rb_principal_finance"
+                        style="@style/check_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_30dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="@string/the_principal_financial" />
+                    <RadioButton
+                        android:id="@+id/rb_due_end"
+                        style="@style/check_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_30dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="@string/due_to_end" />
+                </RadioGroup>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/normal_text"
+                        android:text="@string/daily_rate"/>
+                    <TextView
+                        android:id="@+id/tv_daily_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_5dp"
+                        style="@style/normal_text"
+                        android:text="0.00%"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/normal_text"
+                        android:textColor="@color/color_0080ff"
+                        android:text="@string/daily_earnings" />
+                    <TextView
+                        android:id="@+id/tv_daily_earnings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_5dp"
+                        style="@style/normal_text"
+                        android:textColor="@color/color_0080ff"
+                        android:text="0" />
+                    <TextView
+                        android:id="@+id/tv_coin_type3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_5dp"
+                        style="@style/normal_text"
+                        android:textColor="@color/color_0080ff"
+                        android:text="EBX" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_financial_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/layout_60dp"
+                    android:layout_marginRight="@dimen/layout_60dp"
+                    android:layout_marginTop="@dimen/layout_20dp"
+                    android:layout_marginBottom="@dimen/layout_20dp"
+                    android:paddingTop="@dimen/layout_10dp"
+                    android:paddingBottom="@dimen/layout_10dp"
+                    android:background="@drawable/btn_have_finished_bg"
+                    style="@style/normal_text"
+                    android:textColor="@color/white"
+                    android:text="@string/have_finished" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_10dp"
+                android:paddingRight="@dimen/layout_10dp"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:textColor="@color/color_e65c5c"
+                style="@style/normal_text"
+                android:text="@string/financial_center_tip1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/layout_10dp"
+                android:paddingRight="@dimen/layout_10dp"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:layout_marginBottom="@dimen/layout_20dp"
+                android:textColor="@color/color_e65c5c"
+                style="@style/normal_text"
+                android:text="@string/financial_center_tip2"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="240dp"
+  android:background="@color/white"
+  android:padding="@dimen/layout_20dp">
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/cash_flow"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/sp_12" />
+
+    <!--大流入-->
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/layout_20dp"
+      android:background="@drawable/pie_inflow_bg"
+      android:padding="@dimen/layout_5dp"
+      android:orientation="horizontal">
+
+      <View
+        android:layout_width="@dimen/layout_10dp"
+        android:layout_height="@dimen/layout_10dp"
+        android:layout_marginTop="@dimen/layout_2dp"
+        android:background="@drawable/pie_indicator_big_in"/>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+          style="@style/text_pie_indicator_inflow"
+          android:text="大流入"/>
+
+        <TextView
+          android:id="@+id/tv_big_inflow"
+          style="@style/text_pie_indicator_inflow"
+          tools:text="22%"/>
+      </LinearLayout>
+    </LinearLayout>
+
+    <!--中流入-->
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/layout_10dp"
+      android:background="@drawable/pie_inflow_bg"
+      android:padding="@dimen/layout_5dp"
+      android:orientation="horizontal">
+
+      <View
+        android:layout_width="@dimen/layout_10dp"
+        android:layout_height="@dimen/layout_10dp"
+        android:layout_marginTop="@dimen/layout_2dp"
+        android:background="@drawable/pie_indicator_middle_in"/>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+          style="@style/text_pie_indicator_inflow"
+          android:text="中流入"/>
+
+        <TextView
+          android:id="@+id/tv_middle_inflow"
+          style="@style/text_pie_indicator_inflow"
+          tools:text="22%"/>
+      </LinearLayout>
+    </LinearLayout>
+
+    <!--小流入-->
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/layout_10dp"
+      android:background="@drawable/pie_inflow_bg"
+      android:padding="@dimen/layout_5dp"
+      android:orientation="horizontal">
+
+      <View
+        android:layout_width="@dimen/layout_10dp"
+        android:layout_height="@dimen/layout_10dp"
+        android:layout_marginTop="@dimen/layout_2dp"
+        android:background="@drawable/pie_indicator_small_in"/>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+          style="@style/text_pie_indicator_inflow"
+          android:text="小流入"/>
+
+        <TextView
+          android:id="@+id/tv_small_inflow"
+          style="@style/text_pie_indicator_inflow"
+          tools:text="22%"/>
+      </LinearLayout>
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <com.github.mikephil.charting.charts.PieChart
+    android:id="@+id/pie_chart"
+    android:layout_width="@dimen/layout_120dp"
+    android:layout_height="@dimen/layout_120dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true" />
+
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <!--大流出-->
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/layout_20dp"
+      android:background="@drawable/pie_outflow_bg"
+      android:padding="@dimen/layout_5dp"
+      android:orientation="horizontal">
+
+      <View
+        android:layout_width="@dimen/layout_10dp"
+        android:layout_height="@dimen/layout_10dp"
+        android:layout_marginTop="@dimen/layout_2dp"
+        android:background="@drawable/pie_indicator_big_out"/>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+          style="@style/text_pie_indicator_outflow"
+          android:text="大流出"/>
+
+        <TextView
+          android:id="@+id/tv_big_outflow"
+          style="@style/text_pie_indicator_outflow"
+          tools:text="22%"/>
+      </LinearLayout>
+    </LinearLayout>
+
+    <!--中流出-->
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/layout_10dp"
+      android:background="@drawable/pie_outflow_bg"
+      android:padding="@dimen/layout_5dp"
+      android:orientation="horizontal">
+
+      <View
+        android:layout_width="@dimen/layout_10dp"
+        android:layout_height="@dimen/layout_10dp"
+        android:layout_marginTop="@dimen/layout_2dp"
+        android:background="@drawable/pie_indicator_middle_out"/>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+          style="@style/text_pie_indicator_outflow"
+          android:text="中流出"/>
+
+        <TextView
+          android:id="@+id/tv_middle_outflow"
+          style="@style/text_pie_indicator_outflow"
+          tools:text="22%"/>
+      </LinearLayout>
+    </LinearLayout>
+
+    <!--小流出-->
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/layout_10dp"
+      android:background="@drawable/pie_outflow_bg"
+      android:padding="@dimen/layout_5dp"
+      android:orientation="horizontal">
+
+      <View
+        android:layout_width="@dimen/layout_10dp"
+        android:layout_height="@dimen/layout_10dp"
+        android:layout_marginTop="@dimen/layout_2dp"
+        android:background="@drawable/pie_indicator_small_out"/>
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+          style="@style/text_pie_indicator_outflow"
+          android:text="小流出"/>
+
+        <TextView
+          android:id="@+id/tv_small_outflow"
+          style="@style/text_pie_indicator_outflow"
+          tools:text="22%"/>
+      </LinearLayout>
+    </LinearLayout>
+
+  </LinearLayout>
+</RelativeLayout>
+
+

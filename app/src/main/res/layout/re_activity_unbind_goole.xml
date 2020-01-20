@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9"
+    android:orientation="vertical">
+
+    <com.eex.common.view.NewComTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/unbind_google_verification" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:paddingTop="@dimen/layout_40dp"
+        android:paddingLeft="@dimen/layout_30dp"
+        android:paddingRight="@dimen/layout_30dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/normal_text"
+            android:text="@string/login_password"/>
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_30dp"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:hint="@string/please_input_password"
+            android:textColorHint="@color/color_cfd6e6"
+            android:inputType="textPassword"
+            style="@style/normal_text"
+            android:paddingLeft="@dimen/layout_13dp"
+            android:background="@color/color_f2f4f9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/normal_text"
+            android:layout_marginTop="@dimen/layout_20dp"
+            android:text="@string/google_verification_code"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_30dp"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_google_code"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:hint="@string/please_input_code"
+                android:textColorHint="@color/color_cfd6e6"
+                style="@style/normal_text"
+                android:paddingLeft="@dimen/layout_13dp"
+                android:background="@color/color_f2f4f9"/>
+            <TextView
+                android:id="@+id/tv_paste"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/get_code_shape"
+                android:textColor="@color/color_0080ff"
+                android:paddingLeft="@dimen/layout_10dp"
+                android:paddingRight="@dimen/layout_10dp"
+                android:layout_marginLeft="@dimen/layout_20dp"
+                android:gravity="center_vertical"
+                android:text="@string/paste"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_unbind_google"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_30dp"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/layout_40dp"
+            android:layout_marginTop="@dimen/layout_30dp"
+            android:background="@color/color_0080ff"
+            android:text="@string/unbind"/>
+    </LinearLayout>
+</LinearLayout>

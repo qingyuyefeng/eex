@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_10sp"
+            android:layout_weight="1"
+            android:text="版本信息"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/Edition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/text_10sp"
+            android:text=""
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_13sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_OutLogin"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_margin="@dimen/text_10sp"
+            android:background="@drawable/backbtn"
+            android:text="退出登录"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_13sp" />
+    </RelativeLayout>
+</LinearLayout>

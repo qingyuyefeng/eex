@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--新版简易title-->
+    <declare-styleable name="new_title_bar">
+        <attr name="iv_back_resource" format="integer" />
+        <attr name="title_resource" format="string" />
+        <attr name="iv_right" format="integer" />
+        <attr name="tv_right" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ComTitleBar">
+        <attr name="title" format="string"/>
+        <attr name="title_size" format="integer"/>
+        <attr name="right_text" format="string"/>
+        <attr name="title_color" format="color|reference"/>
+        <attr name="right_text_color" format="color"/>
+    </declare-styleable>
+
+<!--    <declare-styleable name="title_bar">-->
+<!--        <attr name="title" format="string" />-->
+<!--        <attr name="title_size" format="integer" />-->
+<!--        <attr name="right_text" format="string" />-->
+<!--        <attr name="right_text_color" format="color" />-->
+<!--    </declare-styleable>-->
+
+    <declare-styleable name="normal">
+        <attr name="des" format="string" />
+        <attr name="max_word" format="integer" />
+        <attr name="text_color" format="color" />
+    </declare-styleable>
+
+    <!--页面背景色，由于使用侧滑系统背景属性为透明，所以这里自定义一个属性-->
+    <attr name="backgroundColor" format="color|reference" />
+
+    <!--悬浮按钮的颜色-->
+    <attr name="fabColor" format="color|reference" />
+
+    <!--导航图标和文字状态颜色-->
+    <attr name="navColor" format="reference|reference" />
+
+    <!--toolbar的主题-->
+    <attr name="toolbarTheme" format="reference" />
+
+    <!--新闻频道管理的背景-->
+    <attr name="itemChannelBackground" format="reference" />
+
+    <!--导航头像背景-->
+    <attr name="navHeaderBackground" format="reference" />
+
+    <!--CheckedTextView选中状态的颜色-->
+    <attr name="checkTextViewColorStateList" format="reference" />
+
+    <declare-styleable name="PacManRefreshHead">
+        <attr name="pacIconColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ThreePointLoadingView">
+        <attr name="pointColor" format="color|reference" />
+    </declare-styleable>
+
+    <!--设置字体大小控件-->
+    <declare-styleable name="SetTextSizeView">
+        <attr name="lineWidth" format="dimension|reference" />
+        <attr name="lineColor" format="color|reference" />
+        <attr name="totalCount" format="integer" />
+        <attr name="circleColor" format="color|reference" />
+        <attr name="circleRadius" format="dimension|reference" />
+    </declare-styleable>
+
+
+    <!--深度图DepthMapView-->
+    <declare-styleable name="DepthMapView">
+        <!--买入颜色-->
+        <attr name="buy_line_color" format="color|reference" />
+        <!--买入区域内部颜色-->
+        <attr name="buy_path_color" format="color|reference" />
+        <!--卖出颜色-->
+        <attr name="sell_line_color" format="color|reference" />
+        <!--卖出区域内部颜色-->
+        <attr name="sell_path_color" format="color|reference" />
+        <!--线条宽度-->
+        <attr name="line_width" format="dimension" />
+        <!--文字颜色-->
+        <attr name="text_color" />
+        <attr name="textSize" format="dimension" />
+        <!--背景颜色-->
+        <attr name="background_color" format="color|reference" />
+        <!--选中后文字背景颜色-->
+        <attr name="selector_background_color" format="color|reference" />
+        <!--右侧价格行数-->
+        <attr name="line_count" format="integer" />
+        <!--文字大小-->
+        <attr name="text_size" format="dimension" />
+        <!--圆圈半径-->
+        <attr name="circle_radius" format="dimension" />
+        <!--点的半径-->
+        <attr name="dot_radius" format="dimension" />
+    </declare-styleable>
+
+    <!--时间线TimeLineMarkerView-->
+    <declare-styleable name="TimeLineMarker">
+        <!--圆点大小-->
+        <attr name="markerSize" format="dimension" />
+        <!--圆点颜色或者图片-->
+        <attr name="marker" format="color|reference" />
+        <!--上面线段颜色或者图片-->
+        <attr name="upLine" format="color|reference" />
+        <!--下面线段颜色或者图片-->
+        <attr name="downLine" format="color|reference" />
+        <!--线段粗细-->
+        <attr name="lineSize" format="dimension" />
+        <!--横向还是竖向-->
+        <attr name="orientation" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="KLineChartView">
+        <!--公共的-->
+        <attr name="kc_text_size" format="dimension"/>
+        <attr name="kc_text_color" format="color"/>
+        <attr name="kc_line_width" format="dimension"/>
+        <attr name="kc_background_color" format="color"/>
+        <attr name="kc_selected_line_color" format="color"/>
+        <attr name="kc_selected_line_width" format="dimension"/>
+        <attr name="kc_grid_line_width" format="dimension"/>
+        <attr name="kc_grid_line_color" format="color"/>
+        <attr name="kc_point_width" format="dimension"/>
+        <!--macd-->
+        <attr name="kc_macd_width" format="dimension"/>
+        <attr name="kc_dif_color" format="color"/>
+        <attr name="kc_dea_color" format="color"/>
+        <attr name="kc_macd_color" format="color"/>
+        <!--kdj-->
+        <attr name="kc_k_color" format="color"/>
+        <attr name="kc_d_color" format="color"/>
+        <attr name="kc_j_color" format="color"/>
+        <!--rsi-->
+        <attr name="kc_rsi1_color" format="color"/>
+        <attr name="kc_rsi2_color" format="color"/>
+        <attr name="kc_ris3_color" format="color"/>
+        <!--boll-->
+        <attr name="kc_up_color" format="color"/>
+        <attr name="kc_mb_color" format="color"/>
+        <attr name="kc_dn_color" format="color"/>
+        <!--main-->
+        <attr name="kc_ma5_color" format="color"/>
+        <attr name="kc_ma10_color" format="color"/>
+        <attr name="kc_ma20_color" format="color"/>
+        <attr name="kc_candle_width" format="dimension"/>
+        <attr name="kc_candle_line_width" format="dimension"/>
+        <attr name="kc_selector_background_color" format="color"/>
+        <attr name="kc_selector_text_size" format="dimension"/>
+        <attr name="kc_candle_solid" format="boolean"/>
+        <!--tab-->
+        <attr name="kc_tab_background_color" format="color"/>
+        <attr name="kc_tab_text_color" format="color"/>
+        <attr name="kc_tab_indicator_color" format="color"/>
+    </declare-styleable>
+
+
+</resources>

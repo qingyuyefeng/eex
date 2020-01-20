@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9"
+    android:orientation="vertical">
+
+    <com.eex.common.view.NewComTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/google_verification_code" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_margin="@dimen/layout_40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tv_code1"
+                style="@style/verification_code_text"
+                tools:text="1" />
+            <EditText
+                android:id="@+id/tv_code2"
+                style="@style/verification_code_text"
+                android:layout_marginLeft="@dimen/layout_17dp"
+                tools:text="2" />
+            <EditText
+                android:id="@+id/tv_code3"
+                style="@style/verification_code_text"
+                android:layout_marginLeft="@dimen/layout_17dp"
+                tools:text="3" />
+            <EditText
+                android:id="@+id/tv_code4"
+                style="@style/verification_code_text"
+                android:layout_marginLeft="@dimen/layout_17dp"
+                tools:text="4" />
+            <EditText
+                android:id="@+id/tv_code5"
+                style="@style/verification_code_text"
+                android:layout_marginLeft="@dimen/layout_17dp"
+                tools:text="5" />
+            <EditText
+                android:id="@+id/tv_code6"
+                style="@style/verification_code_text"
+                android:layout_marginLeft="@dimen/layout_17dp"
+                tools:text="6" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_30dp"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/layout_40dp"
+            android:layout_marginLeft="@dimen/layout_30dp"
+            android:layout_marginRight="@dimen/layout_30dp"
+            android:background="@color/color_0080ff"
+            android:text="@string/next_step"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+    <!-- 导航栏 -->
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/RcMoney_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/layout_15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/textname1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请选择币种"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cq_right"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_marginRight="@dimen/layout_15dp"
+                    android:background="@color/appbar_background1"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_15sp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="可用:0"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="冻结:0"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_10dp"
+                android:background="@color/activity_marginTop_da"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/text_15sp">
+
+                <TextView
+                    android:id="@+id/textname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADA充值地址"
+                    android:textColor="@color/text_gray_tip"
+                    android:textSize="@dimen/text_14sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_newAddress"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/appbar_background3"
+                android:text="生成充值地址"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/Address_LL"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:layout_marginRight="@dimen/layout_10dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/btn_popwindow_error_bg">
+
+                    <TextView
+                        android:id="@+id/tx_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxEms="15"
+                        android:maxLines="1"
+                        android:text="0"
+                        android:textColor="@color/background_baise" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/imgbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/layout_10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/btn_run_setinfo_next_bg"
+                    android:src="@drawable/cq_fuzi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_marginTop_da"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imgType"
+                    android:layout_width="@dimen/layout_130dp"
+                    android:layout_height="@dimen/layout_130dp"
+                    android:layout_marginTop="@dimen/layout_10dp"
+                    android:layout_marginBottom="@dimen/layout_10dp"
+                    android:src="@drawable/iconjiazaishibai"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_5dp"
+                    android:background="@color/activity_marginTop_da"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_15dp">
+
+                    <TextView
+                        android:id="@+id/textremk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="备注"
+                        android:textColor="@color/text_gray_tip"
+                        android:textSize="@dimen/text_14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/activity_marginTop_da"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_marginRight="@dimen/layout_10dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/btn_popwindow_error_bg">
+
+                        <TextView
+                            android:id="@+id/TxRemark"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_15dp"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxEms="15"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/background_baise" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/ImgButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/layout_10dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/btn_run_setinfo_next_bg"
+                        android:src="@drawable/cq_fuzi" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgRemark"
+                    android:layout_width="@dimen/layout_130dp"
+                    android:layout_height="@dimen/layout_130dp"
+                    android:layout_marginTop="@dimen/layout_10dp"
+                    android:layout_marginBottom="@dimen/layout_10dp"
+                    android:src="@drawable/iconjiazaishibai" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_10dp"
+                android:gravity="center"
+                android:text="充值后需要1次网络确认后才能到账,任何非FUN资产充值到FUN地址后不可找回"
+                android:textColor="@color/appbar_background3"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

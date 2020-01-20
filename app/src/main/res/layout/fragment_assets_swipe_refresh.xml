@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/assets"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.androidkun.xtablayout.XTabLayout
+                android:id="@+id/asset_xtab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                app:tabMaxWidth="200dp"
+                app:tabMinWidth="@dimen/layout_20dp"
+                app:tabPaddingEnd="@dimen/layout_8dp"
+                app:tabPaddingStart="@dimen/layout_12dp"
+                app:xTabDisplayNum="8"
+                app:xTabDividerWidthWidthText="true"
+                app:xTabIndicatorColor="@color/text_color"
+                app:xTabIndicatorHeight="@dimen/layout_2dp"
+                app:xTabIndicatorWidth="@dimen/layout_40dp"
+                app:xTabMode="scrollable"
+                app:xTabSelectedTextColor="@color/text_color"
+                app:xTabSelectedTextSize="@dimen/text_16sp"
+                app:xTabTextColor="@color/mine_item_text"
+                app:xTabTextSize="@dimen/text_16sp">
+
+            </com.androidkun.xtablayout.XTabLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

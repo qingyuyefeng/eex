@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/layout_20dp">
+
+    <LinearLayout
+        android:id="@+id/ll_delegation_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:text="@string/attorney"
+            android:textColor="@color/color_4d6599"
+            android:textSize="@dimen/text_14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radio_attorney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/attorney_normal"
+                    style="@style/filtrate_radio_style"
+                    android:checked="true"
+                    android:text="@string/attorney_normal" />
+
+                <RadioButton
+                    android:id="@+id/attorney_limit"
+                    style="@style/filtrate_radio_style"
+                    android:text="@string/attorney_limit" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_deal_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:text="@string/record_state"
+            android:textColor="@color/color_4d6599"
+            android:textSize="@dimen/text_14sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_deal_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/deal_type_all"
+                style="@style/filtrate_radio_style"
+                android:checked="true"
+                android:text="@string/all" />
+
+            <RadioButton
+                android:id="@+id/not_deal"
+                style="@style/filtrate_radio_style"
+                android:text="@string/not_deal" />
+
+            <RadioButton
+                android:id="@+id/some_deal"
+                style="@style/filtrate_radio_style"
+                android:text="@string/some_deal" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_buy_or_sell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:text="@string/type"
+            android:textColor="@color/color_4d6599"
+            android:textSize="@dimen/text_14sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_sale_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sale_type_both"
+                style="@style/filtrate_radio_style"
+                android:checked="true"
+                android:text="@string/sale_type_both" />
+
+            <RadioButton
+                android:id="@+id/sale_buy"
+                style="@style/filtrate_radio_style"
+                android:text="@string/mairu" />
+
+            <RadioButton
+                android:id="@+id/sale_sold"
+                style="@style/filtrate_radio_style"
+                android:text="@string/maichu" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_choose_coin_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:text="@string/choose_coin_type"
+            android:textColor="@color/color_4d6599"
+            android:textSize="@dimen/text_14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_coin_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_f2f4f9"
+            android:gravity="center"
+            android:padding="@dimen/layout_9dp"
+            android:text="@string/reset"
+            android:textColor="@color/color_0080ff"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_0080ff"
+            android:gravity="center"
+            android:padding="@dimen/layout_9dp"
+            android:text="@string/sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+    <!-- 导航栏 -->
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tra_myzoe_header"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="@string/xingy"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <EditText
+                        android:id="@+id/Bank_edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:background="@null"
+                        android:hint="张"
+                        android:textColor="@color/background_baise"
+                        android:textColorHint="@color/text_list_item_desc"
+                        android:textSize="@dimen/text_14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_1dp"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_marginRight="@dimen/layout_15dp"
+                    android:background="@color/appbar_background1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="@string/mingy"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <EditText
+                        android:id="@+id/Bank_edt_namefo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:background="@null"
+                        android:hint="三"
+                        android:textColor="@color/background_baise"
+                        android:textColorHint="@color/text_list_item_desc"
+                        android:textSize="@dimen/text_14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_1dp"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_marginRight="@dimen/layout_15dp"
+                    android:background="@color/appbar_background1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/bank_list_LL"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/layout_15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/bankll"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/textview_bank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="@string/bankll"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:src="@drawable/cq_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_1dp"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_marginRight="@dimen/layout_15dp"
+                    android:background="@color/appbar_background1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bank_Sheng_list_LL"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/layout_15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/kaihu"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/textview_sheng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="@string/xuanz"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:src="@drawable/cq_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_1dp"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_marginRight="@dimen/layout_15dp"
+                    android:background="@color/appbar_background1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Bank_shi_LL"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/layout_15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="开户市"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/textView_shi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="请选择市"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:src="@drawable/cq_right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_1dp"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_marginRight="@dimen/layout_15dp"
+                    android:background="@color/appbar_background1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="开户支行"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <EditText
+                        android:id="@+id/Bnak_edt_bankName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:background="@null"
+                        android:hint="@string/zihuang"
+                        android:textColor="@color/background_baise"
+                        android:textColorHint="@color/text_list_item_desc"
+                        android:textSize="@dimen/text_14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_1dp"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_marginRight="@dimen/layout_15dp"
+                    android:background="@color/appbar_background1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_55dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="@string/bankanuber"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <EditText
+                        android:id="@+id/recharge_edt_bankNuber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:background="@null"
+                        android:hint="@string/kahao"
+                        android:inputType="number"
+                        android:textColor="@color/background_baise"
+                        android:textColorHint="@color/text_list_item_desc"
+                        android:textSize="@dimen/text_14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbar_background2"
+                android:orientation="vertical"
+                android:padding="@dimen/layout_15dp">
+
+                <Button
+                    android:id="@+id/AddBank_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="@dimen/layout_10dp"
+                    android:background="#ff4329"
+                    android:text="@string/quere"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

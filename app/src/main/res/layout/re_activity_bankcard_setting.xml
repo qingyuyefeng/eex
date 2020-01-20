@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9"
+    android:orientation="vertical">
+    <com.eex.common.view.NewComTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/bank_card_setting" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/layout_30dp"
+            android:paddingTop="@dimen/layout_40dp"
+            android:paddingRight="@dimen/layout_30dp"
+            android:paddingBottom="@dimen/layout_40dp">
+
+            <TextView
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:text="@string/given_name" />
+
+            <EditText
+                android:id="@+id/et_given_name"
+                style="@style/normal_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_30dp"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:background="@color/color_f2f4f9"
+                android:hint="@string/please_enter_name"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/layout_10dp"
+                android:textColorHint="@color/color_cfd6e6" />
+
+            <TextView
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:text="@string/choose_bank" />
+
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                style="@style/normal_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_30dp"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:background="@color/color_f2f4f9"
+                android:drawableRight="@mipmap/down_triangle"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/layout_10dp"
+                android:paddingRight="@dimen/layout_10dp"
+                android:text="@string/choose_bank"
+                android:textColor="@color/color_cfd6e6" />
+
+            <TextView
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:text="@string/branch_bank" />
+
+            <EditText
+                android:id="@+id/et_branch_bank"
+                style="@style/normal_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_30dp"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:background="@color/color_f2f4f9"
+                android:hint="@string/please_enter_branch_bank"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/layout_10dp"
+                android:textColorHint="@color/color_cfd6e6" />
+            <TextView
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:text="@string/bank_number" />
+
+
+            <EditText
+                android:id="@+id/et_card_number"
+                style="@style/normal_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_30dp"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:background="@color/color_f2f4f9"
+                android:hint="@string/please_enter_bank_number"
+                android:maxLines="1"
+                android:inputType="number"
+                android:paddingLeft="@dimen/layout_10dp"
+                android:textColorHint="@color/color_cfd6e6" />
+
+            <TextView
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:text="@string/bank_place" />
+
+            <EditText
+                android:id="@+id/et_bank_place"
+                style="@style/normal_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_30dp"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:background="@color/color_f2f4f9"
+                android:hint="@string/please_enter_bank_place"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/layout_10dp"
+                android:textColorHint="@color/color_cfd6e6" />
+
+            <TextView
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:text="@string/message_code" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_5dp">
+                <EditText
+                    android:id="@+id/et_code"
+                    style="@style/normal_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/layout_30dp"
+                    android:background="@color/color_f2f4f9"
+                    android:hint="@string/please_input_code"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/layout_10dp"
+                    android:textColorHint="@color/color_cfd6e6" />
+                <Button
+                    android:id="@+id/btn_get_code"
+                    android:layout_width="@dimen/layout_100dp"
+                    android:layout_height="@dimen/layout_30dp"
+                    android:layout_marginLeft="@dimen/layout_20dp"
+                    android:background="@drawable/get_code_shape"
+                    android:textColor="@color/color_0080ff"
+                    android:textSize="@dimen/text_12sp"
+                    android:text="@string/get_code"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_30dp"
+                android:layout_marginTop="@dimen/layout_30dp"
+                android:background="@drawable/backbtn"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

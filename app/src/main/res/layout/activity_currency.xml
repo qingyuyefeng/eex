@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+    <!-- 导航栏 -->
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_15dp"
+            android:background="@color/activity_marginTop_da"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/layout_15dp"
+            android:paddingBottom="@dimen/layout_15dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tx_availableName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可用BTC:"
+                    android:textColor="@color/tra_main_login_text_gray"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:id="@+id/tx_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:text="0"
+                    android:textColor="@color/text_sub_menu_desc"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tx_FrozenName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="冻结BTC:"
+                    android:textColor="@color/tra_main_login_text_gray"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:id="@+id/tx_Frozen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:text="0"
+                    android:textColor="@color/text_sub_menu_desc"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/currency_BiAddressLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:background="@color/activity_marginTop_da"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/layout_10dp"
+                android:paddingBottom="@dimen/layout_10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/qianbaodiz"
+                    android:textColor="@color/tra_main_login_text_gray"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:id="@+id/tx_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layout_5dp"
+                    android:text="@string/moneyaddress"
+                    android:textColor="@color/tra_main_login_text_gray"
+                    android:textSize="@dimen/text_14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layout_15dp"
+                    android:src="@drawable/cq_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_marginRight="@dimen/layout_15dp"
+                android:background="@color/appbar_background1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/activity_marginTop_da"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="1"
+                android:text="@string/zhuanchunuber"
+                android:textColor="@color/tra_main_login_text_gray"
+                android:textSize="@dimen/text_14sp" />
+
+            <EditText
+                android:id="@+id/ed_biNuber"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:hint="@string/tibinuber"
+                android:textColor="@color/tra_main_login_text_gray"
+                android:textColorHint="@color/tra_main_login_text_gray"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLtag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/activity_marginTop_da"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="1"
+                android:text="标签:"
+                android:textColor="@color/tra_main_login_text_gray"
+                android:textSize="@dimen/text_14sp" />
+
+            <EditText
+                android:id="@+id/edt_Remark"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:digits="@string/filter_vcode4"
+                android:hint="请输入标签"
+                android:textColor="@color/tra_main_login_text_gray"
+                android:textColorHint="@color/tra_main_login_text_gray"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tc_sever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_15dp"
+            android:gravity="center"
+            android:text="网络手续费0.002BTC"
+            android:textColor="@color/text_list_item_desc"
+            android:textSize="@dimen/text_12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_OK"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="@dimen/layout_15dp"
+        android:background="@drawable/backbtn"
+        android:text="@string/yeszhuanchu"
+        android:textColor="@color/background_baise"
+        android:textSize="@dimen/text_18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_15dp"
+        android:text="@string/zhuanshuoming"
+        android:textColor="@color/tra_main_login_text_gray"
+        android:textSize="@dimen/text_13sp" />
+
+    <TextView
+        android:id="@+id/tx_severnuber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_15dp"
+        android:textColor="@color/tra_main_login_text_gray"
+        android:textSize="@dimen/text_13sp" />
+
+    <TextView
+        android:id="@+id/tx_sever_nuberset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_15dp"
+        android:textColor="@color/tra_main_login_text_gray"
+        android:textSize="@dimen/text_13sp" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/layout_5dp"
+    android:layout_marginBottom="@dimen/layout_5dp"
+    android:layout_marginLeft="@dimen/layout_20dp"
+    android:layout_marginRight="@dimen/layout_20dp"
+    android:background="@color/white">
+    <CheckBox
+        android:id="@+id/cb_coin_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_9dp"
+        android:button="@null"
+        style="@style/check_text_view"
+        android:textSize="@dimen/text_12sp"
+        android:checked="true"
+        tools:text="全部币种"/>
+</LinearLayout>

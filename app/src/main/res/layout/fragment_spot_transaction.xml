@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/color_f2f4f9"
+  android:orientation="vertical">
+
+  <include layout="@layout/view_transaction_title" />
+
+  <ScrollView
+    android:id="@+id/content_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:paddingLeft="@dimen/layout_10dp"
+      android:paddingRight="@dimen/layout_10dp"
+      android:paddingBottom="@dimen/layout_10dp">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.androidkun.xtablayout.XTabLayout
+          android:id="@+id/deal_type"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_toLeftOf="@+id/tv_current_delegation"
+          android:background="@color/white"
+          app:xTabDividerWidthWidthText="true"
+          app:xTabIndicatorColor="@color/color_00a546"
+          app:xTabIndicatorHeight="@dimen/layout_2dp"
+          app:xTabIndicatorWidth="@dimen/layout_40dp"
+          app:xTabMode="scrollable"
+          app:xTabSelectedTextColor="@color/color_00a546"
+          app:xTabSelectedTextSize="@dimen/text_16sp"
+          app:xTabTextColor="@color/color_8fa2cc"
+          app:xTabTextSize="@dimen/text_16sp" />
+
+        <TextView
+          android:id="@+id/tv_current_delegation"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/layout_20dp"
+          android:layout_toLeftOf="@+id/tv_history_delegation"
+          android:text="@string/current_delegation"
+          android:textColor="@color/color_8fa2cc"
+          android:textSize="@dimen/text_12sp" />
+
+        <TextView
+          android:id="@+id/tv_history_delegation"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:text="@string/history_delegation"
+          android:textColor="@color/color_8fa2cc"
+          android:textSize="@dimen/text_12sp" />
+      </RelativeLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+      <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_10dp"
+        tools:visibility="visible">
+
+        <LinearLayout
+          android:id="@+id/ll_left_op"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          app:layout_constraintHorizontal_weight="1"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toLeftOf="@+id/ll_right_op"
+          app:layout_constraintTop_toTopOf="parent">
+
+          <TextView
+            android:id="@+id/trade_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/ic_transaction_arrow_down"
+            android:drawablePadding="@dimen/layout_5dp"
+            android:text="@string/limit_price_transaction"
+            android:textColor="@color/color_0080ff"
+            android:textSize="@dimen/sp_14" />
+
+          <!--止盈止损-->
+          <include
+            android:id="@+id/stoploss_input_box"
+            layout="@layout/view_transaction_stoploss"
+            android:visibility="gone" />
+
+          <!--限价,市价-->
+          <include layout="@layout/view_transaction_limit_price" />
+
+          <Button
+            android:id="@+id/btn_buy_or_sale"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:background="@drawable/btn_solid_buy"
+            android:text="@string/mairu"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_15sp" />
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <View
+              android:layout_width="10dp"
+              android:layout_height="10dp"
+              android:background="@color/color_00a546" />
+
+            <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_weight="1"
+              android:text="买"
+              android:textColor="@color/color_00a546"
+              android:textSize="@dimen/text_13sp" />
+
+            <View
+              android:layout_width="10dp"
+              android:layout_height="10dp"
+              android:layout_marginLeft="@dimen/layout_10dp"
+              android:background="@color/color_a50000" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:text="卖"
+              android:textColor="@color/color_a50000"
+              android:textSize="@dimen/text_13sp" />
+          </LinearLayout>
+
+          <com.eex.market.frgament.text.DepthMapView
+            android:id="@+id/depth_view"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:id="@+id/ll_right_op"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          android:layout_marginLeft="@dimen/layout_5dp"
+          android:orientation="vertical"
+          android:visibility="visible"
+          app:layout_constraintBottom_toTopOf="@+id/ll_filtrate"
+          app:layout_constraintHorizontal_weight="1"
+          app:layout_constraintLeft_toRightOf="@+id/ll_left_op"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="单价"
+              android:textColor="@color/color_8fa2cc"
+              android:textSize="@dimen/text_12sp" />
+
+            <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="right"
+              android:text="数量"
+              android:textColor="@color/color_8fa2cc"
+              android:textSize="@dimen/text_12sp" />
+          </LinearLayout>
+
+          <android.support.v7.widget.RecyclerView
+            android:id="@+id/market_sells"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:layout_marginBottom="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:background="@color/trans"
+            android:divider="@null"
+            android:visibility="visible" />
+
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_f2f4f9" />
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/layout_5dp"
+            android:paddingTop="@dimen/layout_10dp"
+            android:paddingRight="@dimen/layout_5dp"
+            android:paddingBottom="@dimen/layout_10dp">
+
+            <TextView
+              android:id="@+id/tv_latest_amount"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:text="0"
+              android:textColor="@color/color_a50000"
+              android:textSize="@dimen/text_14sp" />
+
+            <TextView
+              android:id="@+id/tv_latest_index_amount"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom"
+              android:text="=0"
+              android:textColor="@color/color_8fa2cc"
+              android:textSize="@dimen/text_10sp" />
+          </LinearLayout>
+
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_f2f4f9" />
+
+          <android.support.v7.widget.RecyclerView
+            android:id="@+id/market_buys"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:layout_marginBottom="@dimen/layout_5dp"
+            android:layout_weight="1"
+            android:background="@color/trans"
+            android:divider="@null"
+            android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:id="@+id/ll_filtrate"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintHorizontal_weight="1"
+          app:layout_constraintLeft_toRightOf="@id/ll_left_op"
+          app:layout_constraintRight_toRightOf="parent">
+
+          <RelativeLayout
+            android:id="@+id/btn_deal_type_filtrate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/corner_solid_f2f4f9">
+
+            <TextView
+              android:id="@+id/tv_deal_type_filtrate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:drawableRight="@mipmap/ic_transaction_arrow_up"
+              android:ellipsize="end"
+              android:gravity="center"
+              android:maxLines="1"
+              android:text="买卖单"
+              android:textColor="@color/color_4d6599"
+              android:textSize="@dimen/text_12sp" />
+          </RelativeLayout>
+
+          <RelativeLayout
+            android:id="@+id/btn_scale_filtrate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/corner_solid_f2f4f9"
+            android:visibility="gone">
+
+            <TextView
+              android:id="@+id/tv_scale_filtrate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:drawableRight="@mipmap/ic_transaction_arrow_up"
+              android:ellipsize="end"
+              android:gravity="center"
+              android:maxLines="1"
+              android:text="5位小数"
+              android:textColor="@color/color_4d6599"
+              android:textSize="@dimen/text_12sp" />
+          </RelativeLayout>
+        </LinearLayout>
+      </android.support.constraint.ConstraintLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_20dp">
+
+        <com.androidkun.xtablayout.XTabLayout
+          android:id="@+id/attach_type"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:xTabDividerWidthWidthText="true"
+          app:xTabIndicatorColor="@color/color_0080ff"
+          app:xTabIndicatorHeight="@dimen/layout_2dp"
+          app:xTabIndicatorWidth="@dimen/layout_40dp"
+          app:xTabMode="scrollable"
+          app:xTabSelectedTextColor="@color/color_0080ff"
+          app:xTabSelectedTextSize="@dimen/text_16sp"
+          app:xTabTextColor="@color/color_4d6599"
+          app:xTabTextSize="@dimen/text_16sp" />
+
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/color_f2f4f9" />
+
+        <LinearLayout
+          android:id="@+id/latest_deal_container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:gravity="left|center_vertical"
+              android:text="@string/time"
+              android:textColor="@color/color_cfd6e6"
+              android:textSize="@dimen/text_13sp" />
+
+            <TextView
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="@string/prices"
+              android:textColor="@color/color_cfd6e6"
+              android:textSize="@dimen/text_13sp" />
+
+            <TextView
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:gravity="right|center_vertical"
+              android:text="@string/nuber"
+              android:textColor="@color/color_cfd6e6"
+              android:textSize="@dimen/text_13sp" />
+          </LinearLayout>
+
+          <android.support.v7.widget.RecyclerView
+            android:id="@+id/recent_records"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+        </LinearLayout>
+
+        <include
+          android:id="@+id/pie_chart_container"
+          layout="@layout/view_pie_chart"
+          android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+          android:id="@+id/industry_news"
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:background="@color/white"
+          android:visibility="gone" />
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

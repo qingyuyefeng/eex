@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/market"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_market" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:background="@color/grey1"
+            android:orientation="vertical">
+
+
+            <com.androidkun.xtablayout.XTabLayout
+                android:id="@+id/xTablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/layout_10dp"
+                app:xTabDividerWidthWidthText="true"
+                app:xTabIndicatorColor="#0080FF"
+                app:xTabIndicatorHeight="@dimen/layout_2dp"
+                app:xTabIndicatorWidth="@dimen/layout_40dp"
+                app:xTabMode="scrollable"
+                app:xTabSelectedTextColor="#0080FF"
+                app:xTabSelectedTextSize="@dimen/text_12sp"
+                app:xTabTextColor="#8FA2CC"
+                app:xTabTextSize="@dimen/text_12sp"
+                />
+
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <!--状态栏半透明-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--虚拟按键全透明-->
+        <item name="android:windowTranslucentNavigation">false</item>
+
+    </style>
+
+
+</resources>

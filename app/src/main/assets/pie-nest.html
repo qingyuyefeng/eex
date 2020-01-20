@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body style="height: 100%; margin: 0;background-color:#171920">
+<div id="container" style="height: 200px;width: 340px"></div>
+<div style="overflow:hidden;color:#fff">
+    <div style="width:49%;float:left;font-size:12px">
+        <p id="buy_b" style="height:10px"></p>
+        <p id="buy_m" style="height:10px"></p>
+        <p id="buy_s" style="height:10px"></p>
+    </div>
+    <div style="width:49%;float:right;font-size:12px">
+        <p id="sell_b" style="height:10px"></p>
+        <p id="sell_m" style="height:10px"></p>
+        <p id="sell_s" style="height:10px"></p>
+    </div>
+</div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="echarts.min.js"></script>
+<script type="text/javascript">
+			var dom = document.getElementById("container");
+			var myChart = echarts.init(dom);
+			var btdata={
+			    "BTC":"bitcoin",
+			    "ETH":"ethereum",
+			    "GTHH":"gthh",
+			    "EOS":"eos",
+			    "BCH":"bitcoin-cash",
+			    "BNB":"binance-coin",
+			    "ZRX":"0x",
+			    "BAT":"basic-attention-token",
+			    "NCASH":"nucleus-vision",
+			    "HT":"huobi-token",
+			    "ZEC":"zcash",
+			    "TRX":"tron",
+			    "ICX":"icon",
+			    "BTM":"bytom",
+			    "ZIL":"zilliqa",
+			    "VET":"vechainthor",
+			    "IOST":"iostoken",
+			    "LTC":"litecoin",
+			    "ELF":"aelf",
+			    "OMG":"omisego",
+			    "DASH":"dash",
+			    "PAY":"tenx",
+			    "DOGE":"dogecoin",
+			    "FUN":"funfair",
+			    "SALT":"salt",
+			    "LUN":"lunyr",
+			    "MCO":"monaco",
+			    "AE":"aeternity",
+			    "LOOM":"loom-network",
+			    "LRC":"loopring",
+			    "STORJ":"storj",
+			    "QTUM":"qtum",
+			    "KNC":"kingn-coin",
+			    "QSP":"quantstamp",
+			    "OST":"ost",
+			    "DNT":"district0x",
+			    "CVC":"civic",
+			    "QASH":"qash",
+			    "RCN":"rcoin",
+			    "GNT":"golem",
+			    "REQ":"request-network",
+			    "MANA":"decentraland",
+			    "RUFF":"ruff",
+			    "NAS":"nebulas-token",
+			    "WINGS":"wings",
+			    "CDT":"blox",
+			    "RDN":"raiden-network-token",
+			    "NULS":"nuls",
+			    "CTXC":"cortex",
+			    "EBT":"ebittree-coin",
+			    "BNT":"bancor",
+			    "MT":"",
+			    "GTC":"game",
+			    "BTO":"bottos",
+			    "ZSC":"zeusshield",
+			    "MDS":"medishares",
+			    "PWCC":"public-welfare-chain",
+			    "ECT":"",
+			    "USDT":"tether",
+			    "STORM":"storm",
+			    "GPCC":"global-pay-chain",
+			    "AYC":"",
+			    "GLS":"",
+			    "AJA":"",
+			    "TSP":"treasure-chain",
+			    "ETZ":"etherzero",
+			    "ACIP":"aggregate-consumption-index-polychain",
+			    "CPU":"couponone",
+			    "PAX":"paxos-standard-token",
+                "TUSD":"true-usd",
+                "BCHABC":"bitcoin-cash-abc",
+                "BCHSV":"bitcoin-satoshi-vision"
+			}
+			function setoption(data,coin) {
+			setTimeout(function(){
+			    document.getElementById('buy_b').innerText = '流入大单:'+parseInt(data.buy_vol_usd_set.b);
+			    document.getElementById('buy_m').innerText = '流入中单:'+parseInt(data.buy_vol_usd_set.m);
+			    document.getElementById('buy_s').innerText = '流入小单:'+parseInt(data.buy_vol_usd_set.s);
+			    document.getElementById('sell_b').innerText ='流出大单:'+ parseInt(data.sell_vol_usd_set.b);
+			    document.getElementById('sell_m').innerText ='流出中单:'+ parseInt(data.sell_vol_usd_set.m);
+			    document.getElementById('sell_s').innerText ='流出小单:'+ parseInt(data.sell_vol_usd_set.s);
+			},2000)
+
+				var option = {
+					tooltip: {
+						show: false
+					},
+					legend: {
+						orient: 'vertical',
+						x: 'left',
+						show: false
+					},
+					series: [{
+							name: coin,
+							type: 'pie',
+							radius: [0, '20%'],
+							hoverAnimation: false,
+							label: {
+								normal: {
+									position: 'inner',
+									fontSize: 8
+								}
+							},
+							labelLine: {
+								normal: {
+									show: false
+								}
+							},
+							data: [
+								{
+									value: parseInt(data.buy_vol_usd),
+									name: '流入'
+								},
+								{
+									value: parseInt(data.sell_vol_usd),
+									name: '流出'
+								}
+							]
+						},
+						{
+							name: coin,
+							type: 'pie',
+							radius: ['25%', '40%'],
+							hoverAnimation: false,
+							label: {
+								normal: {
+									<!--formatter: '{b|{b}：}{c}',-->
+									formatter:function(params){
+
+										var all;
+										var name = params.seriesName.indexOf('流入');
+										var value= params.value;
+										if(name>=0){
+											all = option.series[0].data[0].value;
+										}else{
+											all = option.series[0].data[1].value;
+										}
+										return ' '+params.name+ ((value/(data.buy_vol_usd+data.sell_vol_usd))*100).toFixed(2)+'% ';
+
+									},
+									backgroundColor: '#eee',
+									borderColor: '#aaa',
+									borderWidth: 1,
+									borderRadius: 4,
+									rich: {
+										b: {
+											fontSize: 8,
+											lineHeight: 16,
+											lineWidth:16
+										},
+										c: {
+											fontSize: 8,
+											lineHeight: 16,
+											lineWidth:16
+										}
+									}
+								}
+							},
+							data: [{
+									value:parseInt( data.buy_vol_usd_set.b),
+									name: '流入大单'
+								},
+								{
+									value: parseInt(data.buy_vol_usd_set.m),
+									name: '流入中单'
+								},
+								{
+									value: parseInt(data.buy_vol_usd_set.s),
+									name: '流入小单'
+								},
+								{
+									value: parseInt(data.sell_vol_usd_set.s),
+									name: '流出小单'
+								},
+								{
+									value: parseInt(data.sell_vol_usd_set.m),
+									name: '流出中单'
+								},
+								{
+									value: parseInt(data.sell_vol_usd_set.b),
+									name: '流出大单'
+								}
+							]
+						}
+					]
+				}
+				if(option && typeof option === "object") {
+					myChart.setOption(option, true);
+				}
+			}
+			function getdata(coin){
+				$.get("https://mn.hqz.com/v2/index/coinCashFlow?coincode="+btdata[coin], function(result){
+					setoption(result.data.today,coin);
+				});
+			}
+
+
+
+</script>
+</body>
+
+</html>

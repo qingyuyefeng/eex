@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 导航栏android:background="@color/appbar_background2" -->
+
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+
+    </com.eex.common.view.ComTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/comtitlebar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-4dp"
+        android:background="@color/appbar_background2"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/activity_marginTop_da"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_marginTop="@dimen/layout_15dp"
+                android:layout_marginRight="@dimen/layout_15dp"
+                android:layout_marginBottom="@dimen/layout_15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tixianmoney"
+                    android:textColor="@color/tra_main_login_text_gray"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:id="@+id/tx_hotMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="¥0"
+                    android:textColor="@color/tra_main_login_text_gray"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_marginRight="@dimen/layout_15dp"
+                android:background="@color/appbar_background1" />
+
+            <LinearLayout
+                android:id="@+id/Bank_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bankaa"
+                    android:textColor="@color/tra_main_login_text_gray"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:id="@+id/textview_Bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layout_5dp"
+                    android:text="请选择收款账户"
+                    android:textColor="@color/tra_main_login_text_gray"
+                    android:textSize="@dimen/text_14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cq_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_marginRight="@dimen/layout_15dp"
+                android:background="@color/appbar_background1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/moneyshuiang"
+                    android:textColor="@color/tra_main_login_text_gray"
+                    android:textSize="@dimen/text_14sp" />
+
+                <EditText
+                    android:id="@+id/ed_overMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="@string/qingshuru"
+                    android:numeric="decimal"
+                    android:textColor="@color/background_baise"
+                    android:textColorHint="@color/text_sub_menu_desc"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/layout_18dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tx_severMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="手续费额0,实际到账0"
+                android:textColor="@color/tra_main_login_text_gray"
+                android:textSize="@dimen/text_12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_PutMoney"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_48dp"
+            android:layout_marginLeft="@dimen/layout_15dp"
+            android:layout_marginRight="@dimen/layout_15dp"
+            android:layout_marginBottom="@dimen/layout_15dp"
+            android:background="@drawable/backbtn"
+            android:text="@string/tixian"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_25dp"
+            android:text="@string/xuanzheyingh"
+            android:textColor="@color/tra_main_login_text_gray"
+            android:textSize="@dimen/layout_10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_25dp"
+            android:text="提现全日制24小时秒提秒到
+(注：我方转出为审核通过后实时转出，预计到账时间为30秒内，具体到账时间以转入银行的入账时间为准。"
+            android:textColor="@color/tra_main_login_text_gray"
+            android:textSize="@dimen/text_10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

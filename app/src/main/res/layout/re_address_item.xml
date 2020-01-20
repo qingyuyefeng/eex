@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/layout_10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_20dp">
+
+        <TextView
+            android:id="@+id/tv_aac"
+            android:layout_width="@dimen/layout_40dp"
+            android:layout_height="@dimen/layout_20dp"
+            android:background="#330080ff"
+            android:gravity="center"
+            android:textColor="@color/color_0080ff"
+            android:textSize="@dimen/text_12sp"
+            tools:text="AAC" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/normal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_aac"
+            android:layout_alignParentRight="true"
+            tools:text="2019年11月18日 14:49" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_aac"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:textColor="@color/color_cfd6e6"
+            android:textSize="@dimen/text_10sp"
+            tools:text="0x679dc8903c99227dc0429d1b06d5d7facd1fdc23" />
+
+        <TextView
+            android:id="@+id/tv_extra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_content"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:textColor="@color/color_cfd6e6"
+            android:textSize="@dimen/text_10sp"
+            android:visibility="gone"
+            tools:text="备注：AAC第一个" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_30dp"
+        android:background="@color/color_a50000"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_14sp" />
+</LinearLayout>

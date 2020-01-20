@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_marginTop_da">
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2018-01-02-18:01:10：12"
+            android:textColor="@color/tra_main_login_text_gray"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/text_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="金额"
+            android:textColor="@color/tra_main_login_text_gray"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/text_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="状态"
+            android:textColor="@color/tra_main_login_text_gray"
+            android:textSize="@dimen/text_12sp" />
+
+        <Button
+            android:id="@+id/text_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/layout_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/backbtn"
+            android:gravity="center"
+            android:text="详情"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/text_beizhu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/tra_main_login_text_gray"
+            android:textSize="@dimen/text_12sp" />
+    </LinearLayout>
+
+</LinearLayout>

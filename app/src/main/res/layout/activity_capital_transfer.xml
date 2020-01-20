@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+    <!-- 导航栏 -->
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/edt_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TXzijin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="C2C账户"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_15sp" />
+
+            <LinearLayout
+                android:id="@+id/LLimgType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cq_zijinhuazhuan" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txJiaoyi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:layout_weight="2"
+                android:gravity="right|center"
+                android:text="交易账户"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/fenge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LLBi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:text="选择币种"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+
+            <TextView
+                android:id="@+id/txBiget"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="请选择币种"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:src="@drawable/cq_right" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/fenge" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:text="转入数量"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_13sp" />
+
+        <EditText
+            android:id="@+id/edtNuber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="@string/filter_vcode2"
+            android:hint="请输入转入数量"
+            android:textColor="@color/background_baise"
+            android:textColorHint="@color/text_gruend"
+            android:textSize="@dimen/text_13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最多可转0"
+            android:textColor="@color/text_gruend"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/txQuanbu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="全部转入"
+            android:textColor="@color/appbar_background3"
+            android:textSize="@dimen/text_13sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnPut"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/layout_10dp"
+            android:background="@drawable/backbtn"
+            android:text="确定划转"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_14sp" />
+    </RelativeLayout>
+</LinearLayout>

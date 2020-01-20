@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/color_f2f4f9">
+
+  <com.androidkun.xtablayout.XTabLayout
+    android:id="@+id/tab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/layout_10dp"
+    app:xTabDisplayNum="3"
+    app:xTabDividerWidthWidthText="true"
+    app:xTabIndicatorColor="#0080FF"
+    app:xTabIndicatorHeight="@dimen/layout_2dp"
+    app:xTabIndicatorWidth="@dimen/layout_40dp"
+    app:xTabMode="scrollable"
+    app:xTabSelectedTextColor="#0080FF"
+    app:xTabSelectedTextSize="@dimen/text_12sp"
+    app:xTabTextColor="#8FA2CC"
+    app:xTabTextSize="@dimen/text_12sp" />
+
+  <com.eex.mvp.trading.weight.NoScrollViewPager
+    android:id="@+id/view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/tab_layout"/>
+
+  <include
+    android:id="@+id/fail"
+    layout="@layout/view_transaction_fail"
+    android:visibility="gone"
+    tools:visibility="gone"
+    />
+</RelativeLayout>

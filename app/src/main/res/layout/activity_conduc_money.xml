@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--产品-->
+                <LinearLayout
+                    android:id="@+id/ll_noneyBi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/edt_gray"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_15dp"
+                            android:text="产品"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:id="@+id/tx_Biname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/layout_10dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/layout_15dp"
+                            android:src="@drawable/cq_right" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:layout_marginRight="@dimen/layout_15dp"
+                        android:background="@color/edt_grayBc" />
+                </LinearLayout>
+                <!--理财数量-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_48dp"
+                    android:background="@color/edt_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="理财数量"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <EditText
+                        android:id="@+id/edt_BiNuber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:numeric="integer"
+                        android:digits="@string/filter_vcode2"
+                        android:hint="请输入理财数量"
+                        android:textColor="@color/background_baise"
+                        android:textColorHint="@color/login_login"
+                        android:textSize="@dimen/text_13sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/edt_gray"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/leverage_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:layout_marginTop="@dimen/layout_10dp"
+                        android:layout_marginRight="@dimen/layout_30dp"
+                        android:text=""
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+
+                    <TextView
+                        android:id="@+id/Financial_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_10dp"
+                        android:layout_marginRight="@dimen/layout_30dp"
+                        android:layout_marginBottom="@dimen/layout_15dp"
+                        android:text=""
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+                </LinearLayout>
+
+                <!--可用-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_48dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tx_Kyong"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="可用:0"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tx_Djie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/layout_10dp"
+                        android:gravity="center_vertical"
+                        android:text="限额:0"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+                </LinearLayout>
+                <!--理财周期-->
+                <LinearLayout
+                    android:id="@+id/ll_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_48dp"
+                    android:background="@color/edt_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:layout_weight="1"
+                        android:text="理财周期"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/tx_MoneyTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layout_10dp"
+                        android:text="请选择理财周期"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layout_15dp"
+                        android:src="@drawable/cq_right" />
+                </LinearLayout>
+                <!--固定日利率-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_48dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tx_day_fee"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="固定日利率:0%"
+                            android:textColor="@color/appbar_background3"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:id="@+id/tx_persionMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/layout_10dp"
+                            android:gravity="center_vertical"
+                            android:text="日收益:0"
+                            android:textColor="@color/appbar_background3"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tx_HDfee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:text="活动日利率:0.01%"
+                        android:textColor="@color/money_name"
+                        android:textSize="@dimen/text_14sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tx_feeTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_marginTop="@dimen/layout_10dp"
+                        android:layout_marginBottom="@dimen/layout_10dp"
+                        android:text="活动日期2018-2099"
+                        android:textColor="@color/money_name"
+                        android:textSize="@dimen/text_14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <!--到期后自动将本次理财本金和利息继续续约-->
+                <LinearLayout
+                    android:id="@+id/ll_ck"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_36dp"
+                    android:background="@color/edt_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/ck1"
+                            android:layout_width="@dimen/layout_14dp"
+                            android:layout_height="@dimen/layout_14dp"
+                            android:background="@drawable/ckb_money"
+                            android:button="@null" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:text="到期后自动将本次理财本金和利息继续续约"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--到期后自动将本次理财本金继续续约-->
+                <LinearLayout
+                    android:id="@+id/ll_ck1"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@color/edt_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/ck2"
+                            android:layout_width="@dimen/layout_14dp"
+                            android:layout_height="@dimen/layout_14dp"
+                            android:background="@drawable/ckb_money"
+                            android:button="@null" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:text="到期后自动将本次理财本金继续续约"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--到期后不自动续约-->
+                <LinearLayout
+                    android:id="@+id/ll_ck2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_36dp"
+                    android:background="@color/edt_gray"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/ck3"
+                            android:layout_width="@dimen/layout_14dp"
+                            android:layout_height="@dimen/layout_14dp"
+                            android:background="@drawable/ckb_money"
+                            android:button="@null" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:text="到期后不自动续约"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/layout_20dp"
+                    android:layout_marginTop="@dimen/layout_20dp"
+                    android:layout_marginRight="@dimen/layout_20dp"
+                    android:layout_weight="0"
+                    android:background="@color/edt_gray"
+                    android:text="注：合约解除，锁仓币如数退回账户，杠杠资产收回交易所."
+                    android:textColor="@color/appbar_background3"
+                    android:textSize="@dimen/text_14sp" />
+                <!--确认锁仓理财后-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/layout_10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/txnie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_10dp"
+                        android:text="提示：确认锁仓理财后，对应的数字货币将会处于锁仓状态，发起解仓后该货币可重新用于交易"
+                        android:textColor="@color/money_name"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <Button
+                        android:id="@+id/btn_putMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_50dp"
+                        android:layout_below="@+id/txnie"
+                        android:layout_marginTop="@dimen/layout_30dp"
+                        android:layout_marginBottom="@dimen/layout_30dp"
+                        android:background="@drawable/backbtn"
+                        android:text="确定锁仓"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+    <!--银行卡转账-->
+    <LinearLayout
+        android:id="@+id/c2c_Bank"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/layout_15dp"
+            android:layout_marginRight="@dimen/layout_15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/layout_10dp"
+            android:paddingBottom="@dimen/layout_10dp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="银行卡转账"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bankType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未绑定"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:src="@drawable/cq_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_15dp"
+            android:layout_marginRight="@dimen/layout_15dp"
+            android:background="@color/fenge" />
+    </LinearLayout>
+    <!--微信收款-->
+    <LinearLayout
+        android:id="@+id/C2C_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/layout_15dp"
+            android:layout_marginRight="@dimen/layout_15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/layout_10dp"
+            android:paddingBottom="@dimen/layout_10dp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信收款"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/weixinType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未绑定"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:src="@drawable/cq_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_15dp"
+            android:layout_marginRight="@dimen/layout_15dp"
+            android:background="@color/fenge" />
+    </LinearLayout>
+    <!--支付宝收款-->
+    <LinearLayout
+        android:id="@+id/c2c_zhifubao"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/layout_15dp"
+            android:layout_marginRight="@dimen/layout_15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/layout_10dp"
+            android:paddingBottom="@dimen/layout_10dp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付宝收款"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/zhifubaoType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未绑定"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/layout_8dp"
+                    android:layout_height="@dimen/layout_12dp"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:src="@drawable/cq_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

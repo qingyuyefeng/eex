@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/layout_30dp"
+    android:paddingRight="@dimen/layout_30dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/layout_30dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:text="@string/trading_popup_Stoploss_price"
+                android:textColor="@color/main_title2"
+                android:textSize="@dimen/text_18sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_30dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/popupwindow_According_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/trans"
+                        android:drawableEnd="@drawable/shape_textview_bule"
+                        android:padding="@dimen/layout_10dp"
+                        android:text="@string/popupwindow_According_to"
+                        android:textColor="@color/main_title2"
+                        android:textSize="@dimen/text_14sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/popupwindow_at_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/trans"
+                        android:drawableEnd="@drawable/shape_textview_bule"
+                        android:padding="@dimen/layout_10dp"
+                        android:text="@string/popupwindow_at_price"
+                        android:textColor="@color/main_title2"
+                        android:textSize="@dimen/text_14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_1dp"
+                android:layout_marginLeft="@dimen/layout_20dp"
+                android:layout_marginRight="@dimen/layout_20dp"
+                android:background="@color/main_title1" />
+        </LinearLayout>
+
+        <!--止盈加减-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/popupwindow_Stop_Earnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:text="BTC止损价格 5373.4"
+                android:textColor="@color/main_title2"
+                android:textSize="@dimen/text_12sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trading_Check_surplus"
+                    android:textColor="@color/main_title2"
+                    android:textSize="@dimen/text_14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:background="@drawable/trading_backroung"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/popupwindow_surplus_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:src="@mipmap/trading_add" />
+
+
+                    <EditText
+
+                        android:id="@+id/popupwindow_surplus_edtexit"
+                        android:layout_width="@dimen/layout_50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/trans"
+                        android:hint="1234.221555"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/main_title2"
+                        android:textColorHint="@color/main_title1"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <ImageView
+                        android:id="@+id/popupwindow_surplus_reduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/layout_5dp"
+                        android:src="@mipmap/trading_reductionof" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--止损加减-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/popupwindow_Stop_loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:text="BTC止损价格 5373.4"
+                android:textColor="@color/main_title2"
+                android:textSize="@dimen/text_12sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trading_Stop_loss"
+                    android:textColor="@color/main_title2"
+                    android:textSize="@dimen/text_14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:background="@drawable/trading_backroung"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/popupwindow_Stop_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:src="@mipmap/trading_add" />
+
+
+                    <EditText
+
+                        android:id="@+id/popupwindow_Stop_edtexit"
+                        android:layout_width="@dimen/layout_50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/trans"
+                        android:hint="1234.221555"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/main_title2"
+                        android:textColorHint="@color/main_title1"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <ImageView
+                        android:id="@+id/popupwindow_Stop_reduce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/layout_5dp"
+                        android:src="@mipmap/trading_reductionof" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:layout_marginTop="@dimen/layout_30dp"
+            android:layout_marginRight="@dimen/layout_20dp"
+            android:layout_marginBottom="@dimen/layout_30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/popupwindow_queding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/main_title1"
+                android:text="@string/trading_queding"
+                android:textColor="@color/main_title2"
+                android:textSize="@dimen/text_18sp" />
+
+            <Button
+                android:id="@+id/popupwindow_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_20dp"
+                android:layout_weight="1"
+                android:background="@color/grey1"
+                android:text="@string/cancel"
+                android:textColor="@color/main_title2"
+                android:textSize="@dimen/text_18sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

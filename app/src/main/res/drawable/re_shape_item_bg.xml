@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true" android:drawable="@drawable/add_bankcards_ll_bg"/>
+    <item android:state_focused="false" android:drawable="@drawable/c2c_item_bg"/>
+
+</selector >

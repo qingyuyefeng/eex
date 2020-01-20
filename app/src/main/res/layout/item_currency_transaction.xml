@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/white"
+  android:paddingTop="@dimen/layout_20dp"
+  android:paddingLeft="@dimen/layout_10dp"
+  android:paddingRight="@dimen/layout_10dp">
+
+  <LinearLayout
+    android:id="@+id/ll_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@mipmap/ic_currency_merchant" />
+
+    <TextView
+      android:id="@+id/tv_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/text_14sp"
+      tools:text="张三" />
+
+    <TextView
+      android:id="@+id/tv_certified_tag"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/layout_8dp"
+      android:background="@drawable/corner_solid_cce6ff"
+      android:padding="@dimen/layout_3dp"
+      android:text="商家"
+      android:textColor="@color/color_0080ff"
+      android:textSize="@dimen/text_8sp"
+      android:visibility="gone"
+      tools:visibility="visible" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/ll_quantity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/layout_15dp"
+    android:orientation="vertical"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/ll_name">
+
+    <TextView
+      android:id="@+id/tv_trade_num"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/color_8fa2cc"
+      android:textSize="@dimen/text_10sp"
+      tools:text="数量 1822.12123BTC" />
+
+    <TextView
+      android:id="@+id/tv_limit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/layout_5dp"
+      android:textColor="@color/color_8fa2cc"
+      android:textSize="@dimen/text_10sp"
+      tools:text="限额 100.00-200.00CNY" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/layout_10dp"
+    android:orientation="horizontal"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/ll_quantity">
+
+    <ImageView
+      android:id="@+id/tag_weixin"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@mipmap/ic_pay_weixin"
+      android:visibility="gone"
+      tools:visibility="visible" />
+
+    <ImageView
+      android:id="@+id/tag_alipay"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/layout_10dp"
+      android:src="@mipmap/ic_pay_ali"
+      android:visibility="gone"
+      tools:visibility="visible" />
+
+    <ImageView
+      android:id="@+id/tag_bank_card"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/layout_10dp"
+      android:layout_marginRight="@dimen/layout_10dp"
+      android:src="@mipmap/ic_pay_bank"
+      android:visibility="gone"
+      tools:visibility="visible" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/corner_solid_ffbb00"
+      android:padding="@dimen/layout_3dp"
+      android:text="1分钟"
+      android:textColor="@color/color_FFAA00"
+      android:textSize="@dimen/text_8sp"
+      android:visibility="gone"/>
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/rate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/color_8fa2cc"
+    android:textSize="@dimen/text_10sp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="2005/95%" />
+
+  <LinearLayout
+    android:id="@+id/ll_amount"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/layout_10dp"
+    android:gravity="right"
+    android:orientation="vertical"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/rate">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="单价"
+      android:textColor="@color/color_8fa2cc"
+      android:textSize="@dimen/text_10sp" />
+
+    <TextView
+      android:id="@+id/price"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/layout_5dp"
+      android:text="¥2222.88"
+      android:textColor="@color/color_0080ff"
+      android:textSize="@dimen/text_14sp" />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/btn_buy_or_sale"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/layout_10dp"
+    android:background="@drawable/corner_solid_3300a546"
+    android:paddingLeft="@dimen/layout_18dp"
+    android:paddingTop="@dimen/layout_7dp"
+    android:paddingRight="@dimen/layout_18dp"
+    android:paddingBottom="@dimen/layout_7dp"
+    android:text="买入"
+    android:textColor="@color/color_00a546"
+    android:textSize="@dimen/text_12sp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/ll_amount" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_1dp"
+    android:layout_marginTop="@dimen/layout_20dp"
+    android:background="@color/color_f2f4f9"
+    app:layout_constraintTop_toBottomOf="@id/btn_buy_or_sale"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

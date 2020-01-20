@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9"
+    android:orientation="vertical">
+
+    <com.eex.common.view.NewComTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/mine" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_120dp"
+                android:background="@drawable/mine_top_bg"
+                android:paddingTop="@dimen/layout_22dp">
+
+                <ImageView
+                    android:id="@+id/iv_user_head"
+                    android:layout_width="@dimen/layout_46dp"
+                    android:layout_height="@dimen/layout_46dp"
+                    android:layout_marginLeft="@dimen/layout_20dp"
+                    android:src="@drawable/touxiang" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_user_head"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:layout_toRightOf="@id/iv_user_head"
+                    android:text="1760****121"
+                    android:textColor="@color/color_0080ff"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_user_name"
+                    android:layout_alignBottom="@id/iv_user_head"
+                    android:layout_toRightOf="@id/iv_user_head"
+                    android:background="@drawable/c2c_bg_shape"
+                    android:padding="@dimen/layout_3dp"
+                    android:text="@string/c2c_merchant"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_user_head"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:layout_toRightOf="@id/tv_title1"
+                    android:background="@drawable/authentication_bg_shape"
+                    android:padding="@dimen/layout_3dp"
+                    android:text="@string/authentic_merchant"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_user_msg"
+                    android:layout_width="@dimen/layout_25dp"
+                    android:layout_height="@dimen/layout_25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/layout_10dp"
+                    android:layout_marginRight="@dimen/layout_20dp"
+                    android:src="@mipmap/mine_right_icon" />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_trading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_trading_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_25dp"
+                        android:layout_height="@dimen/layout_25dp"
+                        android:src="@mipmap/trading" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_weight="1"
+                        android:text="@string/mine_trading_record"
+                        android:textColor="@color/main_title2"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_6dp"
+                        android:layout_height="@dimen/layout_12dp"
+                        android:src="@drawable/cq_right"
+                        android:tint="@color/main_title2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_invite_commission"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_25dp"
+                        android:layout_height="@dimen/layout_25dp"
+                        android:src="@mipmap/invite_commission" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_weight="1"
+                        android:text="@string/mine_invite_commission"
+                        android:textColor="@color/main_title2"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_6dp"
+                        android:layout_height="@dimen/layout_12dp"
+                        android:src="@drawable/cq_right"
+                        android:tint="@color/main_title2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_financial_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_25dp"
+                        android:layout_height="@dimen/layout_25dp"
+                        android:src="@mipmap/financial_center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_weight="1"
+                        android:text="@string/mine_financial_center"
+                        android:textColor="@color/main_title2"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_6dp"
+                        android:layout_height="@dimen/layout_12dp"
+                        android:src="@drawable/cq_right"
+                        android:tint="@color/main_title2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mention_money_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_25dp"
+                        android:layout_height="@dimen/layout_25dp"
+                        android:src="@mipmap/tibi_address" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_weight="1"
+                        android:text="@string/mine_mention_money_address"
+                        android:textColor="@color/main_title2"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_6dp"
+                        android:layout_height="@dimen/layout_12dp"
+                        android:src="@drawable/cq_right"
+                        android:tint="@color/main_title2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bank_card_management"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_25dp"
+                        android:layout_height="@dimen/layout_25dp"
+                        android:src="@mipmap/cards_manager" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_weight="1"
+                        android:text="@string/mine_bank_card_management"
+                        android:textColor="@color/main_title2"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_6dp"
+                        android:layout_height="@dimen/layout_12dp"
+                        android:src="@drawable/cq_right"
+                        android:tint="@color/main_title2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_25dp"
+                        android:layout_height="@dimen/layout_25dp"
+                        android:src="@mipmap/security_center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_weight="1"
+                        android:text="@string/mine_security"
+                        android:textColor="@color/main_title2"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_6dp"
+                        android:layout_height="@dimen/layout_12dp"
+                        android:src="@drawable/cq_right"
+                        android:tint="@color/main_title2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_10dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_25dp"
+                        android:layout_height="@dimen/layout_25dp"
+                        android:src="@mipmap/setting" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_weight="1"
+                        android:text="@string/mine_setting"
+                        android:textColor="@color/main_title2"
+                        android:textSize="@dimen/text_12sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/layout_6dp"
+                        android:layout_height="@dimen/layout_12dp"
+                        android:src="@drawable/cq_right"
+                        android:tint="@color/main_title2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

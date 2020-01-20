@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_marginTop_da"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/menuitem"
+        android:layout_width="@dimen/layout_70dp"
+        android:layout_height="@dimen/layout_40dp"
+        android:gravity="center"
+        android:text="1分"
+        android:textColor="@color/background_baise"
+        android:textSize="@dimen/text_13sp" />
+</LinearLayout>

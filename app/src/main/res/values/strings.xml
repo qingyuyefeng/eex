@@ -1,0 +1,1019 @@
+<resources>
+
+    <string name="login_Please_wait_for">请等待</string>
+    <string name="Current_network">当前网络不可用，请开启手机网络</string>
+    <string name="login_seconds">秒</string>
+    <string name="Temporarily_no_data">暂无数据</string>
+
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag can be number, alphabet, underscore, Chinese. Use , to split many tags.</string>
+    <string name="alias_hint">Alias can be number, alphabet, underscore, Chinese.</string>
+    <string name="mobilenumber_hint">The phone number can only start with a "+" or a number,other can only contain "-" and Numbers</string>
+    <string name="style_hint">style should be number</string>
+    <string name="error_style_empty">style cannot be empty</string>
+    <string name="error_alias_empty">alias cannot be empty</string>
+    <string name="error_tag_empty">tag cannot be empty</string>
+    <string name="error_tag_gs_empty">Invalid format</string>
+    <string name="mobilenumber_empty_guide">will clear last set phone number</string>
+    <string name="error_network">Failed to init due to network exception.</string>
+    <string name="logining">Running in background. Please see log.</string>
+    <string name="setting_su">Succeed to set</string>
+    <string name="trust_price">委托价</string>
+    <string name="market_price">市价单</string>
+    <string name="trust_quantity">委托量</string>
+
+    <string name="social_contract">收起</string>
+    <string name="social_expend">展开</string>
+    <string name="social_text_target">网页链接</string>
+
+    <string name="app_name">EEX</string>
+    <string name="action_settings">Settings</string>
+    <string name="filter_vcode">.0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@</string>
+    <string name="filter_vcode4">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="filter_vcode1">0123456789</string>
+    <string name="filter_vcode2">0123456789.</string>
+    <string name="filter_vcode3">0123456789-.</string>
+    <string name="ma_normal">MA(5, 10, 20)</string>
+    <string name="ma_highlight">●MA5 %1$.2f ●MA10 %2$.2f ●MA20 %3$.2f</string>
+
+    <string name="macd_normal">MACD(12, 26, 9)</string>
+    <string name="macd_highlight">MACD(12, 26, 9) ●DIFF %1$.2f ●DEA %2$.2f ●MACD %3$.2f</string>
+
+    <string name="rsi_normal">RSI(6, 12, 24)</string>
+    <string name="rsi_highlight">RSI(6, 12, 24) ●RSI1 %1$.2f ●RSI2 %2$.2f ●RSI3 %3$.2f</string>
+
+    <string name="kdj_normal">KDJ(9, 3, 3)</string>
+    <string name="kdj_highlight">KDJ(9, 3, 3) ●K %1$.2f ●D %2$.2f ●J %3$.2f</string>
+
+    <string name="boll_normal">BOLL(20, 2)</string>
+    <string name="boll_highlight">BOLL(20, 2) ●MID %1$.2f ●UPPER %2$.2f ●LOWER %3$.2f</string>
+
+    <string name="volume_highlight">●MA5 %1$.2f ●MA10 %2$.2f</string>
+    <string name="campaign_Project_selection_name_text">者协会关爱老人主题活动</string>
+    <string name="campaign_Project_selection_host_text">重庆市江北区</string>
+    <string name="campaign_Project_selection_heat_text">1545</string>
+    <string name="campaign_Project_selection_time_text">2016-03-03</string>
+
+    <!-- 登录 -->
+    <string name="Versionen_unbekannt">版本号未知</string>
+
+
+    <string name="shichang_register">市场</string>
+    <string name="shouye_register">首页</string>
+
+    <string name="k_open">开</string>
+    <string name="k_close">收</string>
+    <string name="k_max">24h最高</string>
+    <string name="k_min">24h最低</string>
+    <string name="k_num">成交量</string>
+    <string name="k_amount">额</string>
+    <string name="k_exchange">换</string>
+    <string name="k_ma">MA</string>
+    <string name="k_ma5">5:</string>
+    <string name="k_ma10">10:</string>
+    <string name="k_ma20">20:</string>
+    <string name="k_ma30">30:</string>
+
+    <string name="average_price">均价:%1$s</string>
+    <string name="new_price">最新:</string>
+
+    <string name="wan_unit">万手</string>
+    <string name="yi_unit">亿手</string>
+
+    <string name="entity_macd">MACD</string>
+    <string name="entity_kdj">KDJ</string>
+    <string name="entity_wr">WR</string>
+    <string name="entity_rsi">RSI</string>
+    <string name="entity_boll">BOLL</string>
+    <string name="entity_expma">EXPMA</string>
+    <string name="entity_dmi">DMI</string>
+
+
+    <string name="login_yzm">请输入验证码</string>
+    <string name="caozuo">操作</string>
+    <string name="addbi">添加币账户</string>
+    <string name="meiti">媒体资讯</string>
+    <string name="hangye">行业动态</string>
+    <string name="bixinwen">币种新闻</string>
+    <string name="helepme">帮助中心</string>
+    <string name="guanyuwomen">关于我们</string>
+    <string name="login_registercq">注册账号</string>
+    <string name="login_register_nosms">未收到短信</string>
+    <string name="F">请输入邮箱/电话</string>
+    <string name="login_newpwds">忘记密码</string>
+    <string name="login_no">登录失败!</string>
+    <string name="wangl">网络请求失败</string>
+    <string name="youxianfw">请输入邮箱</string>
+    <string name="youxianfw1">邮箱</string>
+
+    <!-- 注册 -->
+    <string name="yes_phone">请输入正确手机号</string>
+    <string name="msg">短信发送失败</string>
+    <string name="long_pwosd">请限制密码长度</string>
+    <string name="newpword">两次输入密码不一致</string>
+    <string name="registerNo">注册失败</string>
+    <string name="sever_bas">服务协议</string>
+    <string name="zichan">资产</string>
+    <string name="guzhi">估值（BTC）</string>
+    <string name="dakai">收起小额资产</string>
+    <string name="shouqi">打开小额资产</string>
+
+    <string name="yuans">请输入原始登录密码</string>
+    <string name="xianmima">请输入新密码</string>
+    <string name="zaici">请再次输入新密码</string>
+    <string name="jiinqigongao">近期公告</string>
+    <string name="jiinqigongao1">公告</string>
+
+    <!-- 找回密码 -->
+    <string name="shoujihao">手机</string>
+    <string name="Retrievepword">重置密码</string>
+    <string name="putyzm">发送验证码</string>
+    <string name="newaonima">请输入你的原始登录密码</string>
+    <string name="newmima">新登录密码</string>
+    <string name="zaicishuru">请再次输入你的新登录密码</string>
+    <string name="saa">请输入短信验证码</string>
+    <string name="caonima">原登录密码</string>
+    <string name="xiugai">修改密码</string>
+    <string name="qingshoujihao">请输入手机号</string>
+
+    <string name="buyiang">两次密码不一致</string>
+    <string name="jiebangyouxiang">解绑邮箱</string>
+    <string name="yanzmfwfe">请输入邮箱验证码</string>
+    <!-- 我的 -->
+    <string name="myZoe">我的</string>
+    <string name="zhanghu">账户:</string>
+    <string name="keyong">可用:</string>
+    <string name="dongjie">冻结:</string>
+    <string name="heji">合计:</string>
+    <string name="loginno">登录超时请重新登录</string>
+    <string name="isname">实名审核中请稍后再试</string>
+    <string name="person">用户数据获取失败!</string>
+    <string name="outlogin">退出登录成功</string>
+    <string name="congzi">充值提现</string>
+    <string name="saoma">扫码转币</string>
+    <string name="weotuo">我的委托</string>
+    <string name="jilu">交易记录</string>
+    <string name="cbliushui">币种充值流水</string>
+    <string name="bizhongtixian">币种提现流水</string>
+    <string name="bizhanghu">币账户</string>
+    <string name="fanyong">推荐返佣</string>
+    <string name="oulogin">退出登录</string>
+    <string name="tibijilu">提币记录</string>
+    <string name="tra_Search">查询</string>
+    <string name="nodata">该页面暂无数据！</string>
+    <string name="time">时间</string>
+    <string name="bizhong">币种</string>
+    <string name="nuber">数量</string>
+    <string name="quyukuai">区块确认</string>
+    <string name="zhuangtai">状态</string>
+    <string name="chongzi">充值</string>
+    <string name="mychongz">我要充值</string>
+    <string name="mytixian">我要提现</string>
+    <string name="mychongbi">我要充币</string>
+    <string name="mytibi">我要提币</string>
+    <string name="money">实际到账金额</string>
+    <string name="xing">请输入姓氏</string>
+    <string name="ming">请输入名字</string>
+
+    <string name="bankname">请输入银行卡号</string>
+    <string name="moneynuber">请输入充值金额</string>
+    <string name="moneyMin">最小充值金额为500</string>
+    <string name="xingy">姓氏</string>
+    <string name="mingy">名字</string>
+    <string name="banknamee">银行</string>
+    <string name="bankll">请选择银行</string>
+    <string name="jine">金额</string>
+    <string name="xianz">请严格按照当前数量汇款</string>
+    <string name="xiayibu">生成银行汇款单</string>
+    <string name="shijian">审核时间为:工作日9:00-17:00</string>
+    <string name="xuanzBank">选择银行卡</string>
+    <string name="congzjl">充值记录</string>
+    <string name="mingc">名称/成交量</string>
+    <string name="newpri">最新价格</string>
+    <string name="huikuandna">汇款单</string>
+    <string name="tit">汇款时请务必填写备注</string>
+    <string name="zhangtie">24h涨跌</string>
+    <string name="mairu">买入</string>
+    <string name="prices">价格</string>
+    <string name="zuijinchengjiao">最近成交</string>
+    <string name="maichu">卖出</string>
+    <string name="tit1">,否则有可能无法充值到您的账户余额</string>
+    <string name="tit2">待审核,请按照本汇款单信息进行线下汇款</string>
+    <string name="tit3">已完成,请按照本汇款单信息进行线下汇款</string>
+    <string name="tit4">已否决,请按照本汇款单信息进行线下汇款</string>
+    <string name="tit5">等待成交,请按照本汇款单信息进行线下汇款</string>
+    <string name="wenxintis">温馨提示:</string>
+    <string name="bankq">汇入银行账户</string>
+    <string name="huiruyingk">汇入银行</string>
+    <string name="huiru">汇入银行支行</string>
+    <string name="moneypersion">收款人</string>
+    <string name="order">订单号</string>
+    <string name="beizhu">备注</string>
+    <string name="xunibi">虚拟币选择</string>
+    <string name="xinibicngz">充值虚拟币</string>
+    <string name="xuanbi">请选择币种</string>
+    <string name="congb">充币</string>
+    <string name="fuz">复制成功</string>
+    <string name="serds">手续费额</string>
+    <string name="qingshuru">请输入提现金额</string>
+    <string name="nuberdaxiao">请输入大于500的金额</string>
+    <string name="iszhanghu">请选择收款账户</string>
+    <string name="bangding">请绑定邮箱或电话</string>
+    <string name="tixianmoney">可提现金额:</string>
+    <string name="bangd">绑定邮箱</string>
+    <string name="bankaa">银行卡:</string>
+    <string name="moneyshuiang">提现金额:</string>
+    <string name="tixian">提现</string>
+    <string name="xuanzheyingh">提现请选择银行卡</string>
+    <string name="xuanze">提现审核工作时间24小时之内通过审核,节假日1-3天通过审核</string>
+    <string name="zhuanchu">转出虚拟币</string>
+    <string name="name1">2.禁止向(</string>
+    <string name="name2">)地址充值除(</string>
+    <string name="name3">)之外的资产,任何充入(</string>
+    <string name="name4">)地址的非(</string>
+    <string name="name5">)资产将不可找回.</string>
+    <string name="name6">1.单笔转出最小币数</string>
+    <string name="ge">个</string>
+    <string name="name7">,单日转出最大币数</string>
+    <string name="wanglusever">网络手续费</string>
+    <string name="keyong1">可用</string>
+    <string name="dongjie1">冻结</string>
+    <string name="zhuanchu1">转出</string>
+    <string name="tibinuber">请输入提币数量</string>
+    <string name="tibinuber1">请输入正确提币数量</string>
+    <string name="moneyaddress">请选择钱包地址</string>
+    <string name="qianbaodd">钱包地址</string>
+    <string name="qianbaodiz">钱包地址:</string>
+    <string name="shuruqianbao">请输入钱包地址</string>
+    <string name="zhuanchunuber">转出数量:</string>
+    <string name="xuanzbi">请选择币类型</string>
+    <string name="qianbbb">请填写钱包地址!</string>
+    <string name="xuanbiss">请选中币种!</string>
+    <string name="yeszhuanchu">确认转出</string>
+    <string name="zhuanshuoming">转出说明</string>
+    <string name="one">1.单笔转出最小币数0.01个BTC,单日转出最大币数10BTC</string>
+    <string name="thone">2.禁止向(BTC)地址充值除(BTC)之外的资产,任何充入(BTC)地址的非(BTC)资产将不可找回.</string>
+    <string name="fuzichong">复制成功,可以发给朋友们了.</string>
+    <string name="frent">已邀请朋友</string>
+    <string name="addsddads">添加钱包地址</string>
+    <string name="sas">虚拟货币类型</string>
+    <string name="sda"></string>
+    <string name="addmonet">添加地址成功!</string>
+    <string name="mone">已获得佣金预估</string>
+    <string name="yaoqingma">邀请码</string>
+    <string name="lianjie">邀请链接</string>
+    <string name="buy">买</string>
+    <string name="sell">卖</string>
+    <string name="type1">未成交</string>
+    <string name="type2">部分成交</string>
+    <string name="type3">已完成</string>
+    <string name="type4">部分成交已撤销</string>
+    <string name="smaa">实名审核中请稍后再试</string>
+    <string name="shuliang">请输入数量</string>
+    <string name="jiage">请输入价格</string>
+    <string name="type5">已撤销</string>
+    <string name="weit">委托失败</string>
+    <string name="weitc">委托成功</string>
+    <string name="nuber11">数量:</string>
+    <string name="shengyunuber">剩余成交数量:</string>
+    <string name="dangqianwt">当前委托</string>
+    <string name="isyeswt">是否撤销委托?</string>
+    <string name="cedanshibai">撤单失败</string>
+    <string name="yes">是</string>
+    <string name="danjia">单价:</string>
+    <string name="shouxfei">手续费:</string>
+    <string name="yesnuber">已成交数量</string>
+    <string name="nuberye">成交数量</string>
+    <string name="chongbijilu">充币记录</string>
+    <string name="nb1">待审核</string>
+    <string name="nb2">已完成</string>
+    <string name="nb3">已否决</string>
+    <string name="nb4">等待成交</string>
+
+    <string name="sheng">请先选择省</string>
+    <string name="lxing">请输入姓氏</string>
+    <string name="lming">请输入姓名</string>
+    <string name="lbangk">请选择银行行卡</string>
+    <string name="zihuang">请输入开户支行名称</string>
+    <string name="kahao">请输入银行卡号</string>
+    <string name="xuanz">请选择</string>
+    <string name="kaihuhang">请选择开户地区</string>
+    <string name="gobank">银行卡添加成功</string>
+    <string name="nobank">银行卡添加失败</string>
+    <string name="kaihu">开户地区</string>
+    <string name="bankanuber">银行卡号</string>
+    <string name="quere">确认添加</string>
+    <string name="weishimin">未实名</string>
+    <string name="sh1">审核中</string>
+    <string name="sh2">已实名</string>
+    <string name="sh3">未实名</string>
+    <string name="sh4">未认证</string>
+    <string name="sh5">已认证</string>
+    <string name="sh6">未认证</string>
+    <string name="seeting">设置</string>
+    <string name="shimingrenz">实名认证</string>
+    <string name="dalu">中国大陆地区</string>
+    <string name="hengednz">请输入身份证号码</string>
+    <string name="zhengq">请输入正确身份证号码</string>
+    <string name="guojia">请输入国家</string>
+    <string name="huzhao">请输入护照</string>
+    <string name="guojiadiqu">国家/地区</string>
+    <string name="shenz">有效身份证</string>
+    <string name="wqwd">请输入证件号码</string>
+    <string name="uiding">根据国家规定,请填写个人信息,完成实名认证</string>
+    <string name="quanxian">调用相机权限已禁止</string>
+    <string name="shangcuan">图片上传失败</string>
+    <string name="zhen">请上传身份证正面照</string>
+    <string name="binei">币的类</string>
+    <string name="bei">请上传身份证背面照</string>
+    <string name="zb">请上传手持身份证和个人签字照</string>
+    <string name="xc">相册</string>
+    <string name="xj">拍照</string>
+    <string name="benrenz">本人身份证正面照片</string>
+    <string name="fan">本人身份证背面照片</string>
+    <string name="shouc">手持本人身份证正面照和个人签字</string>
+
+
+    <string name="jiebang">解绑手机</string>
+    <string name="ongyao">公钥号/时间</string>
+
+    <string name="goole">谷歌</string>
+    <string name="gooleRZ">谷歌认证</string>
+    <string name="gooleJB">谷歌解绑</string>
+    <string name="gooleBD">谷歌绑定</string>
+    <string name="gooleMY">密钥</string>
+    <string name="gooleFZ1">复制</string>
+    <string name="gooleZT">粘贴</string>
+
+    <string name="stroe">解仓币种</string>
+    <string name="stroetime">合约倒计时</string>
+    <string name="stroemoney">本金</string>
+    <string name="stroemoneysevie">利息</string>
+    <string name="stroenuber">解仓数量</string>
+    <string name="stroedetails">理财明细</string>
+    <string name="junprice">均价</string>
+    <string name="moneysuo">锁仓理财</string>
+    <string name="moneysuolIST">理财币种</string>
+    <string name="moneyjIE">解仓</string>
+    <string name="title_dialog">友情提示</string>
+    <string name="message_permission_failed">尚未获取SD卡读取权限</string>
+    <string name="message_permission_rationale">获取SD卡读取权限</string>
+    <string name="btn_dialog_yes_permission">去设置</string>
+    <string name="btn_dialog_no_permission">取消</string>
+    <string name="message_setting_back">用户从设置回来了</string>
+    <string name="message_post_succeed">获取SD卡权限成功</string>
+    <string name="message_post_failed">获取SD卡权限失败</string>
+    <!-- 商品分类 -->
+    <!-- 活动 -->
+
+
+    <string name="campaign_details_discuss">讨论</string>
+    <string name="campaign_details_notice">通知</string>
+    <string name="campaign_sponsor_details">主办方详情</string>
+    <string name="campaign_sponsor_jbhd">主办的活动</string>
+    <string name="sever1">\u3000\u3000这些使用条款包含绑定条款和类行为，这将影响您的权利如何解决争议。请仔细阅读。
+        \n\u3000\u3000通过访问或使用位于https://www.7ebit.com（“网站”）的7Ebit网站和/或API，以及通过网站和附属网站（统称为“服务”），您（“用户”以及使用平台“用户”的其他用户）同意受这些使用条款（“条款”）约束。该服务由Leemain Technology Group Limited拥有和控制，Leemain Technology Group Limited是根据英国法律（“7Ebit”）组织的“我们”，“我们”和“我们的”是指这种法律实体。这些条款影响您的合法权利和义务，这些规定可能会严重影响您的合法权益，包括您在法庭上提起诉讼并让陪审团听取您的请求的权利。如果您不同意遵守这些条款，请勿访问或使用服务。
+        \n\u3000\u30007Ebit保留随时自行决定更改或修改本条款中包含的条款和条件的权利，包括但不限于本网站的任何政策或指南。我们将通过将修改后的条款发布到本网站，并将“最后修订”日期更改为“条款”顶部，或通过电子邮件发送用户提供的电子邮件地址，或通过7Ebit确定的任何其他方式，提供这些更改的通知。通知方式将由7Ebit自行决定。在某些情况下使用特定形式的通知不要求我们在其他情况下使用相同的形式。任何更改或修改将在发布本网站的修订后立即生效，或在7Ebit向用户（例如通过电子邮件）传输信息的时刻立即生效。这些更改将在当时适用于本网站的当前和后续使用。您放弃任何权利，您可能必须收到此类更改或修改的具体通知。您继续使用本网站将接受此类更改或修改。如果您不同意访问或使用本网站时有效的条款，则必须停止使用本网站。
+        \n\u3000\u3000前言7Ebit提供了一种在线服务（“平台”），允许用户在自己之间交换不同的块链接标记，这些标记通常表示对相应块链网络（称为“令牌”“虚拟币”）的交易，访问或其他参与权限的数据。 7Ebit可能会不时向用户提供其他辅助服务，以促进令牌和虚拟币的交换，如借贷，限价订单和停止订单。
+        \n\u3000\u3000资格通过访问或使用本网站，您声明并保证您至少年满18岁，以前没有被暂停或从本网站移除。您也代表并保证您不是受限国的居民中华人民共和国，（不包括香港澳门和台湾地区）受限国家名单随时可能有变动。如果国家成为受限国家，7Ebit将通过电子邮件，我们网站上的通知或我们认为必要的其他方式向访问该国家的用户提供通知您声明并保证您不是：
+         \n\u3000\u3000（a）位于美国所禁止的货物或服务的国家或国家或居民的控制之下，
+         \n\u3000\u3000（b）被确定为“特别指定的国家，
+         \n\u3000\u3000（c）放在美国商务部的被拒绝人士名单上。您进一步声明并保证，如果贵国法律禁止您按照本条款的规定，您不会使用本网站。
+        \n\u3000\u3000最后，您声明并保证您不会将此网站用于任何非法活动，包括但不限于非法赌博，洗钱，欺诈，勒索，敲诈勒索，数据泄露或资助恐怖主义或其他暴力活动。
+        \n\u3000\u3000尽管如此，根据用户的位置，7Ebit可能无法全面或部分地在每个市场上提供服务，无论是全权酌情决定还是由于法律或法规要求。
+        \n\u3000\u30002.账户和初始资金;第三方转让为了访问和使用服务，您必须使用7Ebit（“帐户”）创建一个帐户。您同意：
+        \n\u3000\u3000（a）在创建账户时提供准确，最新和完整的信息;
+         \n\u3000\u3000（b）维护并及时更新您的帐户信息，使其保持准确，完整和最新;
+         \n\u3000\u3000（c）保持您的登录凭据的安全性和机密性，并限制对您的帐户和您的计算机，平板电脑或移动设备的访问;
+         \n\u3000\u3000（d）如果您发现或以其他方式怀疑与本网站或您的帐户相关的任何安全漏洞，请及时通知7Ebit;
+         \n\u3000\u3000（e）对您帐户下发生的所有活动负责，并接受未经授权的所有风险。
+        \n\u3000\u3000您进一步同意不分享您的用户凭据与任何其他人访问您的帐户，以便于他们未经授权访问7Ebit平台和其他服务。如果您与任何人分享您的用户凭据，我们将考虑其活动已获得您的授权。您独自负责通过使用您的用户凭据和您的帐户可能发生的任何行为或遗漏。我们保留暂停和/或阻止您访问平台和其他7Ebit服务的权利，和/或在怀疑任何未经授权的访问或使用后暂时保留与帐户或钱包中的令牌的交易或任何使用您的用户凭证和/或您的帐户的任何尝试，包括更改用户凭据的请求。
+        \n\u3000\u3000您必须向7Ebit提供有效的电子邮件地址以创建一个帐户。您同意保持电子邮件地址与我们更新。您可以通过向Tidex发送提款通知来撤回您的同意接收电子邮件，了解7Ebit可能会暂停或终止您使用服务的能力。您了解并同意，如果7Ebit向您发送电子通讯，但由于您的电子邮件地址不正确或过期，或者由于我们的电子邮件被您的服务提供商阻止或被垃圾邮件过滤器拦截，您不会收到否则无法接收电子通信，7Ebit将被视为已经向您提供了沟通，无论如何。
+        \n\u3000\u3000为了资助您的账户并开始交易，您需要先购买令牌虚拟币。一旦购买虚拟币，您必须将令牌发送到7Ebit提供的地址，并等待余额显示在您的帐户中。您有责任确保您将令牌发送到为该特定令牌提供的正确地址，否则您的资金可能永远无法恢复。 7Ebit不会就完成从第三方钱包或其他来源转移您的令牌虚拟币所需的时间量进行任何声明或保证，并且您的帐户中有这样的令牌虚拟币可用。
+        \n\u3000\u3000当您选择将令牌从您的帐户转移到第三方钱包或其他位置时，管理新位置的一方总是有可能拒绝您的转移，或者由于影响我们平台的技术或其他问题而导致的转移可能会失败。您同意，您不得持有7Ebit对因拒绝转让而产生的任何损失负责。
+        \n\u3000\u30007Ebit保留限制任何用户或此类用户关联公司可以开立或持有的账户数量的权利。
+        \n\u3000\u30003.隐私政策你的隐私对我们很重要。我们只将隐私政策页面中的隐私政策和执法，法院命令或遵守7Ebit唯一判断中的身份验证或法定报告义务所要求的信息与第三方分享您的信息。
+        \n\u3000\u30004.互联网上信息传输的保密性通过互联网或其他可公开访问的网络传输数据或信息（包括通过电子邮件进行通信）可能并不总是安全的，并且在运输过程中可能会丢失，拦截或更改。因此，7Ebit不对您可能遇到的任何损失或损害承担任何责任，也不承担由于通过互联网或其他可公开访问的网络进行任何传输而导致的费用，包括但不限于涉及平台或与7Ebit的电子邮件包含您的个人信息。虽然7Ebit将采取商业上合理的努力来保护您向7Ebit提供的信息的隐私，并将根据7Ebit的隐私政策对此类信息进行处理，您在任何情况下都不会将您向7Ebit提供的信息视为保密信息，并创建任何信托义务如果7Ebit在7Ebit未经7Ebit同意的情况下这些信息被疏忽释放或第三方访问，7Ebit将承担任何责任。
+        \n\u3000\u30005.风险披露声明7Ebit提供执行专用服务，并不就任何特定交易的优点或其税务后果提供建议。一般来说，在使用我们的服务之前，用户应该了解以下内容。
+        \n\u3000\u3000交易令牌虚拟币可能是非常危险的。每个特定的令牌都有一个独特的功能集，使得它或多或少的价值波动。此外，7Ebit控制之外的因素可能会影响特定令牌的市场流动性，例如监管活动，市场操纵，或无法解释的价格波动。由于错误，困难的叉或许多其他不可预见的原因，Blockchain网络可能会脱机。 7Ebit不承担由于交易而导致的损失风险，或由于无法控制特定块链网络可行性的因素。一般来说，我们建议用户具有有限的交易经验和低风险承受能力，不进行积极的交易。推测令牌虚拟币的价值是高风险，用户不应该交易超过他们的损失。
+        \n\u3000\u3000了解令牌虚拟币需要先进的技术知识。令牌虚拟币通常以非常技术语言描述，需要全面了解应用密码学，计算机科学和经济理论来了解固有风险。在7Ebit上列出令牌虚拟币并不表示对任何令牌的基础技术的批准或不批准，不应被用来替代您对每个令牌虚拟币具体的风险的了解。我们不对您根据这些条款交易的令牌虚拟币的适用性做出保证，并且在与我们的关系中不承担任何信托义务。
+        \n\u3000\u3000您接受交易令牌的风险。在平台上进行任何交易时，您表示您已经，将并且将全权负责自行独立评估和调查交易风险和潜在的令牌虚拟币。您表示您具有足够的知识，市场复杂性，专业建议和经验，可以自己评估任何交易或任何潜在令牌的优点和风险。
+        \n\u3000\u3000您有责任遵守适用法律。您同意，7Ebit不负责确定是否或哪些法律可能适用于您的交易，包括税法。您全权负责报告和支付您使用服务所产生的任何税款。
+        \n\u3000\u3000您意识到并接受操作挑战的风险。 7Ebit可能会遇到复杂的网络攻击，意外的活动激增或其他可能导致服务中断的操作或技术难题。您了解本服务可能会遇到导致我们平台延误的操作问题。您同意接受由于意外或高度的技术难题导致的交易失败风险，包括由复杂攻击造成的技术困难。您同意不对任何相关损失负责7Ebit。7Ebit并不就交易风险提出建议。如果7Ebit或其代表在任何情况下提供交易建议，市场评论或任何其他信息，这样做的行为与您与我们的关系是偶然的，并且不代表7Ebit或其代表不承担任何真相或尽职调查义务。7Ebit是一个受监管的实体，必须遵守适用的法律。适用的法律，法规和行政命令可能需要政府机关要求，冻结提款或交易（或两者），或提供有关您的帐户的信息。此外，我们的记录保存和客户验证程序可能随时根据法律或行业惯例进行更改。我们必须遵守法律，并对您的任何不便或您遵守的其他后果承担任何责任。用户接受将令牌发送到我们平台的一个地址的所有后果。令牌虚拟币交易可能不可逆。将令牌发送到地址后，您将承担无限期访问令牌的风险。例如，地址可能输入不正确，地址的真实所有者可能永远不会被发现，或者地址可能属于不会返回您的令牌的实体，或者地址属于可能返回您的令牌的实体，但是首先需要您采取行动，例如验证您的身份。
+        \n\u3000\u30006.融资交易7Ebit的保证金交易是极高风险的活动。作为借款人，您可能会承受令牌虚拟币的全部损失，或者超过您已存入您账户的令牌。市场流动性的高度波动和巨大风险意味着您不一定能够及时清算您的仓位以遏制损失。
+        \n\u3000\u3000您同意始终保持足够数量的令牌以满足7Ebit的最低余额要求，因为这些要求可能会不时修改。如果您的账户中的资产价值低于最低余额要求，或者7Ebit自行决定您的账户似乎有违约贷款的风险，7Ebit可能会抓住并清算您的任何或所有职位和您的帐户中的任何余额的资产，以偿还其他用户的债务。如果您的头寸和资产清算后，您的账户仍然包含不足的令牌，以偿付其他用户的债务，您将负责任何额外的令牌。意图违约贷款可能导致7Ebit将您的活动报告给当局和/或法律起诉。
+        \n\u3000\u3000虽然7Ebit采取了几个预防措施来防止用户违约贷款，但市场流动性高的波动性和巨大风险意味着7Ebit不能对使用违约服务的用户提供任何保证。当您向其他用户借出令牌虚拟币时，如果借款人违约贷款，借款人账户的清算未能提供足够的令牌以支付借款人的债务，则可能导致无偿本金的损失。
+        \n\u3000\u3000在某些市场条件下，您可能会发现很难或不可能清算头寸。这可能发生在例如市场流动性不足或者我们平台上的技术问题上。配售“止损”或“止损”等定单不一定会将您的损失限制在预定金额上，因为市场状况可能无法执行。杠杆的使用可以对您和您都有效，并可能导致巨大的损失和收益。
+        \n\u3000\u3000所有用户都明白，令牌虚拟币的技术随时可能会发生变化，这些更改可能会影响您存储在我们平台上的资产。您要全面负责监控这些技术变化并了解其对您的令牌的后果。用户在自己的账户下进行所有交易，保证金交易，借贷和/或借款，7Ebit对因使用任何服务而导致的任何损失或损害不承担任何责任，或您未能了解令牌所涉及的风险一般使用或您使用我们的服务。
+        \n\u3000\u30007.版权账户7Ebit根据本条款授予您有限的，非独占的，不可转让的许可证，用于访问和使用服务，以及与之相关的内容，材料，信息和功能（统称为“内容”）仅用于信息，事务性，或其他经批准的目的，不时由7Ebit许可。明确禁止任何其他使用服务或内容。平台或内容中的所有其他权利均由我们和我们的许可方保留。您不得以其他方式复制，传播，分销，销售，转售，许可，解编，反向工程，拆卸，修改，发布，参与转让或销售，制作衍生作品，执行，展示，并入其他网站或以任何其他方式利用服务的任何内容或任何其他部分或其衍生作品，全部或部分用于商业或非商业目的。在不限制前述内容的情况下，未经7Ebit事先书面许可，您不得将网站或内容（或其任何部分）作为任何其他网站或任何其他作者作品的一部分进行构图或显示。如果您违反这些条款的任何部分，您可以根据这些条款立即终止访问和使用平台的权限。此外，我们保留利用法律和公平的任何此类违规行为提供的所有补救办法的权利。 “7Ebit.com”，“7Ebit”以及与本服务相关或在本网站上显示的所有徽标均为7Ebit或其许可人的商标或注册商标。未经7Ebit事先书面同意，您不得复制，模仿或使用。
+        \n\u3000\u3000考虑到使用服务，您同意向7Ebit支付完成交易的费用，7Ebit可能会修改或更新不时自行决定。您授权7Ebit在您进行交易时从您的帐户中扣除任何适用的费用。费用表的变更自任何修订之日起生效，并将从该日期起适用。
+        \n\u3000\u30008.版权侵权如果您认为网站上的任何内容侵犯了您拥有或控制的任何版权，您可以向我们的指定代理人提交如下所示的侵权通知。
+        \n\u3000\u30009.攻击网络网络7Ebit没有任何防止或减轻对块链网络攻击的能力。对于其平台，7Ebit保留在发生攻击时采取以下商业合理行为的权利：（i）如果7Ebit能够确认平台上的令牌虚拟币活动已被破坏或受到攻击，7Ebit可能会立即停止这种令牌虚拟币的交易，存款和取款; （ii）如果确定这种攻击导致令牌虚拟币的价值大幅度下降，7Ebit可能会完全停止对该令牌虚拟币的贸易活动。 7Ebit没有义务从事关于块链网络攻击的活动。有关被攻击令牌的存款，取款和用户余额的决议将由7Ebit自行决定。 7Ebit不作任何声明，不保证平台的安全，并且不对任何丢失的价值或被盗的财产负责，无论7Ebit是否疏忽提供适当的安全。
+        \n\u3000\u300010. FinCEN注册7Ebit正在向美国金融犯罪执法网（“FinCEN”）申请注册，作为货币服务业务（“MSB”）。注册完成后，7Ebit可能需要不时向FinCEN提交帐户活动的详细信息。也可能要求7Ebit向其他州或联邦机构的法律要求向政府机构提供信息。
+        \n\u3000\u300011.反洗钱（AML）并了解您的客户（KYC）政策7Ebit通过遵循FinCEN在美国经营的MSB的指导，保护自己免受任何有助于洗钱或其他犯罪活动的活动。 7Ebit的目标是通过对用户数据进行交叉检查来合理地识别每个用户，这些用户数据是针对政府观察名单，如美国部门内的外国资产管理局（“OFAC”）维护的特别指定国民和被阻止人士名单（“SDN”）财务部门，以及利用第三方身份验证和认证服务。如果用户或用户的交易通过我们的内部控制被标记为可疑，7Ebit将需要额外的用户身份证明，并有权不允许任何交易，存款和/或取款，直到额外和可验证的身份证明令人满意7Ebit自行决定收到，7Ebit已批准用户使用该平台。
+        \n\u3000\u3000通过同意我们的条款，您确认并了解，7Ebit维护验证级别，需要用户参与和验证，以获得基于用户提供的信息的级别权限，我们验证的能力以及内部策略。您同意您可能无法达到所需的验证级别，而且7Ebit保留自行决定任何用户的相应验证级别和标准的权利，以及在没有事先通知的情况下降级用户的权利。 7Ebit可能会不时实施按国籍，居住国家或任何其他因素限制验证水平和标准的政策。这可能会影响您撤销令牌虚拟币的能力，并且您同意对7Ebit进行赔偿，捍卫和保持无害的任何损失，这些损失根据7Ebit为您的账户分配的验证级别无法存入和/或提取令牌。
+        \n\u3000\u300012.第三方内容7Ebit及其附属公司及其用户可以在网站上提供第三方内容，并可能提供链接到不是由7Ebit拥有或控制的网页和内容（统称为“第三方内容”），作为对此感兴趣的人的服务信息。 7Ebit不控制，认可或采纳任何第三方内容，对第三方内容不作任何形式的陈述或保证，包括但不限于其准确性或完整性。您确认并同意，7Ebit对任何第三方内容不承担任何责任，也不承担更新或审查任何第三方内容的责任。
+        \n\u3000\u300013.反馈材料版权您承认并同意任何材料，包括但不限于在我们的平台或我们的社交媒体帐户中提供的问题，意见，反馈，建议，想法，计划，笔记，图纸，原创或创意材料或其他信息或评论关于由您提供的7Ebit或服务（统称为“反馈”），无论是通过电子邮件，发布到本网站或其他方式，都不是机密的，将成为7Ebit的唯一财产。 7Ebit将拥有包括所有知识产权在内的独家权利，并且将有权对此类反馈进行无限制的使用和传播，以商业或其他方式进行，不得向您承认或赔偿。
+        \n\u3000\u300014.用户行为和义务关于您使用本服务以及上述第1部分禁用活动清单，您将不会：违反或协助任何一方违反任何法律，法规，法规，法规或您通过使用本服务而被要求成为会员的任何自律或类似组织的任何规则;提供虚假，不准确，不完整或具误导性的信息;侵犯T7Ebit或任何第三方的版权，专利，商标或知识产权;分发未经请求或未经授权的广告或宣传资料，任何垃圾邮件，垃圾邮件或连锁信件;使用网页抓取工具或类似技术访问我们的服务或提取数据，反向工程或反汇编网站或服务的任何方面，努力访问任何源代码，基本思想和概念以及算法;采取任何行动，对我们的基础设施施加不合理或不成比例的巨大负担，或不利地干扰，拦截或征用任何系统，数据或信息;向网站发送或上传任何包含病毒，特洛伊木马，蠕虫或任何其他有害或有害程序的资料;否则尝试通过密码挖掘或任何其他方式未经授权访问本网站，其他7Ebit帐户，连接到本网站的计算机系统或网络;要么根据这些条款转让您授予的任何权利。
+        \n\u3000\u300015.不可转让虽然提供给用户的账户和服务在任何情况下都不可转让，只能由用户使用，但7Ebit有权转让，转让或出售任何人的所有权利，利益或义务，对于7Ebit或其贷款人的继承人和受让人（如果有的话），条款将继续有效并有效。
+        \n\u3000\u300016.永久撤回服务7Ebit可能会（a）暂停或终止您对本服务的访问，以及（b）根据有效传票或法院命令的要求停用或取消您的帐户，或者如果7Ebit怀疑您或其他人使用您的账户促进非法活动。您将被允许在帐户停用或取消后九十（90）天内转让与帐户相关的令牌虚拟币，除非此类转移在其他方式被禁止（i）根据法律，或（ii）通过有效的传票或法院命令。如果任何交易在您的帐户被取消或暂停时处于待处理状态，则该交易可能会被取消和/或退还。如果7Ebit自行决定是否进行撤销以逃避调查或避免支付任何由于7Ebit而导致的任何金额，您不可以取消帐户。取消您的帐户后，您授权7Ebit取消或暂停待处理的交易，并在提供电子通知后，将与此类交易相关的令牌虚拟币退回给您提供给7Ebit的钱包地址。如果您或7Ebit终止本协议或您对本服务的访问权限，或者取消或取消您的账户，您将对所有到期的金额负责。如果技术问题导致系统中断或帐户错误，7Ebit可能会暂时访问您的帐户，直到问题解决。
+        \n\u3000\u300017.所有权您在此向我们证明，您与平台有关的任何令牌虚拟币均由您拥有，或您被有效授权使用此类令牌虚拟币进行交易，并且您的帐户发起的所有交易都是为您自己的帐户而不是代表任何其他人或实体。
+        \n\u3000\u300018.赔偿您同意赔偿，保护7Ebit及其关联公司和服务提供商及其各自的高级职员，董事，代理人，合资企业，员工，律师，会计师和代表，无任何索赔或要求（包括律师费）以及（i）您违反本条款，（ii）您使用服务或（iii）您违反任何法律，法规，或规定，或任何第三方的权利。
+        \n\u3000\u300019..免责声明7Ebit不对服务的性能或不间断的可用性提供任何保证。服务按“原样”提供，“可用”基于任何形式的明示或暗示的保证。 7Ebit不作任何明示或暗示的保证，包括但不限于适销性，对特定用途的适用性，针对服务的标题和非侵权的暗示担保。 7Ebit不表示或保证服务和包含的信息是准确，完整，可靠，当前或无错误的。 7Ebit将采取合理的措施，确保平台上的交易在及时流程中处理，但对于需要处理此类交易的时间量，不作任何陈述或保证。由于我们的控制权之间的转移是依赖于我们的控制之外的许多因素，包括服务攻击的特殊性以及在我们的平台上的交易，及其他因素，7Ebit对于成功或不正当的表示或保证不做任何陈述或保证金额交易所需的时间。您还承认，您存储或转让使用服务的任何信息可能会因各种原因，包括软件故障，第三方协议变更，互联网终止，第三方服务攻击，ACTS等导致的不可避免的丢失或损坏或暂时不可用上帝或其他辩解。您将被鼓励备份并保护您的信息，包括所有时间的登录凭证某些司法管辖区不允许在与消费者的合同中暗示任何条款的免责声明，因此本部分的所有免责声明可能不适用于您。此外，您承认，7Ebit不会就您进行或建议使用本服务的任何交易行事或担任您的经纪人，中介人，代理人，托管人或顾问，并且您没有受托责任。
+        \n\u3000\u300020.不可抗拒7Ebit的在本条款下的表现将视作免责依据，不可抗拒的原因造成的中断和/或延迟的情况下，包括但不限于上帝的行为，任何行为政府，战争或其他敌意，内乱，元素，火灾，洪水，暴风雪，地震，爆炸，禁运，恐怖主义行为，电力故障，设备故障，工业或劳工纠纷或争议，任何第三方数据提供者的行为（s）或其他第三方信息提供者，第三方软件或通信方式中断。
+        \n\u3000\u300021.管理语言和翻译您同意这些条款，7Ebit的隐私政策和通过服务发布的其他通知已经用英中文草拟。虽然上述任何文件的其他语言的翻译可能是可用的，但这些翻译可能不是最新的或完整的。因此，您同意，如果上述文件的英文版中文版与任何其他翻译有任何冲突，则该文件的英中文版本适用。
+        \n\u3000\u300022.不确定财产如果7Ebit在一段时间不活动之后无法将您的令牌退回给第三方账户，7Ebit可能会根据适用的交易或无人认领的财产法律向适用的政府机构报告和汇出令牌虚拟币。</string>
+
+
+    <!-- 捐赠 -->
+
+    <!-- 个人中心 -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--设置新密码-->
+    <string name="new_password">设置新密码</string>
+    <string name="Please_enter1">请输入包含数字和字母切大于6小于30位的新密码</string>
+    <string name="Please_enter2">请输入大于6小于30位的新密码</string>
+
+
+    <!--主页-->
+    <string name="C2C_transactions">C2C交易</string>
+    <string name="Multiple_C2C">多种C2C交易,多种支付方式</string>
+    <string name="Seconds_kil_zone">秒杀专区</string>
+    <string name="discount_for">5折随心购</string>
+    <string name="Receive_daily_interest">每天领利息</string>
+    <string name="about_to_open">即将开启</string>
+    <string name="cumulative_dividend">24h待分红累计约</string>
+    <string name="currency_ividend_about">24h单币分红约</string>
+    <string name="EBT_circulation">EBT流通量</string>
+    <string name="Amount_of">矿池量</string>
+    <string name="The_current_algorithm">当前算法</string>
+    <string name="Daily_output">当日产量</string>
+    <string name="gold_extention">枚</string>
+    <string name="Please_log">请登录后操作</string>
+    <string name="Clicktoenter">点击进入</string>
+    <!--分红挖矿详情-->
+    <string name="Version_mine">版本更新</string>
+    <string name="home_update">更新</string>
+
+    <string name="new_version_update">新版本下载中</string>
+    <string name="new_version_updating">新版本正在努力更新中，请稍等...</string>
+
+
+    <string name="lan_chinese">中文</string>
+    <string name="lan_en">English</string>
+    <string name="lan_ja">日语</string>
+    <string name="lan_ko">韩语</string>
+    <string name="login_Please">请选择您的语言</string>
+
+
+    <!--我的-->
+    <string name="mini_order">订单中心</string>
+    <string name="mini_recharge">充值提现</string>
+    <string name="mini_realname">实名认证</string>
+    <string name="mini_realname_level1">已完成级别1认证</string>
+    <string name="mini_realname_level2">已完成级别2认证</string>
+    <string name="mini_realname_level3">已完成级别3认证</string>
+    <string name="mini_realname_continue_level1">继续级别1认证</string>
+    <string name="mini_realname_continue_level2">继续级别2认证</string>
+    <string name="mini_realname_continue_level3">继续级别3认证</string>
+    <string name="mini_receivables">收付款设置</string>
+    <string name="mini_merchant">商户昵称</string>
+    <string name="mini_language">切换语言</string>
+
+
+    <!--这里开始重制版-->
+
+    <!--    资产-->
+    <string name="assets_account">币币账户</string>
+    <string name="assets_c2c_account">法币账户</string>
+    <string name="assets_futures">期约账户</string>
+    <string name="assets_orepool">矿池账户</string>
+
+    <!--交易账户-->
+
+    <string name="assets_replacement">交易账户总资产折合(BTC)</string>
+    <string name="assets_available">可用(CNYE)</string>
+    <string name="assets_available1">可用</string>
+    <string name="assets_freeze">冻结(CNYE)</string>
+    <string name="assets_freeze1">冻结</string>
+    <string name="assets_seach">搜索</string>
+
+    <string name="assets_Hide_small">隐藏小额币种</string>
+
+    <string name="Currency_selection">提币选择</string>
+    <string name="Currency_name">币种选择</string>
+    <string name="Currency_choice">币种选择</string>
+    <!--搜索币种-->
+    <string name="AssetsChargeMone_choice">充币选择</string>
+    <string name="commmoney_seach">搜索</string>
+    <!--    资金划转-->
+    <string name="Capital_transfer">资金划转</string>
+    <string name="Capital_name">资金划转</string>
+    <string name="Capital_account">交易账户</string>
+    <string name="Contract_account">期约账户</string>
+    <string name="Contract_contract">合约账户</string>
+
+    <string name="Capital_number">转出数量</string>
+    <string name="Capital_please_number">请输入转出数量</string>
+    <string name="Capital_c2c">C2C账户</string>
+    <string name="Capital_more">最多可转</string>
+    <string name="Capital_all">全部</string>
+    <string name="Capital_money">提币</string>
+    <string name="Capital_no_pss">资金划转到对应账户才能交易</string>
+    <string name="Capital_no_sai">账户划转不收手续费</string>
+    <!--    资金流动-->
+    <string name="Capital_flow">资金流动</string>
+    <string name="Recharge_record">充值记录</string>
+    <string name="Withdrawals_record">提现记录</string>
+    <string name="Coin_record">充币记录</string>
+    <string name="Record_withdrawal">提币记录</string>
+    <string name="Transfer_record">划转记录</string>
+    <!--    充值记录-->
+    <string name="record_time">时间</string>
+    <string name="record_money">金额</string>
+    <string name="record_state">状态</string>
+    <string name="record_operation">操作</string>
+    <string name="record_Remarks">备注</string>
+    <string name="record_Remarks_rmb">人民币</string>
+    <string name="Service_Charge">手续费</string>
+    <!--    充币记录-->
+    <string name="CoinRecord_bname">币种</string>
+    <string name="CoinRecord_number">数量</string>
+    <string name="CoinRecord_sure">区块确认</string>
+    <!--    充值-->
+    <string name="recharge">充值</string>
+    <string name="recharge_currency">充值币种</string>
+    <string name="recharge_platform">支付平台</string>
+    <string name="recharge_amount">充值金额</string>
+    <string name="recharge_fee">充值手续费</string>
+    <string name="recharge_payment">总计支付</string>
+    <string name="recharge_account">充值到账</string>
+    <string name="recharge_limit">单笔充值额度:</string>
+    <string name="recharge_rate">当前汇率：</string>
+    <string name="recharge_details">按照国际实时汇率换算成等值CNYE充值到用户资金账户中</string>
+    <string name="recharge_Immediate">立即充值</string>
+    <!--    提现-->
+    <string name="Cash_withdrawal">提现</string>
+    <string name="Cash_withdrawals">提现币种</string>
+    <string name="Cash_Choicebank">选择银行</string>
+    <string name="Cash_Choice_bank">添加新银行账号</string>
+    <string name="Cash_cash">可提现金</string>
+    <string name="Cash_money">提现金额</string>
+    <string name="Cash_money_charge">提现手续费</string>
+    <string name="Cash_arrival">实际到账</string>
+    <string name="Cash_withdrawal_bakk">提现请选择银行卡</string>
+    <string name="Cash_withdrawal_24">24小时秒提秒到账</string>
+    <string name="Cash_withdrawal_my">我方转出为审核通过</string>
+    <string name="Cash_with_30">预计到账时间为30秒，具体时间以转入银行的时间为准</string>
+
+    <!--    K线的-->
+    <string name="k_index_k">K:</string>
+    <string name="k_index_d">D:</string>
+    <string name="k_index_j">J:</string>
+    <string name="k_index_macd">MACD:</string>
+    <string name="k_index_dif">DIF:</string>
+    <string name="k_index_dea">DEA:</string>
+    <string name="k_index_vol">VOL:</string>
+    <string name="k_index_vol_ma">MA%d:</string>
+    <string name="k_index_boll">BOLL:</string>
+    <string name="k_index_ub">UB:</string>
+    <string name="k_index_lb">LB:</string>
+    <string name="k_index_ma_formater">MA%d:</string>
+
+
+    <string name="record_adapter_1">待审核</string>
+    <string name="record_adapter_2">已完成</string>
+    <string name="record_adapter_3">已否决</string>
+    <string name="record_adapter_4">待支付</string>
+    <string name="record_adapter_5">充值失败</string>
+    <string name="record_adapter_6">等待成交</string>
+
+    <!--    提币-->
+    <string name="Withdraw_money">提币</string>
+    <string name="Withdraw_addres">提币地址</string>
+    <string name="Withdraw_copy">输入或者长按粘贴</string>
+    <string name="Withdraw_charge">网络手续费</string>
+    <string name="Withdraw_30">单笔转出最小币数30个</string>
+    <string name="Withdraw_1000">单日转出最大币数10000个</string>
+    <string name="Withdraw_no">费任何非</string>
+    <string name="Withdraw_no1">资产充值到</string>
+    <string name="Withdraw_no2">地址后将不可找回</string>
+
+    <!--    币种充值-->
+    <string name="Currency_recharge">币种充值</string>
+    <string name="Currency_addres">充币地址</string>
+    <string name="Currency_iphone">保存二维码到手机</string>
+    <string name="Currency_copy">复制地址</string>
+    <string name="Currency_first">充值后需要1次网络确认才能到账</string>
+    <string name="Currency_two">费任何非</string>
+    <string name="Currency_two1">资产充值到</string>
+    <string name="Currency_two2">地址后将不可找回</string>
+
+    <!--交易账户 详情-->`
+    <string name="account_details_Total">总资产</string>
+    <string name="account_details_equivalent">折合(CNY)</string>
+    <string name="account_details_financial">交易</string>
+
+    <!--注册登录-->
+    <string name="mock_switch">切换mock</string>
+    <string name="login">登录</string>
+    <string name="phone">手机</string>
+    <string name="google">谷歌</string>
+    <string name="email">邮箱</string>
+    <string name="please_input_account">请输入账号</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="json_data_error">服务器数据异常</string>
+    <string name="regain_code">重新获取</string>
+
+    <string name="no_account">没有账号？</string>
+    <string name="register">注册</string>
+    <string name="please_input_phone">请输入电话号码</string>
+    <string name="please_input_email">请输入邮箱号</string>
+    <string name="email_register">邮箱注册</string>
+    <string name="phone_register">手机注册</string>
+    <string name="getting_image_code_error">图形验证码获取异常</string>
+    <string name="please_input_image_code">请输入图形验证码</string>
+    <string name="had_account">已有账号</string>
+    <string name="user_service_agreement">《用户服务协议》</string>
+    <string name="had_read_and_agree"> 我已阅读并接受</string>
+    <string name="get_code">获取验证码</string>
+    <string name="referral_code_not_necessary">推荐码（非必填）</string>
+    <string name="please_input_referral_code">请输入推荐码</string>
+    <string name="please_input_confirm_password">请再次输入密码</string>
+    <string name="two_passwords_not_same">密码和确认密码不一致</string>
+    <string name="please_input_need_password">请输入6位以上含字母+数字的密码</string>
+    <string name="please_check_agreement">请勾选用户服务协议</string>
+    <string name="area_selection">地区选择</string>
+
+    <string name="please_choose_type">请选择验证方式</string>
+    <string name="email_type">邮箱验证</string>
+    <string name="phone_type">手机验证</string>
+    <string name="check">验证</string>
+    <string name="next_step">下一步</string>
+    <string name="cancel">取消</string>
+
+    <string name="version_message">版本信息：</string>
+    <string name="current_language">当前语言：</string>
+    <string name="simple_chinese">简体中文</string>
+    <string name="english">English</string>
+    <string name="logout">退出登录</string>
+    <string name="sure_logout">确定要退出登录？</string>
+
+    <!--我的 个人中心-->
+    <string name="c2c_merchant">C2C商家</string>
+    <string name="authentic_merchant">认证商家</string>
+    <string name="assets_recharge_coin">充值/充币记录</string>
+    <string name="assets_withdrawal_records">全部的充值提现记录</string>
+    <string name="assets_top_up">货币充值</string>
+    <string name="assets_withdrawal">货币提现</string>
+    <string name="assets_Charge_money">账户充币</string>
+    <string name="assets_Mention_money">账户提币</string>
+    <string name="assets_transfer">划转</string>
+
+    <string name="mine_trading_record">交易记录</string>
+    <string name="mine_invite_commission">邀请返佣</string>
+    <string name="mine_financial_center">理财中心</string>
+    <string name="mine_mention_money_address">提币地址</string>
+    <string name="mine_bank_card_management">银行卡管理</string>
+    <string name="mine_security">安全中心</string>
+    <string name="mine_setting">设置</string>
+    <string name="add_bank_card">添加银行卡</string>
+    <string name="delete">删除</string>
+    <string name="please_login_first">请先登录</string>
+
+    <!--理财中心-->
+    <string name="currency_financial">货币理财</string>
+    <string name="finance_products">理财产品</string>
+    <string name="financial_number">理财数量</string>
+    <string name="please_enter_recharge_amount">请输入理财金额</string>
+    <string name="value_out_range">输入金额超出范围</string>
+    <string name="rest_can_use">可用：</string>
+    <string name="financial_management_cycle">理财周期</string>
+    <string name="days">天</string>
+    <string name="days_90">90天</string>
+    <string name="days_180">180天</string>
+    <string name="days_270">270天</string>
+    <string name="days_360">360天</string>
+    <string name="leverage">杠杆倍数</string>
+    <string name="lever">杠杆 X1</string>
+    <string name="principal_interest_continue_cycle">到期后自动将被刺理财本金和利息续约</string>
+    <string name="principal_continue_cycle">到期后自动将本次理财本金续约</string>
+    <string name="not_continue_cycle">到期后不自动续约</string>
+    <string name="continue_to_finance">继续理财</string>
+    <string name="the_principal_financial">本金理财</string>
+    <string name="due_to_end">到期结束</string>
+    <string name="daily_rate">日利率：</string>
+    <string name="daily_earnings">日收益：</string>
+    <string name="not_start">未开始</string>
+    <string name="lock_up_financial">锁仓理财</string>
+    <string name="please_enter_trading_pwd">请输入交易密码</string>
+    <string name="trading_pwd">交易密码</string>
+    <string name="have_finished">已结束</string>
+
+    <string name="financial_center_tip1">提示：合约解除锁仓币如数退回账户，杠杆资产回收交易所</string>
+    <string name="financial_center_tip2">提示：确认EBX锁仓理财后，对应的本金在合约期内将被锁定，利息每日发放到资金账户，发起解仓后该货币可重新用于</string>
+
+    <string name="financial_records">理财记录</string>
+
+    <!--交易-->
+    <string name="limit_price_transaction">限价交易</string>
+    <string name="market_price_transaction">市价交易</string>
+    <string name="cash_flow">现金流</string>
+    <string name="publish_ad">发布广告</string>
+    <string name="currency_order">信用排序</string>
+    <string name="spot_transaction">币币交易</string>
+    <string name="spot_futures">期货交易</string>
+    <string name="currency_transaction">法币交易</string>
+    <string name="transaction">交易</string>
+
+    <!--安全中心-->
+    <string name="security_level">安全等级：</string>
+    <string name="danger">危险</string>
+    <string name="low">低</string>
+    <string name="medium">中</string>
+    <string name="safe">安全</string>
+    <string name="recommended_real_name">(建议完成实名认证)</string>
+    <string name="bind_phone">绑定手机</string>
+    <string name="unbind_phone">解绑手机</string>
+    <string name="bind_email">绑定邮箱</string>
+    <string name="unbind_email">解绑邮箱</string>
+    <string name="login_password">登录密码</string>
+    <string name="google_verification">谷歌认证</string>
+    <string name="legal_currency_collection_method">法币收款方式</string>
+    <string name="legal_currency_payment_password">法币支付密码</string>
+    <string name="legal_tender_trading_nickname">法币交易昵称</string>
+
+    <string name="not_bind">未绑定</string>
+    <string name="not_set">未设置</string>
+    <string name="not_verification">未认证</string>
+    <string name="unbind">解绑</string>
+    <string name="modify">修改</string>
+
+    <string name="verification_code">验证码</string>
+
+    <string name="phone_verification">手机认证</string>
+    <string name="email_verification">邮箱认证</string>
+
+    <string name="sure">确定</string>
+    <string name="sure_set">确认设置</string>
+    <string name="sure_submit">确认提交</string>
+
+    <string name="bind_phone_success">绑定手机成功</string>
+    <string name="unbind_phone_success">解绑手机成功</string>
+    <string name="bind_email_success">绑定邮箱成功</string>
+    <string name="unbind_email_success">解绑邮箱成功</string>
+
+    <string name="set_new_password">设置登录密码</string>
+    <string name="input_old_password">输入旧密码</string>
+    <string name="input_new_password">输入新密码</string>
+
+
+    <string name="bind_google_verification">绑定谷歌身份验证器</string>
+    <string name="unbind_google_verification">解除谷歌身份验证器</string>
+    <string name="copy">复制</string>
+    <string name="has_copied">已复制</string>
+    <string name="paste">粘贴</string>
+    <string name="google_tip1">保存二维码到手机或复制密钥到剪贴板可能会有安全风险,请妥善保管</string>
+
+    <string name="google_step1">1、下载谷歌验证器</string>
+    <string name="google_step2">2、使用谷歌验证器APP扫描一下二维码或手工添加密文验证</string>
+    <string name="google_verification_code">谷歌验证码</string>
+    <string name="bind_google_success">绑定谷歌成功</string>
+    <string name="unbind_google_success">解绑谷歌成功</string>
+
+    <string name="gooleLC1">1.安装在"Google Authenticator"应用程序中，点击右上角"+"号,然后选择"手动输入验证码".</string>
+    <string name="gooleLC2">2.粘贴上面的"密钥"到"密钥输入栏",并填写你的7ebit账号,点击"完成"</string>
+    <string name="gooleLC3">3.复制"谷歌验证码",粘贴到上面的"谷歌验证码"输入栏</string>
+    <string name="gooleLC4">请勿删除此双重验证密码账户，否则会导致你无法进行账户操作,如果误删,你可以通过重置密码获取</string>
+    <string name="gooleLC5">开启GOOGLE认证</string>
+    <string name="gooleLC6">关闭GOOGLE认证</string>
+    <string name="gooleLCYZM">请输入谷歌验证码</string>
+
+    <!--级别2认证-->
+    <string name="level_1">初级认证</string>
+    <string name="level_2">中级认证</string>
+    <string name="level_3">高级认证</string>
+
+    <string name="level_1_gift1">—认证后提升提币额度</string>
+    <string name="level_1_gift2">—认证后提升提现额度</string>
+    <string name="level_2_gift1">—提币额度（近24h）0.58BTC</string>
+    <string name="level_2_gift2">—提现额度（近24h）2000CNYE</string>
+    <string name="level_3_gift1">—提币额度（近24h）10000BTC</string>
+    <string name="level_3_gift2">—提现额度（近24h）1000000000BTC</string>
+
+    <string name="country_area">国家地区</string>
+    <string name="chinese_area">中国大陆地区</string>
+    <string name="other_country_area">其他国家地区</string>
+    <string name="pleasee_input_country_area">请选择国家地区</string>
+    <string name="pleasee_input_surname">请输入姓氏</string>
+    <string name="pleasee_input_givename">请输入名字</string>
+    <string name="pleasee_input_id_number">请输入身份证号码</string>
+    <string name="pleasee_input_passport_number">请输入护照ID</string>
+
+    <string name="sex">性别</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="id_card_number">身份证号码</string>
+    <string name="passport_number">护照ID</string>
+    <string name="level_2_tip">提醒：信息一旦提交不可修改，请务必如实填写准确信息</string>
+
+    <!--级别3认证-->
+    <string name="own_id_card_front">本人身份证正面照片</string>
+    <string name="own_id_card_back">本人身份证背面照片</string>
+    <string name="own_font_pic">手持本人身份证正面照和个人签字</string>
+    <string name="post_font">上传正面</string>
+    <string name="post_back">上传背面</string>
+    <string name="post_pic">上传照片</string>
+    <string name="level_3_tip">请确保照片的内容完整并清晰可见，仅支持jpg、png图片格式。</string>
+    <string name="level_3_tip2">请您上传一张手持身份证正面照和一张包含“平台名称”“当前日期”“个人签名”的纸。请确保照片的内容完整并清晰可见，仅支持jpg、png图片格式。</string>
+    <string name="post_submit">提交认证</string>
+    <string name="please_post_all_pics">请先上传所有照片</string>
+    <string name="take_photo">拍照</string>
+    <string name="pic_choose">相册</string>
+
+
+    <!--银行卡管理-->
+    <string name="family_name">姓氏</string>
+    <string name="given_name">名字</string>
+    <string name="please_enter_name">请输入持卡人姓名</string>
+    <string name="choose_bank">选择银行</string>
+    <string name="bank_number">银行卡号</string>
+    <string name="please_enter_bank_number">请输入银行卡号</string>
+    <string name="branch_bank">开户支行</string>
+    <string name="please_enter_branch_bank">请输入开户支行</string>
+    <string name="bank_place">银行所在地</string>
+    <string name="please_enter_bank_place">请输入银行所在地</string>
+    <string name="please_enter_all_message">请输入完整信息</string>
+
+    <!--提币地址-->
+    <string name="virtual_currency_type">虚拟货币类型</string>
+    <string name="please_choose_currency_type">请选择虚拟货币类型</string>
+    <string name="wallet_address">钱包地址</string>
+    <string name="please_enter_wallet_address">请输入钱包地址</string>
+    <string name="remark">备注</string>
+    <string name="addr_tip">提示：请务必确保您的钱包地址填写正确，如因钱包地址填写错误导致的损失将由用户自行承担</string>
+
+    <!--法币收款方式-->
+    <string name="bank_card">银行卡</string>
+    <string name="we_chat">微信</string>
+    <string name="alipay">支付宝</string>
+    <string name="buy_instant">极速买卖</string>
+    <string name="pay_type">购买方式</string>
+    <string name="amount_trade">金额购买</string>
+    <string name="number_sale">数量出售</string>
+    <string name="buy_instant_hint">请输入购买数量</string>
+    <string name="sell_instant_hint">请输入出售数量</string>
+
+    <string name="bank_card_setting">银行卡设置</string>
+    <string name="message_code">短信验证码</string>
+    <string name="save">保存</string>
+
+    <string name="alipay_setting">支付宝设置</string>
+    <string name="wechat_setting">微信设置</string>
+    <string name="please_enter_your_name">请输入姓名</string>
+    <string name="alipay_account">支付宝账号</string>
+    <string name="wechat_account">微信账号</string>
+    <string name="please_enter_alipay_account">请输入支付宝账号</string>
+    <string name="please_enter_wechat_account">请输入微信账号</string>
+    <string name="post_receive_money_code">点击上传收款码</string>
+    <string name="please_post_receive_money_code">请上传收款码</string>
+    <string name="post_receive_tip">只能上传jpg/png文件，且不超过500kb</string>
+
+    <!--法币支付密码-->
+    <string name="set_new_trading_pwd">设置法币支付密码</string>
+    <string name="confirm_new_password">确认新密码</string>
+    <string name="please_enter_6_30_trading_pwd">请输入6-30位交易密码</string>
+    <string name="please_confirm_6_30_trading_pwd">请再次输入6-30位交易密码</string>
+
+    <!--法币交易昵称-->
+    <string name="set_legal_trade_nick">设置法币交易昵称</string>
+    <string name="input_nick">输入昵称</string>
+    <string name="please_input_nick">请输入5个字以内的昵称</string>
+
+    <!--个人信息-->
+    <string name="user_info">用户信息</string>
+    <string name="sgs_level1">初级认证</string>
+    <string name="sgs_level2">中级认证</string>
+    <string name="sgs_level3">高级认证</string>
+    <string name="not_approve">未认证</string>
+    <string name="has_approve">已认证</string>
+    <string name="checking">审核中</string>
+
+    <string name="name">姓名</string>
+    <string name="country">国家</string>
+    <string name="id_number">证件号码</string>
+
+    <!--委托-->
+    <string name="attorney_normal">普通委托</string>
+    <string name="attorney_limit">止盈止损</string>
+    <string name="filtrate">筛选</string>
+    <string name="attorney">委托</string>
+    <string name="type">类型</string>
+    <string name="choose_coin_type">币种选择</string>
+    <string name="all_coin_type">全部币种</string>
+    <string name="sale_type_both">买入卖出</string>
+    <string name="reset">重置</string>
+    <string name="un_trigger">未触发</string>
+    <string name="trigger_success">触发成功</string>
+    <string name="trigger_fail">触发失败</string>
+
+    <!--首页-->
+    <string name="sec_kill">限时秒杀</string>
+    <string name="lock_repo">锁仓理财</string>
+    <string name="not_in_time">不在时间范围内~</string>
+    <string name="legal_trading">法币交易</string>
+    <string name="contract_deal">合约交易</string>
+    <string name="free_dig">免费挖矿</string>
+
+    <string name="usdt_trading">USDT交易对</string>
+    <string name="btc_trading">BTC交易对</string>
+
+    <!--期货交易-->
+    <string name="buy_up">买涨</string>
+    <string name="buy_down">买跌</string>
+    <string name="check_full_stop">止盈止损</string>
+    <string name="close_out">平仓</string>
+    <string name="stay_overnight">过夜</string>
+    <string name="stay_number">0123456789.</string>
+
+
+    <!--mainactivity-->
+    <string name="home">主页</string>
+    <string name="market">市场 </string>
+    <string name="assets">资产 </string>
+    <string name="notice">公告 </string>
+    <string name="trading">交易 </string>
+    <string name="mine">我的 </string>
+    <string name="mine_Press">再按一次退出程序</string>
+
+    <!--市场-->
+    <string name="market_name">名称</string>
+    <string name="market_latest_price">最新价格</string>
+    <string name="market_volume">交易量</string>
+    <string name="market_floating">浮动率</string>
+    <string name="market_applies">涨跌幅</string>
+
+    <string name="trading_popup_Stoploss_price">修改止盈止损 </string>
+    <string name="popupwindow_According_to">按金额 </string>
+    <string name="popupwindow_at_price">按价格 </string>
+    <string name="popupwindow_Stop_Earnings">止盈价格 </string>
+    <string name="popupwindow_stop_price">止损价格 </string>
+    <string name="trading_Check_surplus">止盈</string>
+    <string name="trading_Stop_loss">止损 </string>
+    <string name="trading_queding">确定</string>
+    <string name="trading_choose_leverage_multiples">选择杠杆倍数 </string>
+
+
+    <string name="all_bonds">所有持仓</string>
+    <string name="bond_settle">持仓结算</string>
+    <string name="bond_cancel">持仓撤单</string>
+    <string name="delegation_type">委托类型</string>
+    <string name="delegation_all">全部</string>
+    <string name="delegation_market">市价交易</string>
+    <string name="delegation_trigger">触发交易</string>
+    <string name="deal_type">交易类型</string>
+    <string name="deal_call_option">买涨</string>
+    <string name="deal_put_option">买跌</string>
+    <string name="over_night">是否过夜</string>
+    <string name="daily">不过夜</string>
+    <string name="next_day">过夜</string>
+    <string name="currency_type">币种选择</string>
+
+    <!--交易记录-->
+    <string name="coin_money_orders">币币订单</string>
+    <string name="futures_orders">期货订单</string>
+    <string name="legal_orders">法币订单</string>
+
+    <string name="current_delegation">当前委托</string>
+    <string name="history_delegation">历史委托</string>
+    <string name="trading_record">成交记录</string>
+
+    <string name="all_positions">所有持仓</string>
+    <string name="positions_sell">持仓结算</string>
+    <string name="positions_cancel">持仓撤单</string>
+    <string name="do_close_out">手动平仓</string>
+    <string name="do_cancel">手动撤单</string>
+
+    <string name="all_orders">全部订单</string>
+
+    <string name="cancel_deal">撤销</string>
+    <string name="not_deal">未成交</string>
+    <string name="some_deal">部分成交</string>
+    <string name="all_deal">已完成</string>
+    <string name="some_deal_cancel">部分成交已撤销</string>
+    <string name="has_cancel">已撤销</string>
+    <string name="all">全部</string>
+    <string name="buy_in">买入</string>
+    <string name="sell_out">卖出</string>
+
+    <string name="order_detail">订单详情</string>
+
+    <string name="delegation_order">委托订单</string>
+    <string name="newest_deals">最新成交</string>
+
+</resources>

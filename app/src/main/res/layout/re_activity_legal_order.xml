@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9"
+    android:orientation="vertical">
+
+    <com.eex.common.view.NewComTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/legal_orders" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/layout_50dp"
+       android:orientation="horizontal"
+       android:background="@color/white"
+       android:padding="@dimen/layout_10dp">
+       <TextView
+           android:id="@+id/tv_filter"
+           android:layout_width="@dimen/layout_60dp"
+           android:layout_height="match_parent"
+           android:background="@color/color_f2f4f9"
+           android:gravity="center"
+           android:textSize="@dimen/text_14sp"
+           android:textColor="@color/color_0080ff"
+           android:text="@string/filtrate"/>
+       <TextView
+           android:id="@+id/tv_all"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="@dimen/layout_10dp"
+           android:background="@color/color_f2f4f9"
+           android:paddingRight="@dimen/layout_10dp"
+           android:gravity="center"
+           android:text="@string/all_orders"
+           android:textSize="@dimen/text_14sp"
+           android:textColor="@color/color_0080ff"
+           android:drawableRight="@mipmap/down_triangle"/>
+   </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_legal_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:overScrollMode="never" />
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/layout_30dp"
+        android:gravity="center"
+        android:text="暂无数据，点击刷新~"
+        android:textColor="@color/color_4d6599"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+</LinearLayout>

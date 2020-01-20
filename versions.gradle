@@ -1,0 +1,99 @@
+ext {
+
+    /**
+     * project version conf
+     * */
+    versionMajor = 1
+    versionMinor = 6
+    versionBuild = 8
+    versionPack = 1
+
+    compileSdkVersion = 28
+    buildToolsVersion = "28.0.3"
+    SupportVersion = "28.0.0"
+    minSdkVersion = 17
+    targetSdkVersion = 28
+
+    multidex = 'com.android.support:multidex:1.0.3'
+    junit = 'junit:junit:4.12'
+    testRunner = 'com.android.support.test:runner:1.0.2'
+    espresso = 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    constraint = "com.android.support.constraint:constraint-layout:1.1.3"
+    appcompatV7 = "com.android.support:appcompat-v7:${SupportVersion}"
+    design = "com.android.support:design:${SupportVersion}"
+    supportV4 = "com.android.support:support-v4:${SupportVersion}"
+
+    androidxVersion = '1.0.0'
+//    recyclerView = [group: 'androidx.recyclerview', name: 'recyclerview', version: androidxVersion]
+    recyclerView = 'com.android.support:recyclerview-v7:28.0.0'
+
+    liveData = "android.arch.lifecycle:livedata:1.1.0"
+    liveDataToRxJava = 'com.github.YvesCheung:LiveDataToRxJava:v1.1'
+    room = "android.arch.persistence.room:runtime:1.1.1"
+    roomRxJava = "android.arch.persistence.room:rxjava2:1.1.1"
+    roomCompiler = 'android.arch.persistence.room:compiler:1.1.1'
+
+    rxJava = 'io.reactivex.rxjava2:rxjava:2.1.13'
+    rxAndroid = 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    rxPermissions = 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:3.4.1"
+    retrofit = "com.squareup.retrofit2:retrofit:2.4.0"
+    retrofitAdapterRxJava = "com.squareup.retrofit2:adapter-rxjava2:2.4.0"
+    retrofitConverterMoshi = "com.squareup.retrofit2:converter-moshi:2.4.0"
+    retrofitConverterGson = "com.squareup.retrofit2:converter-gson:2.0.0-beta4"
+    mockApi = 'com.github.landscapeside:MockNetApi:v2.0.0'
+
+    gson = "com.google.code.gson:gson:2.6.2"
+
+    picasso = 'com.squareup.picasso:picasso:2.5.2'
+    glide = 'com.github.bumptech.glide:glide:4.9.0'
+    glideCompiler = 'com.github.bumptech.glide:compiler:4.9.0'
+
+    daggerVersion = '2.16'
+    dagger = "com.google.dagger:dagger:${daggerVersion}"
+    daggerCompiler = "com.google.dagger:dagger-compiler:${daggerVersion}"
+    daggerAndroid = "com.google.dagger:dagger-android:${daggerVersion}"
+    daggerAndroidSupport = "com.google.dagger:dagger-android-support:${daggerVersion}"
+    daggerAndroidCompiler = "com.google.dagger:dagger-android-processor:${daggerVersion}"
+
+    butterknife = 'com.jakewharton:butterknife:8.1.0'
+    butterknifeCompiler = 'com.jakewharton:butterknife-compiler:8.1.0'
+
+    timber = "com.jakewharton.timber:timber:4.7.1"
+    logging = "org.apache.servicemix.logging:logging:7.0.1"
+
+    zxing = "com.github.yuzhiqiang1993:zxing:2.2.5"
+    zxingCore = "com.google.zxing:core:3.3.3"
+    bgaZxing = 'cn.bingoogolapple:bga-qrcode-zxing:1.2.1'
+
+    adapterHelper = 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+
+    pandoraDebug = 'com.github.whataa:pandora:v2.0.4'
+    pandoraRelease = 'com.github.whataa:pandora-no-op:v2.0.3'
+
+    anko = "org.jetbrains.anko:anko:0.10.8"
+
+    walle = 'com.meituan.android.walle:library:1.1.6'
+
+    autodispose = [group: 'com.uber.autodispose', name: 'autodispose-android', version: '1.1.0']
+    autodispose_ktx = [group: 'com.uber.autodispose', name: 'autodispose-ktx', version: '1.1.0']
+    autodispose_android_ktx =
+        [group: 'com.uber.autodispose', name: 'autodispose-android-ktx', version: '1.1.0']
+    autodispose_archs_ktx =
+        [group: 'com.uber.autodispose', name: 'autodispose-android-archcomponents-ktx', version: '1.1.0']
+    rxlifecycle = 'com.dhh:rxlifecycle2:1.6'
+    lifecycleJava8 = 'android.arch.lifecycle:common-java8:1.1.1'
+
+    tabLayout = 'com.androidkun:XTabLayout:1.1.3'
+    tabBar = 'com.hjm:BottomTabBar:1.1.1'
+    banner = 'com.youth.banner:banner:1.4.10'
+    bulletinview = 'me.bakumon:bulletinview:1.0.0'
+    pickerView = 'com.contrarywind:Android-PickerView:3.2.5'
+    immersionBar = 'com.gyf.barlibrary:barlibrary:2.3.0'
+    timeselector = 'com.feezu.liuli:timeselector:1.1.3'
+    magicIndicator = 'com.github.hackware1993:MagicIndicator:1.5.0'
+    mpAndroidChart = 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    klinelib ='com.icechao.klinelib:klinelib:1.1.1'
+}

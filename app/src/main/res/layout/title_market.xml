@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_48dp">
+
+        <ImageView
+            android:id="@+id/sousuo_iv"
+            android:layout_width="@dimen/layout_25dp"
+            android:layout_height="@dimen/layout_25dp"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:src="@mipmap/market_zu"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sousuo_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="50dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/mine_item_text"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/sousuo_image"
+            android:layout_width="@dimen/layout_40dp"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/layout_10dp"
+            android:src="@mipmap/search"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

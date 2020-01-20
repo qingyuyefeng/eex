@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+    <!-- 导航栏 -->
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgview_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_20dp"
+            android:src="@drawable/chenggong" />
+
+        <TextView
+            android:id="@+id/texview_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:text="充值成功,等待审核"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/textview_Explain1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:gravity="center"
+            android:text="平台将于24h内完成充值审核,"
+            android:textColor="@color/money_name"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/textview_Explain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="审核通过后会将CNYE直接充值到您的资金账户中"
+            android:textColor="@color/money_name"
+            android:textSize="@dimen/text_13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

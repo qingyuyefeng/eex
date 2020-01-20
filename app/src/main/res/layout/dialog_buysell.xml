@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="276dp"
+        android:background="@drawable/c2c_item_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="确认订单"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fenge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买总金额:"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/RedPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="888CNY"
+                android:textColor="@color/appbar_background3"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买数量:"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/nuber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="888BTC"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买单价:"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/newPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="888CNY"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txNAME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:gravity="center"
+            android:text="请确认价格再下单，下单后此交易的BTC将托管，请放心出售"
+            android:textColor="@color/appbar_background3"
+            android:textSize="@dimen/text_15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_dimss"
+                    android:layout_width="120dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/btn_grd"
+                    android:text="取消"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+
+                <Button
+                    android:id="@+id/btn_sell"
+                    android:layout_width="120dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:background="@drawable/backbtn"
+                    android:text="确认"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

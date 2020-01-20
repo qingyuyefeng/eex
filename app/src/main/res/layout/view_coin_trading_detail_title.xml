@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_40dp"
+    android:background="#001b58"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/layout_10dp"
+    android:paddingRight="@dimen/layout_20dp">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/back_triangle"
+        android:padding="@dimen/layout_5dp"/>
+
+    <TextView
+        android:id="@+id/tv_pair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/ic_deal_pair_selector"
+        android:drawablePadding="@dimen/layout_5dp"
+        android:textColor="@color/color_0080ff"
+        android:textSize="@dimen/text_16sp"
+        tools:text="CNY/USD" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_to_fullscreen"
+        android:layout_width="@dimen/layout_20dp"
+        android:layout_height="@dimen/layout_20dp"
+        android:padding="@dimen/layout_3dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/to_full_screen" />
+
+    <CheckBox
+        android:id="@+id/cb_if_focus"
+        android:layout_width="@dimen/layout_20dp"
+        android:layout_height="@dimen/layout_20dp"
+        android:layout_marginLeft="@dimen/layout_20dp"
+        android:button="@null"
+        android:background="@drawable/iv_if_focus_selector"
+        android:padding="@dimen/layout_3dp"/>
+</LinearLayout>

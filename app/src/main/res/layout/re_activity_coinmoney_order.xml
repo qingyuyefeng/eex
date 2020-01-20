@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9"
+    android:orientation="vertical">
+
+    <com.eex.common.view.NewComTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/coin_money_orders"
+        app:tv_right="@string/filtrate" />
+
+    <RadioGroup
+        android:id="@+id/rg_coin_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_40dp"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_current"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/current_delegation"
+            android:textColor="@color/color_filtrate_text"
+            android:textSize="@dimen/text_14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/history_delegation"
+            android:textColor="@color/color_filtrate_text"
+            android:textSize="@dimen/text_14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_record"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/trading_record"
+            android:textColor="@color/color_filtrate_text"
+            android:textSize="@dimen/text_14sp" />
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_coin_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:layout_marginTop="@dimen/layout_5dp"
+        android:overScrollMode="never" />
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/layout_30dp"
+        android:gravity="center"
+        android:text="暂无数据，点击刷新~"
+        android:textColor="@color/color_4d6599"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+</LinearLayout>

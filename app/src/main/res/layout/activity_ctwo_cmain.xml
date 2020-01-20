@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+    <!-- 导航栏 -->
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/Textview_Tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_10dp"
+                    android:text="为了保证您接下来更好的知道交易规则,您需要了解《C2C交易规则》并答题通过后,才能开始C2C交易"
+                    android:textColor="@color/money_name"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/AnswerRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/Btn_put"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_47dp"
+                android:layout_margin="@dimen/layout_10dp"
+                android:background="@drawable/backbtn"
+                android:text="提交答案"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

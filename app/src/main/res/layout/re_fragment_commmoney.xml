@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey1"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:layout_marginBottom="@dimen/layout_5dp"
+                android:background="@mipmap/tradingaccount_backroung"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_marginTop="@dimen/layout_18dp"
+                    android:gravity="center"
+                    android:text="@string/assets_replacement"
+                    android:textColor="#ff7f96c8"
+                    android:textSize="@dimen/text_12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/assets_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_20sp" />
+
+                    <TextView
+                        android:id="@+id/assets_about_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="≈0.00 CNY"
+                        android:textColor="@color/color_4d6599"
+                        android:textSize="@dimen/text_12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/assets_linr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+
+                <!--可用(CNYE)  冻结(CNYE)-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:layout_marginTop="@dimen/layout_5dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/assets_available"
+                        android:textColor="@color/color_4d6599"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layout_30dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/assets_freeze"
+                        android:textColor="@color/color_4d6599"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!--可用余额   冻结余额 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:layout_marginTop="@dimen/layout_5dp"
+                    android:layout_marginBottom="@dimen/layout_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/assets_available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/assets_freeze"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/layout_30dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/layout_20dp" />
+
+                </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--充值/充币记录    全部的充值提现记录  -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_trading1" />
+            </LinearLayout>
+
+
+
+
+            <!--搜索   隐藏小额币种-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_marginTop="@dimen/layout_10dp"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:orientation="horizontal">
+
+                <!--搜索-->
+
+                <LinearLayout
+                    android:id="@+id/assets_seach"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:src="@mipmap/search" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="@dimen/layout_15dp"
+                        android:gravity="right"
+                        android:text="@string/assets_seach"
+                        android:textColor="@color/main_title1"
+                        android:textSize="@dimen/text_14sp" />
+                </LinearLayout>
+                <!--隐藏小额币种-->
+                <LinearLayout
+                    android:id="@+id/assets_Hide_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/assets_Hide_check"
+                        android:layout_width="@dimen/layout_20dp"
+                        android:layout_height="@dimen/layout_20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:background="@drawable/login_ckbox"
+                        android:button="@null"
+                        android:checked="true"
+                        android:padding="@dimen/layout_5dp" />
+
+
+                    <TextView
+                        android:id="@+id/assets_Hide_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="@dimen/layout_15dp"
+                        android:gravity="right"
+                        android:text="@string/assets_Hide_small"
+                        android:textColor="@color/main_title1"
+                        android:textSize="@dimen/text_14sp" />
+
+
+                </LinearLayout>
+
+                <!--排序-->
+                <LinearLayout
+                    android:id="@+id/assets_sorting"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:layout_weight="1.4"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/assets_sorting_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:src="@mipmap/assets_sorting" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_marginTop="@dimen/layout_10dp"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

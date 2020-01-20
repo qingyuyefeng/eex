@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/color_f2f4f9"
+  android:orientation="vertical">
+
+  <include layout="@layout/view_simple_toolbar" />
+
+  <android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/comtitlebar"
+    android:padding="@dimen/layout_10dp">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+      <include
+        android:id="@+id/empty"
+        layout="@layout/view_empty"
+        android:visibility="gone" />
+    </RelativeLayout>
+  </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background"
+    android:orientation="vertical">
+    <!-- 导航栏 -->
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <LinearLayout
+        android:id="@+id/addBank_LL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_48dp"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_10dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/cq_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:text="添加银行卡"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tra_myzoe_Bank_pulltorefreshscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addBank_LL"
+        android:layout_below="@+id/comtitlebar"
+        android:background="@color/appbar_background2"
+        android:divider="@color/appbar_background2"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent" />
+</RelativeLayout>

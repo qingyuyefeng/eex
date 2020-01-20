@@ -1,0 +1,16 @@
+
+final def variants = project.android.applicationVariants
+variants.all { variant ->
+    variant.outputs.all {
+        def fileName = "${PACKING_NAME_PREFIX}${project.android.defaultConfig.versionName}_${variant.buildType.name}_${variant.productFlavors[0].name}"
+        fileName += "_${releaseTime()}"
+        fileName += "_${project.android.defaultConfig.versionCode}.apk"
+        outputFileName = fileName
+    }
+}
+
+//获取时间
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+

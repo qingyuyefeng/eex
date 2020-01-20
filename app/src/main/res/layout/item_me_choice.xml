@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appbar_background2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/layout_47dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/ck_item"
+                    android:layout_width="@dimen/layout_13dp"
+                    android:layout_height="@dimen/layout_13dp"
+                    android:background="@drawable/me_ckb"
+                    android:button="@null"
+                    android:checked="false" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tx_Biname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ETH/BTC"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/texview_name1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/money_name"
+                android:textSize="@dimen/text_13sp" />
+
+            <LinearLayout
+                android:layout_width="@dimen/layout_60dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tuodong2x" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/fenge" />
+    </LinearLayout>
+</LinearLayout>

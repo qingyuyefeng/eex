@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTC/USDT"
+        style="@style/normal_text"/>
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_5dp"
+        android:text="12983.11"
+        android:textSize="@dimen/text_14sp"
+        android:textColor="@color/color_00a546"/>
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+5.18%"
+        android:textSize="@dimen/text_14sp"
+        android:textColor="@color/color_00a546"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_5dp"
+        android:text="=73328.92CNY"
+        android:textSize="@dimen/text_10sp"
+        android:textColor="@color/color_cfd6e6"/>
+</LinearLayout>

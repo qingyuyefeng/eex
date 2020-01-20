@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myzoe_sm_listview_backgroung"
+    android:orientation="vertical">
+    <!-- 导航栏 -->
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_marginTop_da"
+        android:orientation="vertical">
+
+        <!--国家/地区-->
+        <LinearLayout
+            android:id="@+id/real_name_LL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_55dp"
+            android:background="@color/myzoe_sm_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_0dp"
+                android:layout_margin="@dimen/layout_15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/layout_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guojiadiqu"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+
+                    <TextView
+                        android:id="@+id/textname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_15dp"
+                        android:text="@string/dalu"
+                        android:textColor="@color/background_baise"
+                        android:textSize="@dimen/text_14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cq_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_1dp"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_marginRight="@dimen/layout_15dp"
+                android:background="@color/appbar_background1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_55dp"
+            android:background="@color/myzoe_sm_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/layout_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/xingy"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_14sp" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:hint="@string/xing"
+                    android:textColor="@color/background_baise"
+                    android:textColorHint="@color/text_list_item_desc"
+                    android:textSize="@dimen/text_14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/layout_15dp"
+            android:layout_marginRight="@dimen/layout_15dp"
+            android:background="@color/appbar_background1" />
+
+        <!--名字-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_55dp"
+            android:background="@color/myzoe_sm_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/mingy"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_14sp" />
+
+                <EditText
+                    android:id="@+id/edt_nameNew"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:hint="@string/ming"
+                    android:textColor="@color/background_baise"
+                    android:textColorHint="@color/text_list_item_desc"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/layout_15dp"
+            android:layout_marginRight="@dimen/layout_15dp"
+            android:background="@color/appbar_background1" />
+
+        <!--有效身份证-->
+        <LinearLayout
+            android:id="@+id/ll_shenfenza"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_55dp"
+            android:background="@color/myzoe_sm_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_55dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/shenz"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_14sp" />
+
+                <EditText
+                    android:id="@+id/edt_ID"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_15dp"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:hint="@string/wqwd"
+                    android:textColor="@color/background_baise"
+                    android:textColorHint="@color/text_list_item_desc"
+                    android:textSize="@dimen/text_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--国家及地区-->
+    <LinearLayout
+        android:id="@+id/ll_guojia"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_55dp"
+        android:background="@color/myzoe_sm_background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="1"
+                android:text="国家及地区"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <EditText
+                android:id="@+id/edt_guojia"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="4"
+                android:background="@null"
+                android:hint="China中国"
+                android:textColor="@color/background_baise"
+                android:textColorHint="@color/text_list_item_desc"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx_A"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/layout_15dp"
+        android:layout_marginRight="@dimen/layout_15dp"
+        android:background="@color/appbar_background1"
+        android:visibility="gone" />
+
+    <!--护照ID-->
+    <LinearLayout
+        android:id="@+id/ll_huzhao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_55dp"
+        android:background="@color/myzoe_sm_background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:text="护照ID"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <EditText
+                android:id="@+id/edt_huzhao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:background="@null"
+                android:hint="请输入护照"
+                android:textColor="@color/background_baise"
+                android:textColorHint="@color/text_list_item_desc"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TxType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginTop="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:gravity="center"
+        android:text="信息一旦提交不可修改,请务必如实填写准确信息"
+        android:textColor="@color/appbar_background3"
+        android:textSize="@dimen/text_14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0dp"
+        android:layout_weight="1" />
+
+    <!--提交认证-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myzoe_sm_listview_backgroung"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_10dp"
+            android:text="信息一旦提交不可修改,请务必如实填写准确信息"
+            android:textColor="@color/text_list_item_desc"
+            android:textSize="@dimen/text_14sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/appbar_background3"
+            android:text="提交认证"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_18sp" />
+    </LinearLayout>
+</LinearLayout>

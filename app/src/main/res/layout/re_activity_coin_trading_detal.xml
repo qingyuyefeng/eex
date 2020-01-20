@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trading_back"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/view_coin_trading_detail_title" />
+
+  <ScrollView
+      android:id="@+id/sv_scroll"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:overScrollMode="never"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/layout_20dp"
+          android:layout_marginTop="@dimen/layout_10dp"
+          android:orientation="horizontal"
+          >
+
+        <TextView
+            android:id="@+id/tv_current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="@color/color_00a546"
+            android:textSize="@dimen/text_16sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_cny_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:text="≈0.00CNY"
+            android:textColor="@color/color_8fa2cc"
+            android:textSize="@dimen/text_10sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_rate_change"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:background="@color/color_3333CC5D"
+            android:gravity="center"
+            android:paddingLeft="@dimen/layout_5dp"
+            android:paddingRight="@dimen/layout_5dp"
+            android:text="0.00%"
+            android:textColor="@color/color_00a546"
+            android:textSize="@dimen/text_9sp"
+            />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/layout_20dp"
+          android:layout_marginTop="@dimen/layout_5dp"
+          android:layout_marginRight="@dimen/layout_20dp"
+          android:orientation="horizontal"
+          >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="24H量"
+              android:textColor="@color/color_8fa2cc"
+              android:textSize="@dimen/text_10sp"
+              />
+
+          <TextView
+              android:id="@+id/tv_24h"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_10dp"
+              android:text="0.00"
+              android:textColor="@color/color_8fa2cc"
+              android:textSize="@dimen/text_10sp"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="最高"
+              android:textColor="@color/color_8fa2cc"
+              android:textSize="@dimen/text_10sp"
+              />
+
+          <TextView
+              android:id="@+id/tv_highest"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_10dp"
+              android:text="0.00"
+              android:textColor="@color/color_8fa2cc"
+              android:textSize="@dimen/text_10sp"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="最低"
+              android:textColor="@color/color_8fa2cc"
+              android:textSize="@dimen/text_10sp"
+              />
+
+          <TextView
+              android:id="@+id/tv_lowest"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_10dp"
+              android:text="0.00"
+              android:textColor="@color/color_8fa2cc"
+              android:textSize="@dimen/text_10sp"
+              />
+        </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+
+
+        <!--K线-->
+        <com.icechao.klinelib.view.KLineChartView
+            android:id="@+id/kLineChartView"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:background="@color/trading_back3"
+            android:orientation="vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_5dp"
+            android:background="@color/trans"
+            android:orientation="vertical"
+            >
+
+          <include
+              android:id="@+id/kline_operater"
+              layout="@layout/kline_operator"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:visibility="gone"
+              />
+
+          <include
+              android:id="@+id/kline_time"
+              layout="@layout/kline_operator_time"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:visibility="gone"
+              />
+          <!--选择时间-->
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+
+            <com.eex.mvp.trading.KLineMenuView
+                android:id="@+id/trading_atthe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/trans"
+                android:orientation="horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                >
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                  <TextView
+                      android:id="@+id/trading_more"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:text="更多"
+                      android:textColor="@color/mine_item_text"
+                      android:textSize="@dimen/text_10sp"
+                      />
+
+                  <ImageView
+                      android:id="@+id/more_trading_image"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:src="@mipmap/more_trading"
+                      />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                  <TextView
+                      android:id="@+id/trading_index"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginLeft="@dimen/layout_10dp"
+                      android:text="指标"
+                      android:textColor="@color/mine_item_text"
+                      android:textSize="@dimen/text_10sp"
+                      />
+
+                  <ImageView
+                      android:id="@+id/more_index_image"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:src="@mipmap/more_trading"
+                      />
+                </LinearLayout>
+              </LinearLayout>
+
+            </LinearLayout>
+          </LinearLayout>
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <RadioGroup
+          android:id="@+id/rg_checks"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/layout_20dp"
+          android:layout_marginTop="@dimen/layout_10dp"
+          android:orientation="horizontal"
+          >
+
+        <RadioButton
+            android:id="@+id/rb_lege_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:text="@string/delegation_order"
+            android:textColor="@color/color_check_text"
+            android:textSize="@dimen/text_12sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_new_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:button="@null"
+            android:text="@string/newest_deals"
+            android:textColor="@color/color_check_text"
+            android:textSize="@dimen/text_12sp"
+            />
+      </RadioGroup>
+
+      <RelativeLayout
+          android:id="@+id/rl_container"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/layout_10dp"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:layout_marginLeft="@dimen/layout_20dp"
+          android:layout_marginTop="@dimen/layout_10dp"
+          android:layout_marginRight="@dimen/layout_20dp"
+          android:layout_marginBottom="@dimen/layout_10dp"
+          android:orientation="horizontal"
+          >
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_00a546"
+            android:text="@string/buy_in"
+            />
+
+        <Button
+            android:id="@+id/btn_sell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:background="@color/color_cc3333"
+            android:text="@string/sell_out"
+            />
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

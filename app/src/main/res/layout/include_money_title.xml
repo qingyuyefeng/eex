@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_base_toolber"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_48dp"
+    android:background="@color/appbar_background4"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_Biname"
+        android:layout_width="@dimen/layout_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tx_BiName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_14sp" />
+
+        <ImageView
+            android:id="@+id/img_biname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xiala" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_type"
+        android:layout_width="@dimen/layout_0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_14sp" />
+
+        <ImageView
+            android:id="@+id/img_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xiala" />
+    </LinearLayout>
+</LinearLayout>

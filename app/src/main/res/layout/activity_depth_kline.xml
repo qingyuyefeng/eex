@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/gred" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="买"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:layout_width="@dimen/layout_10dp"
+            android:layout_height="@dimen/layout_10dp"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:background="@color/appbar_background3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_5dp"
+            android:text="卖"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_13sp" />
+    </LinearLayout>
+
+    <com.eex.market.frgament.text.DepthMapView
+        android:id="@+id/depth_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+</LinearLayout>

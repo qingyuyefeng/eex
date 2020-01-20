@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/white"
+  android:padding="@dimen/dp_10">
+
+  <TextView
+    android:id="@+id/tv_pair"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableRight="@mipmap/ic_deal_pair_selector"
+    android:drawablePadding="@dimen/layout_5dp"
+    android:textColor="@color/color_0080ff"
+    android:textSize="@dimen/text_16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="CNY/USD" />
+
+  <TextView
+    android:id="@+id/tv_diff"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_solid_3300a546"
+    android:textColor="@color/color_00a546"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@id/tv_pair"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/btn_menu"
+    android:layout_width="@dimen/layout_30dp"
+    android:layout_height="@dimen/layout_30dp"
+    android:scaleType="fitXY"
+    android:src="@mipmap/ic_menu"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:visibility="gone"/>
+
+  <ImageView
+    android:id="@+id/btn_index_market"
+    android:layout_width="@dimen/layout_30dp"
+    android:layout_height="@dimen/layout_30dp"
+    android:scaleType="fitXY"
+    android:src="@mipmap/ic_index_market"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/btn_menu"
+    app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

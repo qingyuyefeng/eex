@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appbar_background2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tx_day"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_48dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_14sp" />
+        <TextView
+            android:id="@+id/tx_g1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:background="@color/myzoe_listview_backgroung"/>
+        <TextView
+            android:id="@+id/tx_month"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_48dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_14sp" />
+        <TextView
+            android:id="@+id/tx_g2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1dp"
+            android:visibility="gone"
+            android:background="@color/myzoe_listview_backgroung"/>
+        <TextView
+            android:id="@+id/tx_year"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_48dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+</LinearLayout>

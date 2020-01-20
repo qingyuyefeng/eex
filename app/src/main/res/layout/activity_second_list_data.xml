@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp"></com.eex.common.view.ComTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="解锁币种"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tx_Biname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_18dp"
+                android:layout_weight="3"
+                android:text="USDT"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/appbar_background" />
+    </LinearLayout>
+
+    <!--秒杀数量-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/edt_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="秒杀数量"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tx_BiNuber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_18dp"
+                android:layout_weight="3"
+                android:text="0BTC"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/appbar_background" />
+    </LinearLayout>
+    <!--秒杀单价-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="秒杀单价"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/BiPany"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_18dp"
+                android:layout_weight="3"
+                android:text="0USDT"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/appbar_background" />
+    </LinearLayout>
+    <!--秒杀总金额-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="秒杀总金额"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tx_WholeMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_18dp"
+                android:layout_weight="3"
+                android:text="0USDT"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1dp"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/appbar_background" />
+    </LinearLayout>
+    <!--市场单价-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="市场单价"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tx_marketDPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_18dp"
+                android:layout_weight="3"
+                android:text="0USDT"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/appbar_background" />
+    </LinearLayout>
+    <!--市场总金额-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="市场总金额"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/tx_marketZPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_18dp"
+                android:layout_weight="3"
+                android:text="0USDT"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/appbar_background" />
+    </LinearLayout>
+    <!--合约倒计时-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="合约倒计时"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/layout_14dp" />
+
+            <TextView
+                android:id="@+id/tx_Time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_18dp"
+                android:layout_weight="3"
+                android:text="0天0:00:00"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_10dp"
+        android:text="秒杀到的货币在合约期后即可获得全部数量,如果提前解除锁定,那么只能退回秒杀时所支付的金额"
+        android:textColor="@color/money_name"
+        android:textSize="@dimen/text_13sp" />
+    <!--到账资金0USDT-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tx_meMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到账资金0USDT"
+                android:textColor="@color/appbar_background3"
+                android:textSize="@dimen/text_13sp" />
+
+            <Button
+                android:id="@+id/btn_qiang"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_margin="@dimen/layout_10dp"
+                android:background="@drawable/backbtn"
+                android:text="强制解除"
+                android:textColor="@color/background_baise" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

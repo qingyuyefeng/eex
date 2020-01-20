@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9"
+    android:orientation="vertical">
+
+    <com.eex.common.view.NewComTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/level_3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_40dp">
+
+            <TextView
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/own_id_card_front" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:text="@string/level_3_tip"
+                android:textColor="@color/color_8fa2cc"
+                android:textSize="@dimen/text_10sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_10dp">
+
+                <ImageView
+                    android:id="@+id/iv_font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:background="@mipmap/font_pic"/>
+                <Button
+                    android:id="@+id/btn_font"
+                    android:layout_width="@dimen/layout_100dp"
+                    android:layout_height="@dimen/layout_30dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_12sp"
+                    android:text="@string/post_font"
+                    android:background="@drawable/backbtn"/>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_30dp"
+                android:text="@string/own_id_card_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:text="@string/level_3_tip"
+                android:textColor="@color/color_8fa2cc"
+                android:textSize="@dimen/text_10sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_10dp">
+
+                <ImageView
+                    android:id="@+id/iv_back_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:background="@mipmap/back_pic"/>
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="@dimen/layout_100dp"
+                    android:layout_height="@dimen/layout_30dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_12sp"
+                    android:text="@string/post_back"
+                    android:background="@drawable/backbtn"/>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_30dp"
+                android:text="@string/own_font_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_5dp"
+                android:text="@string/level_3_tip2"
+                android:textColor="@color/color_8fa2cc"
+                android:textSize="@dimen/text_10sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_10dp">
+
+                <ImageView
+                    android:id="@+id/iv_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:background="@mipmap/face_pic"/>
+                <Button
+                    android:id="@+id/btn_pic"
+                    android:layout_width="@dimen/layout_100dp"
+                    android:layout_height="@dimen/layout_30dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_12sp"
+                    android:text="@string/post_pic"
+                    android:background="@drawable/backbtn"/>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_30dp"
+                android:background="@drawable/backbtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12sp"
+                android:layout_marginTop="@dimen/layout_40dp"
+                android:layout_marginBottom="@dimen/layout_40dp"
+                android:text="@string/post_submit"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

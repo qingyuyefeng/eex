@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_10dp">
+
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ACIP"
+            android:textColor="@color/mine_item_text"
+            android:textSize="@dimen/text_14sp" />
+
+        <TextView
+            android:id="@+id/item_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_5dp"
+            android:layout_marginTop="@dimen/layout_3dp"
+            android:text="(ACIP)"
+            android:textColor="@color/mine_item_text"
+            android:textSize="@dimen/text_12sp" />
+
+
+        <TextView
+            android:id="@+id/item_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:layout_marginTop="@dimen/layout_3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+10%"
+            android:textColor="@color/color_33CC5D"
+            android:textSize="@dimen/text_12sp" />
+
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:layout_marginTop="@dimen/layout_3dp"
+            android:text="+10%"
+            android:textColor="@color/mine_item_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/item_scny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginTop="@dimen/layout_3dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:text="10%"
+            android:textColor="@color/mine_item_text"
+            android:textSize="@dimen/text_10sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

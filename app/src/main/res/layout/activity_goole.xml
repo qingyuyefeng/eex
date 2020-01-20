@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+    <com.eex.common.view.ComTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp"
+        android:id="@+id/comtitlebar">
+
+    </com.eex.common.view.ComTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_Zxing"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:padding="@dimen/layout_10dp"
+            android:text="@string/google_tip1"
+            android:textColor="@color/text_list_item_desc"
+            android:textSize="@dimen/text_13sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_miyao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_55dp"
+        android:background="@color/appbar_background2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="1"
+                android:text="@string/gooleMY"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <EditText
+                android:id="@+id/edt_goole"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="4"
+                android:background="@null"
+                android:textColor="@color/background_baise"
+                android:textColorHint="@color/text_list_item_desc"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/text_fz"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:gravity="center"
+                android:text="@string/gooleFZ1"
+                android:textColor="@color/appbar_background3"
+                android:textSize="@dimen/text_14sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1dp"
+            android:layout_marginLeft="@dimen/layout_15dp"
+            android:layout_marginRight="@dimen/layout_15dp"
+            android:background="@color/appbar_background1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Google"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_55dp"
+        android:background="@color/activity_marginTop_da"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="1"
+                android:text="登录密码"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <EditText
+                android:id="@+id/edt_Loginpwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="4"
+                android:background="@null"
+                android:textColor="@color/background_baise"
+                android:textColorHint="@color/text_list_item_desc"
+                android:textSize="@dimen/text_14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1dp"
+            android:layout_marginLeft="@dimen/layout_15dp"
+            android:layout_marginRight="@dimen/layout_15dp"
+            android:background="@color/appbar_background1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_55dp"
+        android:background="@color/appbar_background2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="1"
+                android:text="@string/google_verification_code"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_14sp" />
+
+            <EditText
+                android:id="@+id/edt_YZM"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:hint="@string/gooleLCYZM"
+                android:textColor="@color/background_baise"
+                android:textColorHint="@color/text_list_item_desc"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/layout_15dp"
+                android:gravity="center"
+                android:text="@string/gooleZT"
+                android:textColor="@color/appbar_background3"
+                android:textSize="@dimen/text_14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_1dp"
+        android:layout_marginLeft="@dimen/layout_15dp"
+        android:layout_marginRight="@dimen/layout_15dp"
+        android:background="@color/appbar_background1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_10dp">
+
+        <TextView
+            android:id="@+id/tx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gooleLC1"
+            android:textColor="@color/text_list_item_desc"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tx2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_5dp"
+            android:text="@string/gooleLC2"
+            android:textColor="@color/text_list_item_desc"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tx3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_5dp"
+            android:text="@string/gooleLC3"
+            android:textColor="@color/text_list_item_desc"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/tx4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_5dp"
+            android:text="@string/gooleLC4"
+            android:textColor="@color/text_list_item_desc"
+            android:textSize="@dimen/text_12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_OK"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/backbtn"
+        android:layout_marginRight="@dimen/layout_10dp"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:text="@string/gooleLC5"
+        android:textColor="@color/background_baise"
+        android:textSize="@dimen/text_18sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appbar_background2"
+        android:visibility="visible" />
+</LinearLayout>

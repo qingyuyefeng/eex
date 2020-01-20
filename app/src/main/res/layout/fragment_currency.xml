@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/color_f2f4f9"
+  android:orientation="vertical">
+
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/title_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/dp_10">
+
+    <TextView
+      android:id="@+id/tv_pair"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableRight="@mipmap/ic_deal_pair_selector"
+      android:drawablePadding="@dimen/layout_5dp"
+      android:textColor="@color/color_0080ff"
+      android:textSize="@dimen/text_16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="CNY/USD" />
+
+    <TextView
+      android:id="@+id/btn_order"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="订单"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/sp_14"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/btn_buy_instant"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="@dimen/layout_20dp"
+      android:text="极速购买"
+      android:textColor="@color/color_4d6599"
+      android:textSize="@dimen/sp_14"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/btn_order"
+      app:layout_constraintTop_toTopOf="parent"
+      android:visibility="gone"/>
+  </android.support.constraint.ConstraintLayout>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/layout_10dp"
+    android:paddingRight="@dimen/layout_10dp"
+    android:background="@color/white">
+
+    <com.androidkun.xtablayout.XTabLayout
+      android:id="@+id/deal_type"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@+id/tv_publish"
+      app:xTabDividerWidthWidthText="true"
+      app:xTabIndicatorColor="@color/color_00a546"
+      app:xTabIndicatorHeight="@dimen/layout_2dp"
+      app:xTabIndicatorWidth="@dimen/layout_40dp"
+      app:xTabMode="scrollable"
+      app:xTabSelectedTextColor="@color/color_00a546"
+      app:xTabSelectedTextSize="@dimen/text_16sp"
+      app:xTabTextColor="@color/color_8fa2cc"
+      app:xTabTextSize="@dimen/text_16sp" />
+
+    <TextView
+      android:id="@+id/tv_publish"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableLeft="@drawable/ic_publish_ad"
+      android:drawablePadding="@dimen/layout_2dp"
+      android:gravity="center"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="@dimen/layout_20dp"
+      android:layout_toLeftOf="@+id/tv_sort"
+      android:text="@string/publish_ad"
+      android:textColor="@color/color_8fa2cc"
+      android:textSize="@dimen/text_12sp" />
+
+    <TextView
+      android:id="@+id/tv_sort"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableRight="@drawable/ic_order"
+      android:drawablePadding="@dimen/layout_2dp"
+      android:gravity="center"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:text="@string/currency_order"
+      android:textColor="@color/color_8fa2cc"
+      android:textSize="@dimen/text_12sp" />
+  </RelativeLayout>
+
+  <android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_currency_transaction"
+        tools:itemCount="10"
+        />
+
+      <include
+        android:id="@+id/empty"
+        layout="@layout/view_empty"
+        android:visibility="gone" />
+    </RelativeLayout>
+  </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+
+    <!--分红币种-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/layout_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:text="分红币种"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/tx_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_5dp"
+            android:text="BTC"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:src="@drawable/yifafang" />
+    </LinearLayout>
+    <!--流通总额-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/layout_5dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_47dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/layout_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="流通总额"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+
+            <TextView
+                android:id="@+id/tx_downNuber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:text="0EBT"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1dp"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/fenge" />
+    </LinearLayout>
+    <!--单币流通分红-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/layout_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="单币流通分红"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+
+            <TextView
+                android:id="@+id/singleCoinRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:text="0BTC"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1dp"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/fenge" />
+    </LinearLayout>
+    <!--流通分红总额-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/layout_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="流通分红总额"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+
+            <TextView
+                android:id="@+id/TotalNuber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:text="0BTC"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--锁仓总额-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:layout_marginTop="@dimen/layout_5dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/layout_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="锁仓总额"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+
+            <TextView
+                android:id="@+id/tx_scNuber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:text="0EBT"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1dp"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/fenge" />
+    </LinearLayout>
+    <!--单币锁仓分红约-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="单币锁仓分红约"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+
+            <TextView
+                android:id="@+id/singilNber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:text="0BTC"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_1dp"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/fenge" />
+    </LinearLayout>
+    <!--锁仓分红总额-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/layout_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="锁仓分红总额"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+
+            <TextView
+                android:id="@+id/scTotalNuber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:text="0BTC"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--合计-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_47dp"
+        android:layout_marginTop="@dimen/layout_5dp"
+        android:background="@color/edt_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/layout_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:text="合计"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+
+            <TextView
+                android:id="@+id/Total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:text="0BTC"
+                android:textColor="@color/appbar_background3"
+                android:textSize="@dimen/text_15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--分红日期-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom">
+
+        <TextView
+            android:id="@+id/tx_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_30dp"
+            android:text="分红日期"
+            android:textColor="@color/accmulative"
+            android:textSize="@dimen/text_13sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

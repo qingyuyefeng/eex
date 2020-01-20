@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/flash0"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash1"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash2"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash3"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash4"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash5"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash6"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash7"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash8"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash9"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash10"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash11"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash12"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash13"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash14"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash15"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash16"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash17"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash18"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash19"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash20"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash21"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash22"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash23"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash24"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash25"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash26"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash27"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash28"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash29"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash30"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash31"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash32"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash33"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash34"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash35"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash36"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash37"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash38"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash39"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash40"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash41"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash42"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash43"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash44"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash45"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash46"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash47"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash48"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash49"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash50"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash51"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash52"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash53"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash54"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash55"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash56"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash57"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash58"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash59"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash60"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash61"
+        android:duration="70" />
+    <item
+        android:drawable="@drawable/flash62"
+        android:duration="70" />
+
+</animation-list>

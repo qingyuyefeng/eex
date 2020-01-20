@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+    <com.eex.common.view.ComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_25dp">
+
+    </com.eex.common.view.ComTitleBar>
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/LL_fenRed"
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:background="@color/edt_gray"
+                        android:orientation="horizontal">
+                        <!--24h待分红累计-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="24h待分红累计"
+                                android:textColor="@color/background_baise"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <TextView
+                                android:id="@+id/tx_time_red"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_15dp"
+                                android:text="0USDT"
+                                android:textColor="@color/appbar_background3"
+                                android:textSize="@dimen/text_16sp" />
+                        </LinearLayout>
+                        <!--查看分红-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/layout_10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="查看分红"
+                                android:textColor="@color/money_name"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/gengduo" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/fenge" />
+                    <!--24H单币持有分红-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:background="@color/edt_gray"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="24H单币持有分红"
+                                android:textColor="@color/background_baise"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <TextView
+                                android:id="@+id/time_dan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_15dp"
+                                android:text="0USDT"
+                                android:textColor="@color/appbar_background3"
+                                android:textSize="@dimen/text_16sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/fenge" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="3dp"
+                                    android:text="昨日分红累计约"
+                                    android:textColor="@color/background_baise"
+                                    android:textSize="@dimen/text_13sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/yifafang" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tx_upDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_15dp"
+                                android:text="0USDT"
+                                android:textColor="@color/appbar_background3"
+                                android:textSize="@dimen/text_16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_5dp"
+                                android:text="每日香港时间12:00更新分红"
+                                android:textColor="@color/money_name"
+                                android:textSize="@dimen/layout_10dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/fenge" />
+                    <!--EBT流通量-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:background="@color/edt_gray"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="EBT流通量"
+                                android:textColor="@color/background_baise"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <TextView
+                                android:id="@+id/ebt_nuber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_15dp"
+                                android:text="0枚"
+                                android:textColor="@color/appbar_background3"
+                                android:textSize="@dimen/text_16sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/fenge" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_MineralName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="EBT矿池量"
+                                android:textColor="@color/background_baise"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <TextView
+                                android:id="@+id/tx_MineralMoney"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_15dp"
+                                android:text="0枚"
+                                android:textColor="@color/appbar_background3"
+                                android:textSize="@dimen/text_16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/fenge" />
+                    <!--EBT当前算法-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:background="@color/edt_gray"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/CalculationName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="EBT当前算法"
+                                android:textColor="@color/background_baise"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <TextView
+                                android:id="@+id/tx_CalculationMoney"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_15dp"
+                                android:text="0USDT"
+                                android:textColor="@color/appbar_background3"
+                                android:textSize="@dimen/text_16sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1px"
+                            android:layout_height="match_parent"
+                            android:background="@color/fenge" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_oneday_nuber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="EBT当日产量"
+                                android:textColor="@color/background_baise"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <TextView
+                                android:id="@+id/tx_tx_nuberMoney"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/layout_15dp"
+                                android:text="0枚"
+                                android:textColor="@color/appbar_background3"
+                                android:textSize="@dimen/text_16sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--规则说明-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_10dp"
+                        android:layout_marginBottom="@dimen/layout_10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_10dp"
+                            android:layout_weight="1"
+                            android:text="规则说明"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_13sp" />
+
+                        <Button
+                            android:id="@+id/btn_Red"
+                            android:layout_width="77dp"
+                            android:layout_height="27dp"
+                            android:layout_marginRight="@dimen/layout_10dp"
+                            android:background="@drawable/backbtn"
+                            android:text="我的分红"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_13sp" />
+
+                        <Button
+                            android:id="@+id/Btn_mining"
+                            android:layout_width="77dp"
+                            android:layout_height="27dp"
+                            android:layout_marginRight="@dimen/layout_10dp"
+                            android:background="@drawable/backbtn"
+                            android:text="我的挖矿"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_13sp" />
+                    </LinearLayout>
+                    <!--24H待分红累计说明-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24H待分红累计说明"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="近24小时内指定交易对产生的手续费的80%收入分配给EBT持有者，分红派发的币种为平台收到的手续费币种"
+                            android:textColor="@color/money_name"
+                            android:textSize="@dimen/text_12sp" />
+                    </LinearLayout>
+                    <!--24h单币持有分红说明-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_marginTop="@dimen/layout_15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24h单币持有分红说明"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="24H单分红=24H待分红累计/EBT总量"
+                            android:textColor="@color/money_name"
+                            android:textSize="@dimen/text_12sp" />
+                    </LinearLayout>
+                    <!--EBT流通量说明-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_marginTop="@dimen/layout_15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EBT流通量说明"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="EBT流通量=EBT总的发行量-EBT销毁总量-EBT官方锁仓量-EBT锁仓理财"
+                            android:textColor="@color/money_name"
+                            android:textSize="@dimen/text_12sp" />
+                    </LinearLayout>
+                    <!--EBT矿池量说明-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_marginTop="@dimen/layout_15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EBT矿池量说明"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="EBT来源有两种，一是平台不定期空投，二是通过EBT交易区产生的EBT交易手续费全部放入矿池中"
+                            android:textColor="@color/money_name"
+                            android:textSize="@dimen/text_12sp" />
+                    </LinearLayout>
+
+                    <!--EBT当前算法-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_marginTop="@dimen/layout_15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EBT当前算法"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="产出1EBT需要的USDT成交总额（交易手续费全部折算成EBT等值数量）"
+                            android:textColor="@color/money_name"
+                            android:textSize="@dimen/text_12sp" />
+                    </LinearLayout>
+
+                    <!--EBT当前日产量  and 通过交易挖矿产生的日产量总额-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_10dp"
+                        android:layout_marginTop="@dimen/layout_15dp"
+                        android:layout_marginBottom="@dimen/layout_10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="EBT当前日产量"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="通过交易挖矿产生的日产量总额"
+                            android:textColor="@color/money_name"
+                            android:textSize="@dimen/text_12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

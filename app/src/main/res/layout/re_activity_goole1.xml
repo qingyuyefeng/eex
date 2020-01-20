@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f4f9"
+    android:orientation="vertical">
+    <com.eex.common.view.NewComTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_resource="@string/bind_google_verification"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/layout_20dp"
+        android:paddingRight="@dimen/layout_20dp"
+        android:layout_marginLeft="@dimen/layout_10dp"
+        android:layout_marginRight="@dimen/layout_10dp">
+
+        <ImageView
+            android:id="@+id/iv_zxing"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="@dimen/layout_20dp"
+            android:padding="@dimen/layout_12dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_secret_key"
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="AQCM7YGFFM7SDTT"/>
+            <TextView
+                android:id="@+id/tv_copy_secret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_5dp"
+                android:layout_marginLeft="@dimen/layout_20dp"
+                style="@style/normal_text"
+                android:textColor="@color/color_0080ff"
+                android:text="@string/copy"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_30dp"
+            android:textSize="@dimen/text_12sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/layout_35dp"
+            android:background="@color/color_0080ff"
+            android:text="@string/next_step"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_40dp"
+            android:layout_marginBottom="@dimen/layout_40dp"
+            android:textSize="@dimen/text_8sp"
+            android:textColor="@color/color_cfd6e6"
+            android:text="@string/google_tip1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_30dp"
+        android:layout_marginTop="@dimen/layout_30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/normal_text"
+            android:text="@string/google_step1"/>
+        <ImageView
+            android:id="@+id/iv_google_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_7dp"
+            android:padding="@dimen/layout_5dp"
+            android:src="@mipmap/google_downloader"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_30dp"
+        android:layout_marginRight="@dimen/layout_30dp"
+        android:layout_marginBottom="@dimen/layout_30dp"
+        android:layout_marginTop="@dimen/layout_20dp"
+        style="@style/normal_text"
+        android:text="@string/google_step2"/>
+
+</LinearLayout>

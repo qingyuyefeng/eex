@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <com.icechao.klinelib.view.ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trading_back"
+        android:orientation="vertical"
+        >
+
+
+      <!--顶部按钮-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:orientation="horizontal"
+          android:padding="@dimen/layout_10dp"
+          >
+
+        <!--交易对  选择交易对  全屏K线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+          <!--交易对-->
+          <TextView
+              android:id="@+id/trading_currency_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="BTC/USDT"
+              android:textColor="@color/text_color"
+              android:textSize="@dimen/text_16sp"
+              />
+
+          <!--选择交易对-->
+          <ImageView
+              android:id="@+id/trading_currency_image"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_15dp"
+              android:src="@mipmap/trading_currency_image"
+              />
+
+          <!--全屏K线-->
+
+          <ImageView
+              android:id="@+id/trading_full_screen_image"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_20dp"
+              android:src="@mipmap/trading_full_screen"
+              />
+        </LinearLayout>
+
+        <!--数值-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal"
+            >
+
+          <TextView
+              android:id="@+id/trading_value"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:text="93964.52"
+              android:textColor="@color/color_00a546"
+              android:textSize="@dimen/text_16sp"
+              />
+
+          <TextView
+              android:id="@+id/trading_percentage"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_5dp"
+              android:layout_marginTop="@dimen/layout_3dp"
+              android:text="+5.13%"
+              android:textColor="@color/color_00a546"
+              android:textSize="@dimen/text_12sp"
+              />
+
+
+        </LinearLayout>
+      </LinearLayout>
+
+
+      <!--K线-->
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/layout_10dp"
+          >
+
+
+        <com.icechao.klinelib.view.KLineChartView
+            android:id="@+id/kLineChartView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@color/trading_back3">
+
+        </com.icechao.klinelib.view.KLineChartView>
+
+
+      </RelativeLayout>
+
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_2dp"
+          android:background="@color/trading_back1"
+          />
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/layout_5dp"
+          android:orientation="vertical"
+          >
+
+        <include
+            android:id="@+id/kline_operater"
+            layout="@layout/kline_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            />
+
+        <include
+            android:id="@+id/kline_time"
+            layout="@layout/kline_operator_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            />
+
+
+        <!--选择时间-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+          <com.eex.mvp.trading.KLineMenuView
+              android:id="@+id/trading_atthe"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:background="@color/trading_back"
+              android:orientation="horizontal"
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="3"
+              android:orientation="horizontal"
+              >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  >
+
+                <TextView
+                    android:id="@+id/trading_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="更多"
+                    android:textColor="@color/mine_item_text"
+                    android:textSize="@dimen/text_10sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/more_trading_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/more_trading"
+                    />
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  >
+
+                <TextView
+                    android:id="@+id/trading_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:text="指标"
+                    android:textColor="@color/mine_item_text"
+                    android:textSize="@dimen/text_10sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/more_index_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/more_trading"
+                    />
+              </LinearLayout>
+            </LinearLayout>
+
+          </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_5dp"
+          android:background="@color/trading_back1"
+          />
+
+      <!--市价下单 触发下单 加和减 输入数量-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="@dimen/layout_5dp"
+          >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+          <com.eex.mvp.trading.KLineMenuView
+              android:id="@+id/trading_price_order"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:background="@color/trading_back"
+              android:orientation="horizontal"
+              />
+
+          <LinearLayout
+              android:id="@+id/trading_finger_guide"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="right|center"
+              android:layout_weight="1"
+              android:gravity="right|center"
+              android:orientation="horizontal"
+              >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新手指南"
+                android:textColor="@color/trading_back2"
+                android:textSize="@dimen/text_12sp"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:src="@mipmap/trading_finger_guide"
+                android:visibility="gone"
+                />
+
+
+          </LinearLayout>
+
+
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_5dp"
+          android:background="@color/trading_back1"
+          />
+
+
+      <!--触发价  加和减 输入 -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/layout_5dp"
+          android:gravity="center"
+          android:orientation="horizontal"
+          >
+
+        <!--触发价  加和减 输入 -->
+        <LinearLayout
+            android:id="@+id/linear_add"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="@dimen/layout_40dp"
+              android:layout_marginLeft="@dimen/layout_10dp"
+              android:layout_weight="1"
+              android:background="@drawable/trading_backroung"
+              android:orientation="horizontal"
+              >
+
+            <!--触发价-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:text="买入价"
+                android:textColor="@color/trading_back2"
+                android:textSize="@dimen/text_10sp"
+                />
+
+            <!--输入触发价-->
+            <EditText
+                android:id="@+id/trading_edtexit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/layout_5dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:background="@color/trans"
+                android:digits="@string/stay_number"
+                android:hint=""
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/main_title1"
+                android:textSize="@dimen/text_12sp"
+                />
+
+            <!--触发价 减-->
+            <ImageView
+                android:id="@+id/trading_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/layout_5dp"
+                android:gravity="center"
+
+                android:padding="@dimen/layout_5dp"
+                android:src="@mipmap/trading_reductionof"
+                />
+
+            <!--触发价 加-->
+            <ImageView
+                android:id="@+id/trading_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/layout_5dp"
+                android:gravity="center"
+                android:padding="@dimen/layout_5dp"
+                android:src="@mipmap/trading_add"
+                />
+          </LinearLayout>
+
+
+          <!--买入数 加和减 输入-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/trading_backroung"
+            android:orientation="horizontal"
+            >
+          <!--买入数-->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_10dp"
+              android:text="买入数"
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_10sp"
+              />
+
+          <!-- 输入 买入数-->
+
+          <!--买入数  减-->
+          <EditText
+              android:id="@+id/trading_BTC_edtexit"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_5dp"
+              android:layout_weight="1"
+              android:background="@color/trans"
+              android:inputType="numberDecimal"
+              android:digits="@string/stay_number"
+              android:hint=""
+              android:singleLine="true"
+              android:textColor="@color/text_color"
+              android:textColorHint="@color/main_title1"
+              android:textSize="@dimen/text_14sp"
+              />
+
+
+
+
+          <ImageView
+              android:id="@+id/trading_BTC_reduce"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_5dp"
+              android:gravity="center"
+              android:padding="@dimen/layout_5dp"
+              android:src="@mipmap/trading_reductionof"
+              />
+
+          <!--买入数   加-->
+          <ImageView
+              android:id="@+id/trading_BTC_add"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_10dp"
+              android:gravity="center"
+              android:padding="@dimen/layout_5dp"
+              android:src="@mipmap/trading_add"
+              />
+
+
+        </LinearLayout>
+
+      </LinearLayout>
+      <!--买入市值   杠杆倍数-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/layout_10dp"
+          android:orientation="horizontal"
+          >
+
+        <!--买入市值   杠杆倍数-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_trading_backroung"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="买入市值"
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_10sp"
+              />
+
+          <!--买入市值-->
+          <TextView
+              android:id="@+id/trading_Buy_value"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_10sp"
+              />
+
+          <!--买入市值 交易对-->
+          <TextView
+              android:id="@+id/trading_BiBuy_value"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="CNY"
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_10sp"
+              />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_5dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_trading_backroung"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+
+          <!--杠杆倍数-->
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/layout_25dp"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:orientation="horizontal"
+              >
+
+            <Button
+                android:id="@+id/btnXD0"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:background="@color/trans"
+                android:text="0%"
+                android:textColor="@color/mine_item_text"
+                android:textSize="@dimen/text_10sp"
+                />
+
+
+            <Button
+                android:id="@+id/btnXD1"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@color/trans"
+                android:text="25%"
+                android:textColor="@color/mine_item_text"
+                android:textSize="@dimen/text_10sp"
+                />
+
+            <Button
+                android:id="@+id/btnXD2"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@color/trans"
+                android:text="50%"
+                android:textColor="@color/mine_item_text"
+                android:textSize="@dimen/layout_10dp"
+                />
+
+            <Button
+                android:id="@+id/btnXD3"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@color/trans"
+                android:text="75%"
+                android:textColor="@color/mine_item_text"
+                android:textSize="@dimen/layout_10dp"
+                />
+
+            <Button
+                android:id="@+id/btnXD4"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:background="@color/trans"
+                android:text="100%"
+                android:textColor="@color/mine_item_text"
+                android:textSize="@dimen/layout_10dp"
+                />
+          </LinearLayout>
+
+
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+      <!--支付保证金 杠杠  资金划转-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/layout_10dp"
+          android:orientation="horizontal"
+          >
+
+        <!--买入市值   杠杆倍数-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/trading_backroung"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+          <!--支付保证金-->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_5dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="支付保证金"
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_10sp"
+              />
+          <!--支付保证金-->
+          <EditText
+              android:id="@+id/trading_Payment_of"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:background="@null"
+              android:digits="@string/stay_number"
+              android:gravity="center"
+              android:singleLine="true"
+              android:inputType="number"
+              android:text=""
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_14sp"
+              />
+
+          <!--支付保证金  交易对-->
+          <TextView
+              android:id="@+id/trading_BiPayment_of"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="USDT"
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_10sp"
+              />
+
+
+        </LinearLayout>
+
+        <!--选择杠杠的倍数-->
+
+        <LinearLayout
+            android:id="@+id/choice_Charge_money"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_weight="1.4"
+            android:background="@drawable/trading_backroung"
+            android:orientation="horizontal"
+            >
+          <!--杠杠-->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_5dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="杠杆"
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_10sp"
+              />
+
+          <!--倍数-->
+          <TextView
+              android:id="@+id/trading_Charge_money"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_10dp"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_14sp"
+              />
+
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_5dp"
+              android:layout_marginRight="@dimen/layout_5dp"
+              android:gravity="center"
+              android:src="@mipmap/trading_leverage"
+              />
+
+        </LinearLayout>
+
+        <!--资金划转-->
+        <LinearLayout
+            android:id="@+id/trading_Transfer_of"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_weight="1.4"
+            android:orientation="horizontal"
+            >
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:src="@mipmap/trading_transfer_of"
+              />
+          <!--资金划转-->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:text="资金划转"
+              android:textColor="@color/text_color"
+              android:textSize="@dimen/text_12sp"
+              />
+
+
+        </LinearLayout>
+      </LinearLayout>
+
+      <!-- 止盈 止损  可用-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/layout_10dp"
+          android:orientation="horizontal"
+          >
+
+
+        <!-- 止盈 止损  可用-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+          <!--止盈-->
+          <TextView
+              android:id="@+id/trading_Check_surplus"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:singleLine="true"
+              android:text="止盈"
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_10sp"
+              />
+
+          <!--止损-->
+          <TextView
+              android:id="@+id/trading_Stop_loss"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:singleLine="true"
+              android:text="止损"
+              android:textColor="@color/trading_back2"
+              android:textSize="@dimen/text_10sp"
+              />
+
+        </LinearLayout>
+
+        <!--可用-->
+        <TextView
+            android:id="@+id/trading_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:singleLine="true"
+            android:text="可用 0 USDT"
+            android:textColor="@color/trading_back2"
+            android:textSize="@dimen/text_10sp"
+            />
+
+      </LinearLayout>
+      <!--买涨-->
+      <!--买跌-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="@dimen/layout_10dp"
+          android:orientation="horizontal"
+          >
+
+        <!--买涨-->
+        <Button
+            android:id="@+id/trading_Buy_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:text="买涨"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp"
+            />
+
+
+        <!--买跌-->
+        <Button
+            android:id="@+id/trading_To_buy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:background="@color/trading_btn"
+            android:text="买跌"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp"
+
+            />
+
+
+      </LinearLayout>
+      <!--间隔线-->
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_5dp"
+          android:layout_marginTop="@dimen/layout_10dp"
+          android:background="@color/trading_back1"
+          />
+
+      <!--持仓  结算  撤单-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/layout_10dp"
+          android:orientation="horizontal"
+          android:paddingLeft="@dimen/layout_10dp"
+          >
+
+        <!--持仓  结算  撤单-->
+        <com.eex.mvp.trading.KLineMenuView
+            android:id="@+id/trading_trading_Warehousing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/trading_back"
+            android:orientation="horizontal"
+            />
+
+        <!--只显示当前交易对-->
+        <CheckBox
+            android:id="@+id/trading_Show_only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/trading_ck"
+            android:gravity="center"
+            android:text="只显示当前交易对"
+            android:textColor="@color/trading_back2"
+            android:textSize="@dimen/text_12sp"
+            />
+
+
+        <!--查看更多-->
+        <TextView
+            android:id="@+id/trading_view_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:gravity="center"
+            android:text="查看更多"
+            android:textColor="@color/trading_back2"
+            android:textSize="@dimen/text_12sp"
+            />
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_5dp"
+          android:layout_marginTop="@dimen/layout_10dp"
+          android:background="@color/trading_back1"
+          />
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/rv_futures_foot"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/layout_20dp"
+          android:background="@color/trading_back3"
+          android:overScrollMode="never"
+          />
+
+      <TextView
+          android:id="@+id/tv_empty"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/layout_60dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="@string/Temporarily_no_data"
+          android:textColor="@color/color_4d6599"
+          android:textSize="14sp"
+          android:visibility="gone"
+          />
+
+    </LinearLayout>
+  </com.icechao.klinelib.view.ScrollView>
+
+
+</LinearLayout>

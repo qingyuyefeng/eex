@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbar_background2"
+    android:orientation="vertical">
+
+    <com.eex.market.weight.WebViewScrollView
+        android:id="@+id/scrView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_48dp"
+                android:layout_marginTop="@dimen/layout_25dp"
+                android:gravity="center">
+
+                <include layout="@layout/title_kline" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LLtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/activity_marginTop_da"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/layout_10dp"
+                android:paddingTop="@dimen/layout_3dp"
+                android:paddingBottom="@dimen/layout_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/activity_marginTop_da"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_90dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/kline_tv_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="@dimen/layout_100dp"
+                            android:text="0.00"
+                            android:textColor="@color/text_color_red"
+                            android:textSize="@dimen/text_14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/kline_tv_sub"
+                            style="@style/MainCommonText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/text_color_red"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:id="@+id/kline_tv_percent"
+                            style="@style/MainCommonText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/background_baise"
+                            android:textSize="@dimen/text_14sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_90dp"
+                        android:layout_weight="1.6"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/layout_5dp">
+
+                            <TextView
+                                style="@style/MainCommonText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="5dp"
+                                android:text="@string/k_max"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <TextView
+                                android:id="@+id/kline_tv_max"
+                                style="@style/MainCommonText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0.00"
+                                android:textSize="@dimen/text_13sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/layout_5dp">
+
+                            <TextView
+                                style="@style/MainCommonText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="5dp"
+                                android:text="@string/k_min"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <TextView
+                                android:id="@+id/kline_tv_min"
+                                style="@style/MainCommonText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0.00"
+                                android:textSize="@dimen/text_13sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/layout_5dp">
+
+                            <TextView
+                                style="@style/MainCommonText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="5dp"
+                                android:text="@string/k_num"
+                                android:textSize="@dimen/text_13sp" />
+
+                            <TextView
+                                android:id="@+id/kline_tv_num"
+                                style="@style/MainCommonText"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0.00"
+                                android:textSize="@dimen/text_13sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appbar_background4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/pop_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_5dp"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tx_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/cq_reddowm"
+                        android:drawablePadding="@dimen/layout_5dp"
+                        android:gravity="center"
+                        android:padding="@dimen/layout_10dp"
+                        android:text="5分钟"
+                        android:textColor="@color/appbar_background3"
+                        android:textSize="@dimen/text_13sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/layout_80dp"
+                        android:layout_height="@dimen/layout_1dp"
+                        android:background="@color/appbar_background3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tx_qiehuan"
+                        android:layout_width="@dimen/layout_60dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="全屏"
+                        android:textColor="@color/background_baise" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_MA"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/k_ma"
+                            android:textColor="@color/mine_label_txt"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/k_ma5"
+                            android:textColor="@color/ma5"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:id="@+id/view_kline_tv_ma5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="10dp"
+                            android:text="0.00"
+                            android:textColor="@color/ma5"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/k_ma10"
+                            android:textColor="@color/ma10"
+                            android:textSize="@dimen/text_14sp" />
+
+                        <TextView
+                            android:id="@+id/view_kline_tv_ma10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/layout_10dp"
+                            android:text="0.00"
+                            android:textColor="@color/ma10"
+                            android:textSize="@dimen/text_14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_20dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/k_ma20"
+                                android:textColor="@color/ma20"
+                                android:textSize="@dimen/text_14sp" />
+
+                            <TextView
+                                android:id="@+id/view_kline_tv_ma20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="@dimen/layout_10dp"
+                                android:text="0.00"
+                                android:textColor="@color/ma20"
+                                android:textSize="@dimen/text_14sp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/k_ma30"
+                                android:textColor="@color/ma30"
+                                android:textSize="@dimen/text_14sp" />
+
+                            <TextView
+                                android:id="@+id/view_kline_tv_ma30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="10dp"
+                                android:text="0.00"
+                                android:textColor="@color/ma30"
+                                android:textSize="@dimen/text_14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/KlineWebView1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            </WebView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.androidkun.xtablayout.XTabLayout
+                        android:id="@+id/xTablayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/appbar_background4"
+                        app:xTabDisplayNum="2"
+                        app:xTabDividerWidthWidthText="true"
+                        app:xTabIndicatorColor="@color/appbar_background3"
+                        app:xTabIndicatorHeight="@dimen/layout_2dp"
+                        app:xTabIndicatorWidth="@dimen/layout_40dp"
+                        app:xTabMode="scrollable"
+                        app:xTabSelectedTextColor="@color/appbar_background3"
+                        app:xTabSelectedTextSize="@dimen/text_16sp"
+                        app:xTabTextColor="@color/white"
+                        app:xTabTextSize="@dimen/text_16sp">
+
+                    </com.androidkun.xtablayout.XTabLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.eex.market.weight.WebViewScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/activity_marginTop_da"
+        android:padding="@dimen/layout_5dp">
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/campaign_yemian_color"
+            android:text="买入"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_14sp" />
+
+        <Button
+            android:id="@+id/btn_sell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_5dp"
+            android:layout_weight="1"
+            android:background="@color/appbar_background3"
+            android:text="卖出"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+</RelativeLayout>

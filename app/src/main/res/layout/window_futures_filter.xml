@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/layout_20dp">
+
+    <LinearLayout
+        android:id="@+id/ll_delegation_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:text="@string/delegation_type"
+            android:textColor="@color/color_4d6599"
+            android:textSize="@dimen/text_14sp" />
+
+
+
+            <RadioGroup
+                android:id="@+id/radio_attorney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_dele_all"
+                    style="@style/filtrate_radio_style"
+                    android:checked="true"
+                    android:text="@string/all" />
+
+                <RadioButton
+                    android:id="@+id/rb_market"
+                    style="@style/filtrate_radio_style"
+                    android:text="市价交易" />
+
+                <RadioButton
+                    android:id="@+id/rb_trigger"
+                    style="@style/filtrate_radio_style"
+                    android:text="触发交易" />
+            </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_deal_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:text="@string/deal_type"
+            android:textColor="@color/color_4d6599"
+            android:textSize="@dimen/text_14sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_deal_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_deal_type_all"
+                style="@style/filtrate_radio_style"
+                android:checked="true"
+                android:text="@string/all" />
+
+            <RadioButton
+                android:id="@+id/rb_buy_up"
+                style="@style/filtrate_radio_style"
+                android:text="@string/buy_up" />
+
+            <RadioButton
+                android:id="@+id/rb_buy_down"
+                style="@style/filtrate_radio_style"
+                android:text="@string/buy_down" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_buy_or_sell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:text="@string/over_night"
+            android:textColor="@color/color_4d6599"
+            android:textSize="@dimen/text_14sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_if_over_night"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_night_all"
+                style="@style/filtrate_radio_style"
+                android:checked="true"
+                android:text="@string/all" />
+
+            <RadioButton
+                android:id="@+id/rb_over_night"
+                style="@style/filtrate_radio_style"
+                android:text="@string/stay_overnight" />
+
+            <RadioButton
+                android:id="@+id/rb_not_over_night"
+                style="@style/filtrate_radio_style"
+                android:text="不过夜" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_choose_coin_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:text="@string/choose_coin_type"
+            android:textColor="@color/color_4d6599"
+            android:textSize="@dimen/text_14sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_coin_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_f2f4f9"
+            android:gravity="center"
+            android:padding="@dimen/layout_9dp"
+            android:text="@string/reset"
+            android:textColor="@color/color_0080ff"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_0080ff"
+            android:gravity="center"
+            android:padding="@dimen/layout_9dp"
+            android:text="@string/sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

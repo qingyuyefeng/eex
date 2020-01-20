@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/edt_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/LL_ONE"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tx_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_weight="1"
+            android:textColor="@color/background_baise"
+            android:textSize="@dimen/text_13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/ck_type"
+                android:layout_width="13dp"
+                android:layout_height="8dp"
+                android:background="@drawable/ck_up_down"
+                android:button="@null"
+                android:checked="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_list2"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/layout_20dp"
+                android:layout_marginRight="@dimen/layout_20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="团队总人数"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+
+                <TextView
+                    android:id="@+id/persion_nuber1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_1dp"
+                android:layout_marginLeft="@dimen/layout_20dp"
+                android:layout_marginRight="@dimen/layout_20dp"
+                android:background="@color/appbar_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/layout_20dp"
+                android:layout_marginRight="@dimen/layout_20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="有效EBX持仓总人数 :"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+
+                <TextView
+                    android:id="@+id/item_nuber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_1dp"
+                android:layout_marginLeft="@dimen/layout_20dp"
+                android:layout_marginRight="@dimen/layout_20dp"
+                android:background="@color/appbar_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/layout_20dp"
+                android:layout_marginRight="@dimen/layout_20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="返佣详情"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+
+                <Button
+                    android:id="@+id/btn_detile"
+                    android:layout_width="48dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/backbtn"
+                    android:text="查看"
+                    android:textColor="@color/background_baise"
+                    android:textSize="@dimen/text_13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_1dp"
+                android:layout_marginLeft="@dimen/layout_20dp"
+                android:layout_marginRight="@dimen/layout_20dp"
+                android:background="@color/appbar_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/layout_20dp"
+            android:layout_marginRight="@dimen/layout_20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp" />
+
+            <Button
+                android:id="@+id/btn_down"
+                android:layout_width="77dp"
+                android:layout_height="29dp"
+                android:background="@drawable/backbtn"
+                android:text="下级"
+                android:textColor="@color/background_baise"
+                android:textSize="@dimen/text_13sp">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

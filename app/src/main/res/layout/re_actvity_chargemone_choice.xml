@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey1"
+    android:orientation="vertical">
+
+
+    <com.eex.common.view.NewComTitleBar
+        android:id="@+id/comtitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_marginBottom="@dimen/layout_30dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/chargemone_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/layout_10dp"
+                android:background="@color/grey1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/Currency_name"
+                    android:textColor="@color/mine_item_text"
+                    android:textSize="@dimen/text_12sp" />
+
+                <TextView
+                    android:id="@+id/chargemone_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="AA"
+                    android:textColor="@color/mine_item_text"
+                    android:textSize="@dimen/text_12sp" />
+
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:src="@mipmap/down_triangle" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:layout_marginRight="@dimen/layout_10dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/layout_30dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Capital_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="@dimen/layout_5dp"
+                        android:text="@string/Capital_account"
+                        android:textColor="@color/mine_item_text"
+                        android:textSize="@dimen/text_14sp" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/Capital_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/layout_10dp"
+                    android:src="@mipmap/capital_account" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/layout_30dp"
+                    android:layout_weight="1"
+                    android:background="@color/grey1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Capital_c2c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="@dimen/layout_5dp"
+                        android:text="@string/assets_c2c_account"
+                        android:textColor="@color/mine_item_text"
+                        android:textSize="@dimen/text_14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_40dp"
+                    android:text="@string/Capital_number"
+                    android:textColor="@color/mine_item_text"
+                    android:textSize="@dimen/text_12sp" />
+
+
+                <EditText
+                    android:id="@+id/Capital_please"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_30dp"
+                    android:layout_marginTop="@dimen/layout_5dp"
+                    android:layout_marginRight="@dimen/layout_30dp"
+                    android:background="@color/grey1"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/Capital_please_number"
+                    android:padding="@dimen/layout_10dp"
+                    android:textColor="@color/text_color"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_cfd6e6"
+                    android:textSize="@dimen/text_12sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_40dp"
+                    android:layout_marginTop="@dimen/layout_20dp"
+                    android:text="@string/Capital_more"
+                    android:textColor="@color/mine_item_text"
+                    android:textSize="@dimen/text_12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_30dp"
+                        android:layout_marginTop="@dimen/layout_5dp"
+                        android:layout_marginRight="@dimen/layout_10dp"
+                        android:layout_weight="1"
+                        android:background="@color/grey1"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/Capital_edtoMuber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/grey1"
+                            android:hint="9999"
+                            android:padding="@dimen/layout_10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_color"
+                            android:textColorHint="@color/color_cfd6e6"
+                            android:textSize="@dimen/text_12sp" />
+
+                        <TextView
+                            android:id="@+id/Capital_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/layout_10dp"
+                            android:layout_weight="0"
+                            android:gravity="right"
+                            android:text="AA"
+                            android:textColor="@color/color_8fa2cc"
+                            android:textSize="@dimen/text_12sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/Capital_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/layout_30dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/shape_textview_bule"
+                        android:padding="@dimen/layout_10dp"
+                        android:text="@string/Capital_all"
+                        android:textColor="#ff0080ff"
+                        android:textSize="@dimen/text_12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_30dp"
+                    android:layout_marginTop="@dimen/layout_40dp"
+                    android:layout_marginRight="@dimen/layout_30dp"
+                    android:layout_marginBottom="@dimen/layout_20dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/Capital_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/re_shape_jb_roung"
+                        android:text="@string/assets_transfer"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_14sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginTop="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_40dp"
+                android:layout_marginTop="@dimen/layout_20dp"
+                android:text="@string/Capital_no_pss"
+                android:textColor="#ffcc3333"
+                android:textSize="@dimen/text_12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_40dp"
+                android:layout_marginTop="@dimen/layout_10dp"
+                android:layout_marginBottom="@dimen/layout_20dp"
+                android:text="@string/Capital_no_sai"
+                android:textColor="#ffcc3333"
+                android:textSize="@dimen/text_12sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

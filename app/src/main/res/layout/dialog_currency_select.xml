@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/white"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_10dp"
+    android:background="@color/color_f2f4f9">
+
+    <TextView
+      android:id="@+id/tv_ok"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/color_8fa2cc"
+      android:text="选择币种" />
+
+    <TextView
+      android:id="@+id/tv_cancel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:text="取消"
+      android:textColor="@color/color_4d6599" />
+  </RelativeLayout>
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/currency_list"
+    android:layout_width="match_parent"
+    android:layout_height="400dp" />
+
+</LinearLayout>

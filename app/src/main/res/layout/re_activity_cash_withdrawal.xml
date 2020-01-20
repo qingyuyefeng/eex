@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <com.eex.common.view.NewComTitleBar
+      android:id="@+id/comtitlebar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
+
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/swipeRefresh"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/grey1"
+          android:orientation="vertical"
+          >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_marginBottom="@dimen/layout_10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_30dp"
+              android:layout_marginTop="@dimen/layout_30dp"
+              android:text="@string/Cash_withdrawals"
+              android:textColor="@color/color_4d6599"
+              android:textSize="@dimen/text_12sp"
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_30dp"
+              android:layout_marginTop="@dimen/layout_5dp"
+              android:orientation="vertical"
+              >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+          </LinearLayout>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_30dp"
+              android:layout_marginTop="@dimen/layout_20dp"
+              android:text="@string/Cash_Choicebank"
+              android:textColor="@color/color_4d6599"
+              android:textSize="@dimen/text_12sp"
+              />
+
+          <LinearLayout
+              android:id="@+id/Cash_Choicebank"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_marginLeft="@dimen/layout_30dp"
+              android:layout_marginTop="@dimen/layout_5dp"
+              android:layout_marginRight="@dimen/layout_30dp"
+              android:background="@color/grey1"
+              android:gravity="center"
+              android:orientation="horizontal"
+              >
+
+            <TextView
+                android:id="@+id/Cash_Choicebank_bakk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/layout_10dp"
+                android:text="@string/Cash_Choicebank"
+                android:textColor="@color/main_title1"
+                android:textSize="@dimen/text_12sp"
+                />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/layout_15dp"
+                android:src="@mipmap/down_triangle"
+                />
+          </LinearLayout>
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_30dp"
+              android:layout_marginTop="@dimen/layout_20dp"
+              android:text="@string/Cash_money"
+              android:textColor="@color/color_4d6599"
+              android:textSize="@dimen/text_12sp"
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_30dp"
+              android:layout_marginTop="@dimen/layout_5dp"
+              android:layout_marginRight="@dimen/layout_30dp"
+              android:background="@color/grey1"
+              android:orientation="horizontal"
+              >
+
+            <EditText
+                android:id="@+id/recharge_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/please_enter_recharge_amount"
+                android:inputType="number"
+                android:padding="@dimen/layout_10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/main_title1"
+                android:textSize="@dimen/text_12sp"
+                />
+
+
+            <TextView
+                android:id="@+id/recharge_amount_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_15dp"
+                android:text="JPY"
+                android:textColor="@color/mine_item_text"
+                android:textSize="@dimen/text_12sp"
+                />
+
+          </LinearLayout>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_30dp"
+              android:layout_marginTop="@dimen/layout_20dp"
+              android:text="@string/Cash_money_charge"
+              android:textColor="@color/color_4d6599"
+              android:textSize="@dimen/text_12sp"
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_30dp"
+              android:layout_marginTop="@dimen/layout_5dp"
+              android:layout_marginRight="@dimen/layout_30dp"
+              android:background="@color/grey1"
+              android:orientation="horizontal"
+              >
+
+            <TextView
+                android:id="@+id/recharge_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_10dp"
+                android:layout_weight="1"
+                android:hint=""
+                android:padding="@dimen/layout_10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/main_title1"
+                android:textSize="@dimen/text_12sp"
+                />
+
+
+            <TextView
+                android:id="@+id/recharge_fee_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layout_15dp"
+                android:text="JPY"
+                android:textColor="@color/mine_item_text"
+                android:textSize="@dimen/text_12sp"
+                />
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_30dp"
+              android:layout_marginTop="@dimen/layout_20dp"
+              android:orientation="horizontal"
+              >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/Cash_cash"
+                  android:textColor="@color/color_4d6599"
+                  android:textSize="@dimen/text_12sp"
+                  />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/layout_5dp"
+                  android:layout_marginRight="@dimen/layout_30dp"
+                  android:background="@color/grey1"
+                  android:orientation="horizontal"
+                  >
+
+                <TextView
+                    android:id="@+id/recharge_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/layout_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/main_title1"
+                    android:textSize="@dimen/text_12sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/recharge_payment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layout_15dp"
+                    android:text=""
+                    android:textColor="@color/mine_item_text"
+                    android:textSize="@dimen/text_12sp"
+                    />
+
+              </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/Cash_arrival"
+                  android:textColor="@color/color_4d6599"
+                  android:textSize="@dimen/text_12sp"
+                  />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/layout_5dp"
+                  android:layout_marginRight="@dimen/layout_30dp"
+                  android:background="@color/grey1"
+                  android:orientation="horizontal"
+                  >
+
+                <TextView
+                    android:id="@+id/recharge_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_10dp"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:padding="@dimen/layout_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/main_title1"
+                    android:textSize="@dimen/text_12sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/recharge_account_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/layout_15dp"
+                    android:text=""
+                    android:textColor="@color/mine_item_text"
+                    android:textSize="@dimen/text_12sp"
+                    />
+
+              </LinearLayout>
+            </LinearLayout>
+
+          </LinearLayout>
+
+
+          <Button
+              android:id="@+id/Cash_withdrawal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_32dp"
+              android:layout_marginTop="@dimen/layout_40dp"
+              android:layout_marginRight="@dimen/layout_32dp"
+              android:layout_marginBottom="@dimen/layout_30dp"
+              android:background="@drawable/re_shape_jb_roung"
+              android:text="@string/Cash_withdrawal"
+              android:textColor="@color/white"
+              android:textSize="@dimen/text_12sp"
+              />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_10dp"
+            android:layout_marginRight="@dimen/layout_10dp"
+            android:layout_marginBottom="@dimen/layout_20dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_40dp"
+              android:layout_marginTop="@dimen/layout_15dp"
+              android:text="@string/Cash_withdrawal_bakk"
+              android:textColor="@color/volume_color_red"
+              android:textSize="@dimen/text_12sp"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_40dp"
+              android:layout_marginTop="@dimen/layout_10dp"
+              android:text="@string/Cash_withdrawal_24"
+              android:textColor="@color/volume_color_red"
+              android:textSize="@dimen/text_12sp"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_40dp"
+              android:layout_marginTop="@dimen/layout_10dp"
+              android:text="@string/Cash_withdrawal_my"
+              android:textColor="@color/volume_color_red"
+              android:textSize="@dimen/text_12sp"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/layout_40dp"
+              android:layout_marginTop="@dimen/layout_10dp"
+              android:layout_marginBottom="@dimen/layout_20dp"
+              android:text="@string/Cash_with_30"
+              android:textColor="@color/volume_color_red"
+              android:textSize="@dimen/text_12sp"
+              />
+
+
+        </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+  </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
